@@ -103,7 +103,7 @@
     "saintCyrilOfJerusalemBishopAndDoctor": "Svätého Cyrila Jeruzalemského, biskupa a učiteľa Cirkvi",
     "saintTuribiusOfMogrovejoBishop": "Svätého Turibia de Mongrovejo, biskupa",
     "saintFrancisOfPaolaHermit": "Svätý František z Paoly, pustovník",
-    "saintIsidoreOfSevilleBishopAndDoctorOfTheChurch": "Izidor Sevillský, biskup a učiteľ Cirkvi",
+    "saintIsidoreOfSevilleBishopAndDoctorOfTheChurch": "Svätého Izidora, biskupa a učiteľa Cirkvi",
     "saintVincentFerrerPriest": "Svätého Vincenta Ferrera, kňaza",
     "saintJohnBaptistDeLaSallePriest": "Svätého Jána Krstiteľa de la Salle, kňaza",
     "saintStanislausBishopAndMartyr": "Svätého Stanislava, biskupa a mučeníka",
@@ -230,7 +230,7 @@
     "dedicationOfTheBasilicasOfSaintsPeterAndPaulApostles": "Výročie posviacky bazilík svätého Petra a svätého Pavla, apoštolov",
     "presentationOfTheBlessedVirginMary": "Obetovanie Panny Márie",
     "saintCeciliaVirginAndMartyr": "Svätej Cecílie, panny a mučenice",
-    "saintClementIPopeAndMartyrSaintColumbanReligious": "Svätého Klementa I., papeža a mučeníka/Svätého Kolumbána, opáta",
+    "saintClementIPopeAndMartyrSaintColumbanReligious": "Svätého Klementa I., papeža a mučeníka/Svätého Kolumbána,f opáta",
     "saintAndrewDungLacAndCompanionsMartyrs": "Svätého Ondreja Dung-Laka, kňaza, a spoločníkov, mučeníkov",
     "saintCatherineOfAlexandriaVirginAndMartyr": "Svätej Kataríny Alexandrijskej, panny a mučenice",
     "saintAndrewTheApostle": "Svätého Ondreja, apoštola",
@@ -252,29 +252,24 @@
     "saintSylvesterIPope": "Svätého Silvestra I., pápeža"
   },
   "national": {
-    "blessedLauraVicuna": "Blessed Laura Vicuna",
-    "ourLadyQueenOfPeace": "Our Lady, Queen of Peace",
-    "saintTuribiusOfMogrovejoBishop": "Saint Turibius of Mogrovejo, Bishop",
-    "ourLadyOfLujanPatronessOfArgentina": "Our Lady of Luján, Patroness of Argentina",
-    "saintIsidoreTheFarmer": "Saint Isidore the Farmer",
-    "saintLuigiOrionePriest": "Saint Luigi Orione, Priest",
-    "ourLadyOfItati": "Our Lady of Itati",
-    "saintsAugustineZhaoRongPriestAndCompanionsMartyrs": "Saints Augustine Zhao Rong, Priest, and Companions, Martyrs",
-    "ourLadyOfMountCarmel": "Our Lady of Mount Carmel",
-    "saintSharbelMakhlufPriestAndHermit": "Saint Sharbel Makhlūf, Priest and Hermit",
-    "saintFrancisSolanusPriest": "Saint Francis Solanus, Priest",
-    "saintRocco": "Saint Rocco",
-    "blessedCeferinoNamuncura": "Blessed Ceferino Namuncura",
-    "saintRoseOfLima": "Saint Rose of Lima",
-    "ourLadyOfMercy": "Our Lady of Mercy",
-    "saintHectorValdivielsoSaezMartyr": "Saint Héctor Valdivielso Sáez, Martyr",
-    "ourLadyOfThePillar": "Our Lady of The Pillar",
-    "saintsRoqueGonzalezAlfonsoRodriguezAndJuanDelCastilloPriestsAndMartyrs": "Saints Roque Gonzalez, Alfonso Rodriguez, and Juan del Castillo, Priests and Martyrs",
-    "saintElizabethOfHungary": "Saint Elizabeth of Hungary",
-    "ourLadyOfGuadalupe": "Our Lady of Guadalupe",
+    "blessedLauraVicuna": "Blahoslavenej Laury Vicuñe",  // argentina, chile
+    "ourLadyQueenOfPeace": "Panny Márie Kráľovnej",  // argentina, slovakia
+    "ourLadyOfLujanPatronessOfArgentina": "Panny Marie Lujánska",  // argentina
+    "saintIsidoreTheFarmer": "Saint Isidore the Farmer",  // argentina, philippines, spain, us; double check en name farmer/laboro(u)r
+    "saintLuigiOrionePriest": "Svätého Alojza Orione, kňaza",  // argentina
+    "ourLadyOfItati": "Panna Mária Itatská",  // argentina
+    "saintSharbelMakhlufPriestAndHermit": "Saint Sharbel Makhlūf, Priest and Hermit", // duplicate
+    "saintFrancisSolanusPriest": "Svätého Františka Solana, kňaza",  // argentina, bolivia, peru
+    "saintRocco": "Saint Rocco",  // argentina, lithuania
+    "blessedCeferinoNamuncura": "Blahoslaveného Zefirína Namuncurá",  // argentina
+    "saintRoseOfLima": "Saint Rose of Lima",  // duplicate
+    "ourLadyOfMercy": "Panny Márie, Matky milosrdenstva",  // argentina, chile, peru
+    "saintHectorValdivielsoSaezMartyr": "Svätého Héctora Valdivielsa Sáeza (Benedikta od Ježiša), mučeníka",  // argentina
+    "ourLadyOfThePillar": "Panny Márie del Pilar",  // argentina, spain
+    "saintsRoqueGonzalezAlfonsoRodriguezAndJuanDelCastilloPriestsAndMartyrs": "Svätých Rochusa Gonzáleza de Santa Cruz, Alfonza Rodrígueza a Jána del Castillo, kňazov a mučeníkov",  // argentina, bolivia, brazil
+    "saintElizabethOfHungary": "Saint Elizabeth of Hungary",  // duplicate
     "ourLadyOfTheValley": "Our Lady of The Valley",
     "maryMotherOfTheChurch": "Mary, Mother of The Church",
-    "saintPatrickBishop": "Saint Patrick, Bishop",
     "saintPeterChanelPriestAndMartyr": "Saint Peter Chanel, Priest and Martyr",
     "ourLadyHelpOfChristians": "Our Lady, Help of Christians",
     "blessedPeterToRotMartyr": "Blessed Peter To Rot, Martyr",
@@ -356,7 +351,7 @@
     "saintsPhilipAndJamesApostles": "Saints Philip and James, Apostles",
     "saintTeresaOfLosAndesVirgin": "Saint Teresa of Los Andes, Virgin",
     "saintCamillusDeLellisPriestOrSaintHenry": "Saint Camillus de Lellis, Priest, Or Saint Henry",
-    "ourLadyOfMountCarmelMotherAndQueenOfChile": "Our Lady of Mount Carmel, Mother and Queen of Chile",
+    "ourLadyOfMountCarmelMotherAndQueenOfChile": "Our Lady of Mount Carmel, Mother and Queen of Chile",  // duplicate
     "saintAlbertoHurtadoPriest": "Saint Alberto Hurtado, Priest",
     "saintJohnXxiiiPope": "Svätého Jána XXIII., pápeža",
     "jesusChristTheEternalHighPriest": "Jesus Christ, The Eternal High Priest",
@@ -748,7 +743,6 @@
     "saintVincentDeaconAndMartyr": "Saint Vincent, Deacon and Martyr",
     "saintIldephonsusOfToledoBishop": "Saint Ildephonsus of Toledo, Bishop",
     "saintHermenegildMartyr": "Saint Hermenegild, Martyr",
-    "saintIsidoreOfSevilleBishopAndDoctorOfTheChurch": "Saint Isidore of Seville, Bishop and Doctor of The Church",
     "saintJohnOfAvilaPriest": "Saint John of Avila, Priest",
     "saintPaschalBaylon": "Saint Paschal Baylon",
     "saintJoaquinaVedruna": "Saint Joaquina Vedruna",
