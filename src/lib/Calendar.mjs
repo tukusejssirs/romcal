@@ -27,11 +27,12 @@ const _getConfig = config => {
   config = _.isPlainObject(config) ? config : _.stubObject();
   config.year = config.year || moment.utc().year();
   config.christmastideEnds = config.christmastideEnds || 'o';
-  config.epiphanyOnJan6 = config.epiphanyOnJan6 || _.stubFalse();
-  config.corpusChristiOnThursday = config.corpusChristiOnThursday || _.stubFalse();
-  config.ascensionOnSunday = config.ascensionOnSunday || _.stubFalse();
-  config.country = config.country || _.stubFalse();
-  config.saintsCyrilMonkAndMethodiusBishopOnFeb14 = config.saintsCyrilMonkAndMethodiusBishopOnFeb14 || _.stubFalse();
+  config.epiphanyOnJan6 = config.epiphanyOnJan6;
+  config.christmastideIncludesTheSeasonOfEpiphany = config.christmastideIncludesTheSeasonOfEpiphany;
+  config.corpusChristiOnThursday = config.corpusChristiOnThursday;
+  config.ascensionOnSunday = config.ascensionOnSunday;
+  config.country = config.country || 'general';
+  config.saintsCyrilMonkAndMethodiusBishopOnFeb14 = config.saintsCyrilMonkAndMethodiusBishopOnFeb14;
   config.locale = config.locale || 'en';
   config.type = config.type || 'calendar';
   config.query = _.isPlainObject( config.query ) ? config.query : null;
@@ -46,7 +47,7 @@ const _getConfig = config => {
 // Return the appropriate national calendar based on the country given
 // Returns object with function returning empty array if nothing specified
 // country: the camel cased country name to get the calendar for (country name will be camel cased in this method)
-const getNationalCalendar = country => {
+const getCalendar = country => {
   if ( country ) {
     if ( _.has( Calendars, _.camelCase(country))) {
       return Calendars[_.camelCase(country)];
@@ -66,21 +67,37 @@ const getNationalCalendar = country => {
 // options: (see _calendarYear)
 const _getCalendar = options => {
 
+  // Get the general calendar based on the given year and format the result for better processing
+  let general = getCalendar('general').dates(options.year);
+
   // Get the relevant national calendar object based on the given country
   // Pass in the optional `saintsCyrilMonkAndMethodiusBishopOnFeb14` flag which is used in the Czech Rep and Slovakia
-  let national = _.reduce( getNationalCalendar( options.country ).dates( options.year, options.saintsCyrilMonkAndMethodiusBishopOnFeb14 ), ( r, v, k ) => {
+  let national = getCalendar(options.country).dates(options.year, options.saintsCyrilMonkAndMethodiusBishopOnFeb14);
+
+  // Check if 'drop' has been defined for any celebrations in the national calendar
+  // and remove them from both national and general calendar sources
+  let dropKeys = _.map(_.filter(national, n => (_.has(n, 'drop') && n.drop )), 'key');
+  if (!_.isEmpty(dropKeys)) {
+    _.each(dropKeys, dropKey => { // _,remove() mutates the array
+      _.remove(general, ({key}) => _.eq(key, dropKey));
+      _.remove(national, ({key}) => _.eq(key, dropKey));
+    });
+  }
+
+  // format the general calendar for better processing and add the calendar source "g"
+  general = _.reduce(general, ( r, v, k ) => {
+    v.source = 'g';
+    r[ v.key ] = v;
+    return r;
+  }, {});
+
+  // format the national calendar for better processing and add the calendar source "n"
+  national = _.reduce(national, ( r, v, k ) => {
     v.source = 'n';
     r[ v.key ] = v;
     return r;
   }, {});
 
-
-  // Get the general calendar based on the given year and format the result for better processing
-  let general = _.reduce( Calendars['general'].dates( options.year ), ( r, v, k ) => {
-    v.source = 'g';
-    r[ v.key ] = v;
-    return r;
-  }, {});
 
   // If the national calendar has the same celebration defined
   // as in the general calendar, it replaces the one
@@ -89,7 +106,8 @@ const _getCalendar = options => {
   // calendar, it is added
   _.each( national, ( v, k ) => _.set( general, k, v ));
 
-  // Get the celebration dates based on the given year and options and format the result for better processing
+  // Get the celebration dates based on the given year and options 
+  // and format the result for better processing
   let celebrations = _.reduce(
     Celebrations.dates( options.year, options.christmastideEnds, options.epiphanyOnJan6, options.corpusChristiOnThursday, options.ascensionOnSunday ),
     ( r, v, k ) => {
@@ -137,68 +155,68 @@ const _getCalendar = options => {
   // Apply replacement logic for coinciding dates
   result = _.map( result, coincidences => {
 
-      // Only run when there's more than 1 date in the group
-      if ( coincidences.length > 1 ) {
+    // Only run when there's more than 1 date in the group
+    if ( coincidences.length > 1 ) {
 
-        // Group coincidences by their source
-        let sources = _.groupBy( coincidences, v => v.source );
+      // Group coincidences by their source
+      let sources = _.groupBy( coincidences, v => v.source );
 
-        // Flag of the date to be retained
-        let keep;
+      // Flag of the date to be retained
+      let keep;
 
-        // If the group has a celebration and no national date and no general date
-        // Keep the celebration and discard other coincidences
-        if ( _.has( sources, 'c' ) && !_.has( sources, 'n') && !_.has( sources, 'g') ) {
-          keep = 'c';
+      // If the group has a celebration and no national date and no general date
+      // Keep the celebration and discard other coincidences
+      if ( _.has( sources, 'c' ) && !_.has( sources, 'n') && !_.has( sources, 'g') ) {
+        keep = 'c';
+      }
+
+      // If the group has a celebration AND national date AND no general date ...
+      // Keep national date IF its prioritized
+      // else keep the celebration
+      else if ( _.has( sources, 'c') && _.has( sources, 'n' ) ) {
+        if ( _.head( sources['n'] ).data.prioritized ) {
+          keep = 'n';
         }
-
-        // If the group has a celebration AND national date AND no general date ...
-        // Keep national date IF its prioritized
-        // else keep the celebration
-        else if ( _.has( sources, 'c') && _.has( sources, 'n' ) ) {
-          if ( _.head( sources['n'] ).data.prioritized ) {
-            keep = 'n';
-          }
-          else {
-            keep = 'c';
-          }
-        }
-
-        // If the group has a national AND general date but no celebration
-        // Keep the general date if its prioritized
-        // If not, keep the national date
-        else if ( !_.has( sources, 'c') && _.has( sources, 'n' ) && _.has( sources, 'g') ) {
-          if ( !_.head( sources['n'] ).data.prioritized && _.head( sources['g'] ).data.prioritized ) {
-            keep = 'g';
-          }
-          else {
-            keep = 'n';
-          }
-        }
-
-        // If the group has multiple general dates only
-        // Keep the highest ranking general date
-        else if ( !_.has( sources, 'c') && !_.has( sources, 'n' ) && _.has( sources, 'g') ) {
-          sources['g'] = _.map( sources, source => {
-            return _.minBy( source, function( item ) {
-              return _.indexOf( Types, item.type );
-            });
-          });
-          keep = 'g';
-        }
-      
-        // If the group has a celebration and general date but no national date
-        // and any other combination, keep the celebration date
         else {
           keep = 'c';
         }
-
-        // Keep only the relevant date
-        coincidences = _.filter( coincidences, { source: keep } );
-
       }
 
-      return coincidences;
+      // If the group has a national AND general date but no celebration
+      // Keep the general date if its prioritized
+      // If not, keep the national date
+      else if ( !_.has( sources, 'c') && _.has( sources, 'n' ) && _.has( sources, 'g') ) {
+        if ( !_.head( sources['n'] ).data.prioritized && _.head( sources['g'] ).data.prioritized ) {
+          keep = 'g';
+        }
+        else {
+          keep = 'n';
+        }
+      }
+
+      // If the group has multiple general dates only
+      // Keep the highest ranking general date
+      else if ( !_.has( sources, 'c') && !_.has( sources, 'n' ) && _.has( sources, 'g') ) {
+        sources['g'] = _.map( sources, source => {
+          return _.minBy( source, function( item ) {
+            return _.indexOf( Types, item.type );
+          });
+        });
+        keep = 'g';
+      }
+    
+      // If the group has a celebration and general date but no national date
+      // and any other combination, keep the celebration date
+      else {
+        keep = 'c';
+      }
+
+      // Keep only the relevant date
+      coincidences = _.filter( coincidences, { source: keep } );
+
+    }
+
+    return coincidences;
   });
 
   // Flatten the results
@@ -424,9 +442,10 @@ const _metadata = (year, dates) => {
 // [-] country: Get national calendar dates for the given country (defaults to 'general')
 // [-] locale: The language for the calendar names (defaults to 'en')
 // [-] christmastideEnds: t|o|e (The mode to calculate the end of Christmastide. Defaukts to 'o')
-// [-] epiphanyOnJan6: true|false|undefined (If true, Epiphany will be fixed to Jan 6)
-// [-] corpusChristiOnThursday: true|false|undefined (If true, Corpus Christi is set to Thursday)
-// [-] ascensionOnSunday: true|false|undefined (If true, Ascension is moved to the 7th Sunday of Easter)
+// [-] epiphanyOnJan6: true|false|undefined (If true, Epiphany will be fixed to Jan 6) (defaults to false)
+// [-] christmastideIncludesTheSeasonOfEpiphany: true|false|undefined (If false, the season of Epiphany will not be merged into Christmastide )
+// [-] corpusChristiOnThursday: true|false|undefined (If true, Corpus Christi is set to Thursday) (defaults to false)
+// [-] ascensionOnSunday: true|false|undefined (If true, Ascension is moved to the 7th Sunday of Easter) (defaults to false)
 // [-] type: calendar|liturgical (return dates in either standard calendar or liturgical calendar format)
 // [-] query: Additional filters to be applied against calendar dates array (default: none)
 // [-] saintsCyrilMonkAndMethodiusBishopOnFeb14: Should this feast be on Feb 14 (only used for Czech Rep and Slovakia) (defaults to false)
@@ -434,13 +453,13 @@ const _calendarYear = c => {
 
   // Get the liturgical seasons that run through the year
   let dates = _.union(
-    Seasons.christmastide( c.year - 1, c.christmastideEnds, c.epiphanyOnJan6 ),
+    Seasons.christmastide( c.year - 1, c.christmastideEnds, c.epiphanyOnJan6, c.christmastideIncludesTheSeasonOfEpiphany ),
     Seasons.earlyOrdinaryTime( c.year, c.christmastideEnds, c.epiphanyOnJan6 ),
     Seasons.lent( c.year ),
     Seasons.eastertide( c.year ),
     Seasons.laterOrdinaryTime( c.year ),
     Seasons.advent( c.year ),
-    Seasons.christmastide( c.year, c.christmastideEnds, c.epiphanyOnJan6 )
+    Seasons.christmastide( c.year, c.christmastideEnds, c.epiphanyOnJan6, c.christmastideIncludesTheSeasonOfEpiphany )
   );
 
   // console.log(Seasons.lent(c.year));
@@ -461,9 +480,10 @@ const _calendarYear = c => {
 // [-] country: Get national calendar dates for the given country (defaults to 'general')
 // [-] locale: The language for the calendar names (defaults to 'en')
 // [-] christmastideEnds: t|o|e (The mode to calculate the end of Christmastide. Defaukts to 'o')
-// [-] epiphanyOnJan6: true|false|undefined (If true, Epiphany will be fixed to Jan 6)
-// [-] corpusChristiOnThursday: true|false|undefined (If true, Corpus Christi is set to Thursday)
-// [-] ascensionOnSunday: true|false|undefined (If true, Ascension is moved to the 7th Sunday of Easter)
+// [-] epiphanyOnJan6: true|false|undefined (If true, Epiphany will be fixed to Jan 6) (defaults to false)
+// [-] christmastideIncludesTheSeasonOfEpiphany: true|false|undefined (If false, the season of Epiphany will not be merged into Christmastide )
+// [-] corpusChristiOnThursday: true|false|undefined (If true, Corpus Christi is set to Thursday) (defaults to false)
+// [-] ascensionOnSunday: true|false|undefined (If true, Ascension is moved to the 7th Sunday of Easter) (defaults to false)
 // [-] type: calendar|liturgical (return dates in either standard calendar or liturgical calendar format)
 // [-] query: Additional filters to be applied against calendar dates array (default: none)
 // [-] saintsCyrilMonkAndMethodiusBishopOnFeb14: Should this feast be on Feb 14 (only used for Czech Rep and Slovakia) (defaults to false)
@@ -616,5 +636,5 @@ export {
   calendarFor,
   queryFor,
   countries,
-  getNationalCalendar
+  getCalendar
 };

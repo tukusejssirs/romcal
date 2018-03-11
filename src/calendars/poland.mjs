@@ -47,7 +47,7 @@ let dates = year => {
     // general calendar because on Jan 27 we celebrate memorial of
     // blessed Jerzy Matulewicz, bishop.
     {
-      "key": "blessedBoleslawaMariaLamentVirginsaintAngelaMericiVirgin",
+      "key": "blessedBoleslawaMariaLamentVirginAndSaintAngelaMericiVirgin",
       "type": Types[6],
       "moment": moment.utc({ year: year, month: 0, day: 29 }),
       "data": {}
@@ -724,12 +724,7 @@ let dates = year => {
   ];
 
   // Get localized celebration names
-  return _.map( _dates, date => {
-    date.name = Utils.localize({
-      key: 'national.' + date.key
-    });
-    return date;
-  });
+  return Utils.localizeDates(_dates);
 };
 
 export {

@@ -51,7 +51,7 @@ let dates = year => {
       }
     },
     {
-      "key": "blessedInacioDeAzevedoPriestAndMartyr",
+      "key": "blessedInacioDeAzevedoPriestAndCompanionsMartyrs",
       "type": Types[5],
       "moment": moment.utc({ year: year, month: 6, day: 17 }),
       "data": {
@@ -132,12 +132,7 @@ let dates = year => {
   ];
 
   // Get localized celebration names
-  return _.map( _dates, date => {
-    date.name = Utils.localize({
-      key: 'national.' + date.key
-    });
-    return date;
-  });
+  return Utils.localizeDates(_dates);
 };
 
 export {

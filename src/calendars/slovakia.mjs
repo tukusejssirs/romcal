@@ -122,7 +122,7 @@ let dates = (year, saintsCyrilMonkAndMethodiusBishopOnFeb14 = false ) => {
       }
     },
     {
-      "key": "saintsAndrewZoerardusAndBenedictEremites",
+      "key": "saintsAndrewZoerardusAndBenedictHermits",
       "type": Types[5],
       "moment": moment.utc({ year: year, month: 6, day: 17 }),
       "data": {
@@ -191,7 +191,7 @@ let dates = (year, saintsCyrilMonkAndMethodiusBishopOnFeb14 = false ) => {
       }
     },
     {
-      "key": "ourLadyOfSorrowsPatronessOfSlovakia",
+      "key": "ourLadyOfSorrows",
       "type": Types[0],
       "moment": moment.utc({ year: year, month: 8, day: 15 }),
       "data": {
@@ -215,16 +215,20 @@ let dates = (year, saintsCyrilMonkAndMethodiusBishopOnFeb14 = false ) => {
           "liturgicalColor": LiturgicalColors.WHITE
         }
       }
+    },
+    // Dropped celebrations
+    {
+      "key": "shroveMonday",
+      "drop": true
+    },
+    {
+      "key": "shroveTuesday",
+      "drop": true
     }
   ];
 
   // Get localized celebration names
-  return _.map( _dates, date => {
-    date.name = Utils.localize({
-      key: 'national.' + date.key
-    });
-    return date;
-  });
+  return Utils.localizeDates(_dates);
 };
 
 export {
