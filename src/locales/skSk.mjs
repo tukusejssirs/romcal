@@ -261,24 +261,34 @@
     "saintSharbelMakhlufPriestAndHermit": "Saint Sharbel Makhlūf, Priest and Hermit", // duplicate
     "saintFrancisSolanusPriest": "Svätého Františka Solana, kňaza",  // argentina, bolivia, peru
     "saintRocco": "Saint Rocco",  // argentina, lithuania
-    "blessedCeferinoNamuncura": "Blahoslaveného Zefirína Namuncurá",  // argentina
+    "blessedCeferinoNamuncura": "Blahoslaveného Zefirína Namuncurá",  // 
+argentina
     "saintRoseOfLima": "Saint Rose of Lima",  // duplicate
     "ourLadyOfMercy": "Panny Márie, Matky milosrdenstva",  // argentina, chile, peru
     "saintHectorValdivielsoSaezMartyr": "Svätého Héctora Valdivielsa Sáeza (Benedikta od Ježiša), mučeníka",  // argentina
     "ourLadyOfThePillar": "Panny Márie del Pilar",  // argentina, spain
     "saintsRoqueGonzalezAlfonsoRodriguezAndJuanDelCastilloPriestsAndMartyrs": "Svätých Rochusa Gonzáleza de Santa Cruz, Alfonza Rodrígueza a Jána del Castillo, kňazov a mučeníkov",  // argentina, bolivia, brazil
     "saintElizabethOfHungary": "Saint Elizabeth of Hungary",  // duplicate
-    "ourLadyOfTheValley": "Our Lady of The Valley",
-    "maryMotherOfTheChurch": "Mary, Mother of The Church",
-    "saintPeterChanelPriestAndMartyr": "Saint Peter Chanel, Priest and Martyr",
-    "ourLadyHelpOfChristians": "Our Lady, Help of Christians",
-    "blessedPeterToRotMartyr": "Blessed Peter To Rot, Martyr",
-    "saintMaryOfTheCrossVirgin": "Saint Mary of The Cross, Virgin",
-    "saintBrotherMutienMarieReligious": "Saint Brother Mutien Marie, Religious",
-    "saintAmandMissionary": "Saint Amand, Missionary",
+    "ourLadyOfTheValley": "Our Lady of The Valley",  // argentina
+    "maryMotherOfTheChurch": "Panny Márie, Matky Cirkvi",  // agentina, 
+bosniaHerzegovina, greece, poland, puertorico, ukraine
+    "saintPeterChanelPriestAndMartyr": "Saint Peter Chanel, Priest and Martyr",  
+// possible duplicate
+    "ourLadyHelpOfChristians": "Panny Márie, Pomocnice kresťanov",  // 
+australia, 
+hungary, newZealand, peru, poland, ?add optMem 24/5 slovakia
+    "blessedPeterToRotMartyr": "Blahoslaveného Petra To Rota, mučeníka",  // 
+australia
+    "saintMaryOfTheCrossVirgin": "Svätej Márie od Kríža, panny",  // 
+australia
+    "saintBrotherMutienMarieReligious": "Svätého brata Mutien-Marie, 
+rehoľníka",  // belgium
+    "saintAmandMissionary": "Svätý Milan, biskup",  // belgium, ?add france, 
+?add slovakia (Milan or Amantius?)
     "saintGertrudeOfNivellesVirgin": "Saint Gertrude of Nivelles, Virgin",
     "saintJulieBilliartVirgin": "Saint Julie Billiart, Virgin",
-    "saintFatherDamienMissionary": "Saint Father Damien, Missionary",
+    "saintFatherDamienMissionary": 
+"Saint Father Damien, Missionary",
     "saintJulianaOfLiegeVirgin": "Saint Juliana of Liege, Virgin",
     "ourLadyMediatrix": "Our Lady, Mediatrix",
     "saintLambertBishopAndMartyr": "Saint Lambert, Bishop and Martyr",
