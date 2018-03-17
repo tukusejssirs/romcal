@@ -262,7 +262,6 @@
     "saintFrancisSolanusPriest": "Svätého Františka Solana, kňaza",  // argentina, bolivia, peru
     "saintRocco": "Svätého Rocha, pútnika",  // argentina, lithuania
     "blessedCeferinoNamuncura": "Blahoslaveného Zefirína Namuncurá",  // argentina
-    "saintRoseOfLima": "Saint Rose of Lima",  // duplicate
     "ourLadyOfMercy": "Panny Márie, Matky milosrdenstva",  // argentina, chile, peru
     "saintHectorValdivielsoSaezMartyr": "Svätého Héctora Valdivielsa Sáeza (Benedikta od Ježiša), mučeníka",  // argentina
     "ourLadyOfThePillar": "Panny Márie del Pilar",  // argentina, spain
@@ -283,32 +282,25 @@
     "saintJulianaOfLiegeVirgin": "Svätej Juliány z Liége, panny",  // belgium
     "ourLadyMediatrix": "Panny Márie, Prostrednice všetkých milostí",  // belgium, czechRepublic
     "saintLambertBishopAndMartyr": "Svätého Lamberta z Maastrichtu, biskupa a mučeníka",  // duplicate; belgium, germany 
-    "saintHubertBishop": "Saint Hubert, Bishop",
-    "saintJohnBerchmansReligious": "Saint John Berchmans, Religious",
-    "saintsFelipeDeJesusPaulMikiAndCompanionsMartyrs": "Saints Felipe de Jesus, Paul Miki and Companions, Martyrs",
-    "saintMarianaDeJesusDeParedesVirgin": "Saint Mariana de Jesus de Paredes, Virgin",
-    "blessedNazariaIgnaciaMarchReligious": "Blessed Nazaria Ignacia March, Religious",
-    "saintCamillusDeLellisPriest": "Saint Camillus de Lellis, Priest",
-    "saintRoseOfLimaVirgin": "Saint Rose of Lima, Virgin",
-    "saintPeterClaverPriest": "Saint Peter Claver, Priest",
-    "saintJohnMaciasReligious": "Saint John Macias, Religious",
-    "saintLouisBertrandPriest": "Saint Louis Bertrand, Priest",
-    "saintMiguelFebresCorderoReligious": "Saint Miguel Febres Cordero, Religious",
-    "saintJohnPaulIiPope": "Svätého Jána Pavla II., pápeža",
-    "saintAnthonyMaryClaretBishop": "Saint Anthony Mary Claret, Bishop",
-    "saintMartinDePorresReligious": "Saint Martin de Porres, Religious",
-    "saintsRoqueGonzalezAlfonsoRodriguezOlmedoAndJuanDelCastilloPriestsAndMartyrs": "Saints Roque Gonzalez, Alfonso Rodriguez Olmedo, and Juan del Castillo, Priests and Martyrs",
-    "ourLordJesusChristTheEternalHighPriest": "Our Lord Jesus Christ, The Eternal High Priest",
-    "saintScholasticaVirgin": "Saint Scholastica, Virgin",
-    "blessedAloysiusStepinacBishopAndMartyr": "Blessed Aloysius Stepinac, Bishop and Martyr",
-    "blessedOsannaOfCattaroVirgin": "Blessed Osanna of Cattaro, Virgin",
-    "saintCatherineOfSienaVirginAndDoctorOfTheChurch": "Saint Catherine of Siena, Virgin and Doctor of The Church, Patron of Europe",
-    "blessedIvanMerz": "Blessed Ivan Merz",
-    "saintLeopoldMandicPriest": "Saint Leopold Mandic, Priest",
-    "blessedMaryOfJesusCrucifiedPetkovicVirgin": "Blessed Mary of Jesus Crucified Petkovic, Virgin",
-    "saintBenedictOfNursiaAbbot": "Saint Benedict of Nursia, Abbot, Patron of Europe",
-    "ourLadyOfBistrica": "Our Lady of Bistrica",
-    "saintElijahProphet": "Saint Elijah, prophet",
+    "saintHubertBishop": "Svätého Huberta, biskupa",  // belgium; ?add netherlands, ?add luxembourg, ?add france, ?add germany
+    "saintJohnBerchmansReligious": "Svätého Jána Berchmansa, rehoľníka",  // belgium
+    "saintsFelipeDeJesusPaulMikiAndCompanionsMartyrs": "Svätého Filipa od Ježiša, Pavla Mikiho a spoločníkov, mučeníkov",  // duplicate, rather a localised name; general; bolivia, japan, newZealand, philippines
+    "saintMarianaDeJesusDeParedesVirgin": "Svätej Márie Anny od Ježiša (de Paredes), panny",  // bolivia, peru
+    "blessedNazariaIgnaciaMarchReligious": "Blahoslavenej Nazárie Ignácie March Mesa (Nazárie od Svätého Terézie od Ježiša), rehoľníčky",
+    "saintCamillusDeLellisPriest": "Saint Camillus de Lellis, Priest",  // duplicate; general; bolivia, chile, unitedStates
+    "saintJohnMaciasReligious": "Svätého Jána Macíasa, rehoľníka",  // bolivia, peru
+    "saintLouisBertrandPriest": "Svätého Ľudovíta Bertranda, kňaza a rehoľníka",  // bolivia
+    "saintMiguelFebresCorderoReligious": "Svätého Michala Febresa Cordera, rehoľníka",  // bolivia
+    "saintJohnPaulIiPope": "Svätého Jána Pavla II., pápeža",  // bolivia, czechRepublic, england, france, hungary, poland, ukraine, unitedStates; add slovakia
+    "saintsRoqueGonzalezAlfonsoRodriguezOlmedoAndJuanDelCastilloPriestsAndMartyrs": "Svätého Rochusa Gonzáleza, Alfonza Rodrígueza a Jána del Castilla, kňazov a mučeníkov",  // argentina, bolivia, brazil
+    "ourLordJesusChristTheEternalHighPriest": "Nášho Pána Ježiša Krista, najvyššieho a večného kňaza",  // bolivia, mexico, peru, poland, puertoRico, slovakia; add czechRepublic and netherlands
+    "blessedAloysiusStepinacBishopAndMartyr": "Blahoslaveného Alojza Stepinaca, biskupa a mučeníka",  // bosniaHerzegovina, croatia
+    "blessedOsannaOfCattaroVirgin": "Blahoslavenej Hosanny Kotorskej, panny",  // bosniaHerzegovina
+    "blessedIvanMerz": "Blahoslaveného Ivana Merza",  // bosniaHerzegovina, croatia
+    "saintLeopoldMandicPriest": "Svätého Leopolda Bogdana Mandića, kňaza a rehoľníka",  // bosniaHerzegovina, croatia
+    "blessedMaryOfJesusCrucifiedPetkovicVirgin": "Blahoslavenej Márie od ukrižovaného Ježiša Petković, panny",  // bosniaHerzegovina, croatia
+    "ourLadyOfBistrica": "Panny Márie Bistrickej (Marija Bistrica)",  // bosniaHerzegovina, croatia
+    "saintElijahProphet": "Svätého Eliáša, proroka",  // bosniaHerzegovina
     "saintBirgittaReligious": "Saint Birgitta, Religious",
     "saintClementOfOhridAndGorazdBishopsAndCompanions": "Saint Clement of Ohrid and Gorazd, Bishops and Companions",
     "blessedAugustinKazoticBishopAndMartyr": "Blessed Augustin Kazotic, Bishop and Martyr",
@@ -351,7 +343,7 @@
     "exaltationOfTheHolyCross": "Exaltation of The Holy Cross",
     "saintsPhilipAndJamesApostles": "Saints Philip and James, Apostles",
     "saintTeresaOfLosAndesVirgin": "Saint Teresa of Los Andes, Virgin",
-    "saintCamillusDeLellisPriestOrSaintHenry": "Saint Camillus de Lellis, Priest, Or Saint Henry",
+    "saintCamillusDeLellisPriestOrSaintHenry": "Saint Camillus de Lellis, Priest, Or Saint Henry",  // possible duplicate
     "ourLadyOfMountCarmelMotherAndQueenOfChile": "Our Lady of Mount Carmel, Mother and Queen of Chile",  // duplicate
     "saintAlbertoHurtadoPriest": "Saint Alberto Hurtado, Priest",
     "saintJohnXxiiiPope": "Svätého Jána XXIII., pápeža",
