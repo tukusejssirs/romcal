@@ -255,12 +255,12 @@
     "blessedLauraVicuna": "Blahoslavenej Laury Vicuñe",  // argentina, chile
     "ourLadyQueenOfPeace": "Panny Márie Kráľovnej",  // argentina, slovakia
     "ourLadyOfLujanPatronessOfArgentina": "Panny Marie Lujánska",  // argentina
-    "saintIsidoreTheFarmer": "Saint Isidore the Farmer",  // argentina, philippines, spain, unitedStates; double check en name farmer/laboro(u)r
+    "saintIsidoreTheFarmer": "Svätého Izidora z Madridu, roľníka",  // argentina, philippines, spain, unitedStates; double check en name farmer/laboro(u)r; latin name: Isidor Agricola
     "saintLuigiOrionePriest": "Svätého Alojza Orione, kňaza",  // argentina
     "ourLadyOfItati": "Panna Mária Itatská",  // argentina
     "saintSharbelMakhlufPriestAndHermit": "Saint Sharbel Makhlūf, Priest and Hermit", // duplicate
     "saintFrancisSolanusPriest": "Svätého Františka Solana, kňaza",  // argentina, bolivia, peru
-    "saintRocco": "Saint Rocco",  // argentina, lithuania
+    "saintRocco": "Svätého Rocha, pútnika",  // argentina, lithuania
     "blessedCeferinoNamuncura": "Blahoslaveného Zefirína Namuncurá",  // argentina
     "saintRoseOfLima": "Saint Rose of Lima",  // duplicate
     "ourLadyOfMercy": "Panny Márie, Matky milosrdenstva",  // argentina, chile, peru
@@ -281,8 +281,8 @@
     "saintJulieBilliartVirgin": "Svätej Júlie Billiart, panny",  // belgium
     "saintFatherDamienMissionary": "Svätého Damiána De Veuster, kňaza a mučeníka",  // belgium
     "saintJulianaOfLiegeVirgin": "Svätej Juliány z Liége, panny",  // belgium
-    "ourLadyMediatrix": "Our Lady, Mediatrix",
-    "saintLambertBishopAndMartyr": "Saint Lambert, Bishop and Martyr",
+    "ourLadyMediatrix": "Panny Márie, Prostrednice všetkých milostí",  // belgium, czechRepublic
+    "saintLambertBishopAndMartyr": "Svätého Lamberta z Maastrichtu, biskupa a mučeníka",  // duplicate; belgium, germany 
     "saintHubertBishop": "Saint Hubert, Bishop",
     "saintJohnBerchmansReligious": "Saint John Berchmans, Religious",
     "saintsFelipeDeJesusPaulMikiAndCompanionsMartyrs": "Saints Felipe de Jesus, Paul Miki and Companions, Martyrs",
@@ -466,7 +466,7 @@
     "saintChristopherMartyr": "Saint Christopher, Martyr",
     "saintPaulinusOfTrierBishop": "Saint Paulinus of Trier, Bishop",
     "saintHildegardOfBingenAbbessAndDoctor": "Saint Hildegard of Bingen, Abbess and Doctor",
-    "saintLambertOfMaastrichtBishopAndMartyr": "Saint Lambert of Maastricht, Bishop and Martyr",
+    "saintLambertOfMaastrichtBishopAndMartyr": "Saint Lambert of Maastricht, Bishop and Martyr",  // duplicate
     "saintMauriceAndCompanionsMartyrs": "Saint Maurice and Companions, Martyrs",
     "saintsRupertAndVirgiliusOfSalzburgBishops": "Saints Rupert and Virgilius of Salzburg, Bishops",
     "saintNicholasOfFlueHermit": "Saint Nicholas of Flüe, Hermit",
