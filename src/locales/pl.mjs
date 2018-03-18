@@ -290,7 +290,6 @@ export default {
     "blessedKarolinaKozkownaVirginAndMartyr": "Bł. Karoliny Kózkówny, dziewicy i męczennicy",
     "saintOttoOfBambergBishop": "Św. Ottona, biskupa",
     "blessedAntoniNowowiejskiBishopAndCompanionsMartyrs": "Błogosławionych męczenników Antoniego Juliana Nowowiejskiego, biskupa, i Towarzyszy",
-    "saintCatherineOfSienaVirginAndDoctorOfTheChurch": "Św. Katarzyny Sieneńskiej, dziewicy i doktora Kościoła, patronki Europye",
     "blessedSalomeVirgin": "Bł. Salomei, zakonnicy",
     "saintRafalKalinowskiPriest": "Św. Rafała Kalinowskiego, prezbiterat",
     "blessedMaryOfJesusTheGoodShepherdVirgin": "Bł. Marii od Pana Jezusa Dobrego Pasterza (Franciszki Siedliskiej), zakonnicy",
