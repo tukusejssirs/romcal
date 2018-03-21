@@ -264,7 +264,6 @@
     "ourLadyOfMercy": "Panny Márie, Matky milosrdenstva",  // argentina, chile, peru
     "saintHectorValdivielsoSaezMartyr": "Svätého Héctora Valdivielsa Sáeza (Benedikta od Ježiša), mučeníka",  // argentina
     "ourLadyOfThePillar": "Panny Márie del Pilar",  // argentina, spain
-    "saintsRoqueGonzalezAlfonsoRodriguezAndJuanDelCastilloPriestsAndMartyrs": "Svätých Rochusa Gonzáleza de Santa Cruz, Alfonza Rodrígueza a Jána del Castillo, kňazov a mučeníkov",  // argentina, bolivia, brazil
     "ourLadyOfTheValley": "Our Lady of The Valley",  // argentina
     "maryMotherOfTheChurch": "Panny Márie, Matky Cirkvi",  // agentina, bosniaHerzegovina, greece, poland, puertorico, ukraine
     "ourLadyHelpOfChristians": "Panny Márie, Pomocnice kresťanov",  // australia, hungary, newZealand, peru, poland, ?add optMem 24/5 slovakia
@@ -287,7 +286,7 @@
     "saintLouisBertrandPriest": "Svätého Ľudovíta Bertranda, kňaza a rehoľníka",  // bolivia
     "saintMiguelFebresCorderoReligious": "Svätého Michala Febresa Cordera, rehoľníka",  // bolivia
     "saintJohnPaulIiPope": "Svätého Jána Pavla II., pápeža",  // bolivia, czechRepublic, england, france, hungary, poland, ukraine, unitedStates; add slovakia
-    "saintsRoqueGonzalezAlfonsoRodriguezOlmedoAndJuanDelCastilloPriestsAndMartyrs": "Svätého Rochusa Gonzáleza, Alfonza Rodrígueza a Jána del Castilla, kňazov a mučeníkov",  // argentina, bolivia, brazil
+    "saintsRoqueGonzalezAlfonsoRodriguezOlmedoAndJuanDelCastilloPriestsAndMartyrs": "Svätého Rochusa Gonzáleza, Alfonza Rodrígueza Olmeda a Jána del Castilla, kňazov a mučeníkov",  // argentina, bolivia, brazil
     "ourLordJesusChristTheEternalHighPriest": "Nášho Pána Ježiša Krista, najvyššieho a večného kňaza",  // bolivia, mexico, peru, poland, puertoRico, slovakia; add czechRepublic and netherlands
     "blessedAloysiusStepinacBishopAndMartyr": "Blahoslaveného Alojza Stepinaca, biskupa a mučeníka",  // bosniaHerzegovina, croatia
     "blessedOsannaOfCattaroVirgin": "Blahoslavenej Hosanny Kotorskej, panny",  // bosniaHerzegovina
@@ -296,10 +295,9 @@
     "blessedMaryOfJesusCrucifiedPetkovicVirgin": "Blahoslavenej Márie od ukrižovaného Ježiša Petković, panny",  // bosniaHerzegovina, croatia
     "ourLadyOfBistrica": "Panny Márie Bistrickej (Marija Bistrica)",  // bosniaHerzegovina, croatia
     "saintElijahProphet": "Svätého Eliáša, proroka",  // bosniaHerzegovina
-    "saintBirgittaReligious": "Saint Birgitta, Religious",
-    "saintClementOfOhridAndGorazdBishopsAndCompanions": "Saint Clement of Ohrid and Gorazd, Bishops and Companions",
-    "blessedAugustinKazoticBishopAndMartyr": "Blessed Augustin Kazotic, Bishop and Martyr",
-    "saintRoch": "Saint Roch",
+    "saintClementOfOhridAndGorazdBishopsAndCompanions": "Svätého Klimenta Ochridského a Gorazda, biskupov, a spoločníkov",  // bosniaHerzegovina
+    "blessedAugustinKazoticBishopAndMartyr": "Blahoslaveného Augustína Kažotića, biskupa a mučeníka",  // bosniaHerzegovina, croatia
+    "saintRoch": "Svätého Rochusa",  // bosniaHerzegovina, philippines
     "saintMarkoKrizinPriestAndMartyr": "Saint Marko Krizin, Priest and Martyr",
     "blessedGraziaOfCattaro": "Blessed Grazia of Cattaro",
     "saintNikolaTavelicPriestAndMartyr": "Saint Nikola Tavelic, Priest and Martyr",
