@@ -46,7 +46,7 @@
     "christmas": "Narodenie Pána",
     "maryMotherOfGod": "Panny Márie Bohorodičky",
     "epiphany": "Zjavenie Pána",
-    "josephHusbandOfMary": "Jozefa, ženícha Panny Márie",
+    "josephHusbandOfMary": "Svätého Jozefa, ženícha Panny Márie",
     "easter": "Nedeľa Pánovho zmŕtvychvstania",
     "divineMercySunday": "Nedeľa Božieho milosrdenstva",
     "annunciation": "Zvestovanie Pána",
@@ -56,7 +56,7 @@
     "corpusChristi": "Najsvätejšieho Kristovho Tela a Krvi",
     "sacredHeartOfJesus": "Najsvätejšie Srdce Ježišovo",
     "birthOfJohnTheBaptist": "Narodenie sv. Jána Krstiteľa",
-    "peterAndPaulApostles": "Sv. Petra a Pavla, apoštolov",
+    "peterAndPaulApostles": "Svätých Petra a Pavla, apoštolov",
     "assumption": "Nanebovzatie Panny Márie",
     "allSaints": "Všetkých svätých",
     "christTheKing": "Krista Kráľa",
@@ -72,7 +72,7 @@
     "shroveTuesday": "Fašiangový utorok",
     "saintsBasilTheGreatAndGregoryNazianzenBishopsAndDoctors": "Svätých Bazila Veľkého a Gregora Nazianzského, biskupov a učiteľov Cirkvi",
     "theMostHolyNameOfJesus": "Najsvätejšieho mena Ježiš",
-    "saintRaymondOfPenyafortPriest": "Rajmunda z Peňafortu, kňaza",
+    "saintRaymondOfPenyafortPriest": " Svätého Rajmunda z Peňafortu, kňaza",
     "saintHilaryOfPoitiersBishopAndDoctor": "Svätého Hilára, biskupa, učiteľa Cirkvi",
     "saintAnthonyOfEgyptAbbot": "Svätého Antona, opáta",
     "saintFabianPopeAndMartyrAndSaintSebastianMartyr": "Svätý Fabián, pápež a mučeník, a svätý Šebastián, mučeník",
@@ -293,25 +293,23 @@
     "blessedIvanMerz": "Blahoslaveného Ivana Merza",  // bosniaHerzegovina, croatia
     "saintLeopoldMandicPriest": "Svätého Leopolda Bogdana Mandića, kňaza a rehoľníka",  // bosniaHerzegovina, croatia
     "blessedMaryOfJesusCrucifiedPetkovicVirgin": "Blahoslavenej Márie od ukrižovaného Ježiša Petković, panny",  // bosniaHerzegovina, croatia
-    "ourLadyOfBistrica": "Panny Márie Bistrickej (Marija Bistrica)",  // bosniaHerzegovina, croatia
+    "ourLadyOfBistrica": "Panny Márie z Marije Bistrice",  // bosniaHerzegovina, croatia
     "saintElijahProphet": "Svätého Eliáša, proroka",  // bosniaHerzegovina
     "saintClementOfOhridAndGorazdBishopsAndCompanions": "Svätého Klimenta Ochridského a Gorazda, biskupov, a spoločníkov",  // bosniaHerzegovina
     "blessedAugustinKazoticBishopAndMartyr": "Blahoslaveného Augustína Kažotića, biskupa a mučeníka",  // bosniaHerzegovina, croatia
     "saintRoch": "Svätého Rochusa",  // bosniaHerzegovina, philippines
-    "saintMarkoKrizinPriestAndMartyr": "Saint Marko Krizin, Priest and Martyr",
-    "blessedGraziaOfCattaro": "Blessed Grazia of Cattaro",
-    "saintNikolaTavelicPriestAndMartyr": "Saint Nikola Tavelic, Priest and Martyr",
-    "saintJoseDeAnchietaPriest": "Saint Jose de Anchieta, Priest",
-    "blessedAlbertinaBerkenbrockVirginAndMartyr": "Blessed Albertina Berkenbrock, Virgin and Martyr",
-    "saintPaulinaOfTheAgonizingHeartOfJesusVirgin": "Saint Paulina of The Agonizing Heart of Jesus, Virgin",
-    "blessedInacioDeAzevedoPriestAndMartyr": "Blessed Inacio de Azevedo, Priest and Martyr",
-    "blessedsAndreDeSoveralAndAmbrosioFranciscoFerroPriestsAndMartyrs": "Blesseds Andre de Soveral and Ambrosio Francisco Ferro, Priests and Martyrs",
-    "ourLadyOfAparecidaNossaSenhoraAparecidaPatronessOfBrazil": "Our Lady of Aparecida (Nossa Senhora Aparecida), Patroness of Brazil",
-    "saintAnthonyOfSaintAnneGalvaoFreiGalvaoPriest": "Saint Anthony of Saint Anne Galvao (Frei Galvao), Priest",
-    "saintAndreBessetteReligious": "Saint Andre Bessette, Religious",
-    "saintRaymondOfPenyafortPriest": "Saint Raymond of Penyafort, Priest",
-    "saintMargueriteBourgeoysVirgin": "Saint Marguerite Bourgeoys, Virgin",
-    "saintJosephSpouseOfTheBlessedVirginMaryPrincipalPatronOfCanada": "Saint Joseph, Spouse of The Blessed Virgin Mary, Principal Patron of Canada",
+    "saintMarkoKrizinPriestAndMartyr": "Svätého Marka Križina, kňaza a mučeníka",  // possible duplicate; bosniaHerzegovina, croatia
+    "blessedGraziaOfCattaro": "Blahoslavenej Grácie Kotorskej",  // bosniaHerzegovina
+    "saintNikolaTavelicPriestAndMartyr": "Svätého Nikolu Tavelića, kňaza a mučeníka",  // bosniaHerzegovina, croatia
+    "saintJoseDeAnchietaPriest": "Svätého Jozefa de Anchietu, kňaza",  // brazil
+    "blessedAlbertinaBerkenbrockVirginAndMartyr": "Blahoslavenej Albertiny Berkenbrockovej, panny a mučenice",  // brazil
+    "saintPaulinaOfTheAgonizingHeartOfJesusVirgin": "Svätej Paulíny trpiaceho Srdca Ježišovho, panny",  // brazil
+    "blessedsAndreDeSoveralAndAmbrosioFranciscoFerroPriestsAndMartyrs": "Blahoslavených Andreja de Soverala a Ambróza Františka Ferra, mučeníka",  // brazil
+    "ourLadyOfAparecidaNossaSenhoraAparecidaPatronessOfBrazil": "Panna Mária z Aparecidy, Patrónka Brazílie",  // brazil
+    "saintAnthonyOfSaintAnneGalvaoFreiGalvaoPriest": "Svätého Antona de Sant’Ana Galvão (brata Galvão), kňaza",  // brazil
+    "saintAndreBessetteReligious": "Svätého Andreja Alfréda Bessetta, rehoľníka",  // canada, unitedStates
+    "saintMargueriteBourgeoysVirgin": "Svätej Margaréty Bourgeoys, panny",  // canada
+    "saintJosephSpouseOfTheBlessedVirginMaryPrincipalPatronOfCanada": "Saint Joseph, Spouse of The Blessed Virgin Mary, Principal Patron of Canada",  // canada; possible duplicate
     "saintKateriTekakwithaVirgin": "Saint Kateri Tekakwitha, Virgin",
     "blessedMarieAnneBlondinVirgin": "Blessed Marie Anne Blondin, Virgin",
     "ourLadyOfGoodCounsel": "Our Lady of Good Counsel",
