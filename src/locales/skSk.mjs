@@ -310,59 +310,54 @@
     "saintAndreBessetteReligious": "Svätého Andreja Alfréda Bessetta, rehoľníka",  // canada, unitedStates
     "saintMargueriteBourgeoysVirgin": "Svätej Margaréty Bourgeoys, panny",  // canada
     "saintJosephSpouseOfTheBlessedVirginMaryPrincipalPatronOfCanada": "Saint Joseph, Spouse of The Blessed Virgin Mary, Principal Patron of Canada",  // canada; possible duplicate
-    "saintKateriTekakwithaVirgin": "Saint Kateri Tekakwitha, Virgin",
-    "blessedMarieAnneBlondinVirgin": "Blessed Marie Anne Blondin, Virgin",
-    "ourLadyOfGoodCounsel": "Our Lady of Good Counsel",
-    "saintMarieOfTheIncarnationReligious": "Saint Marie of The Incarnation, Religious",
-    "blessedMarieLeonieParadisVirgin": "Blessed Marie Leonie Paradis, Virgin",
-    "saintFrancoisDeLavalBishop": "Saint Francois de Laval, Bishop",
-    "blessedCaTherineOfSaintAugustineVirgin": "Blessed Catherine of Saint Augustine, Virgin",
-    "saintEugeneDeMazenodBishop": "Saint Eugene de Mazenod, Bishop",
-    "blessedLouisZephirinMoreauBishop": "Blessed Louis Zephirin Moreau, Bishop",
-    "blessedsNykytaBudkaAndVasylVelychkowskyBishopsAndMartyrs": "Blesseds Nykyta Budka and Vasyl Velychkowsky, Bishops and Martyrs",
-    "saintAnnePatronOfQuebecAndSaintJoachimParentsOfTheBlessedVirginMary": "Saint Anne, Patron of Quebec, and Saint Joachim, Parents of The Blessed Virgin Mary",
-    "blessedFredericJanssoonePriest": "Blessed Frederic Janssoone, Priest",
-    "blessedAndreGrassetPriestAndMartyr": "Blessed Andre Grasset, Priest and Martyr",
-    "blessedDinaBelangerVirgin": "Blessed Dina Belanger, Virgin",
-    "blessedEmilieTavernierGamelinReligious": "Blessed Emilie Tavernier Gamelin, Religious",
-    "blessedMarieRoseDurocherVirgin": "Blessed Marie Rose Durocher, Virgin",
-    "saintMargueriteDYouvilleReligious": "Saint Marguerite d'Youville, Religious",
-    "saintHedwigReligiousOrSaintMargaretMaryAlacoqueVirgin": "Saint Hedwig, Religious Or Saint Margaret Mary Alacoque, Virgin",
-    "blessedLauraVicunaVirgin": "Blessed Laura Vicuna, Virgin",
-    "blessedPiusIxPope": "Blessed Pius IX, Pope",
-    "ourLadyOfLourdes": "Our Lady of Lourdes",
-    "exaltationOfTheHolyCross": "Exaltation of The Holy Cross",
-    "saintsPhilipAndJamesApostles": "Saints Philip and James, Apostles",
-    "saintTeresaOfLosAndesVirgin": "Saint Teresa of Los Andes, Virgin",
-    "ourLadyOfMountCarmelMotherAndQueenOfChile": "Our Lady of Mount Carmel, Mother and Queen of Chile",  // duplicate; pejulian simply removed it from `enUs.mjs`
-    "saintAlbertoHurtadoPriest": "Saint Alberto Hurtado, Priest",
-    "saintJohnXxiiiPope": "Svätého Jána XXIII., pápeža",
-    "jesusChristTheEternalHighPriest": "Jesus Christ, The Eternal High Priest",
-    "saintQuirinusOfSescia": "Saint Quirinus of Sescia",
-    "saintTeresaBenedictaOfTheCrossEdithSteinVirginAndMartyr": "Saint Teresa Benedicta of The Cross (Edith Stein), Virgin and Martyr, Patron of Europe",
-    "ourLadyMotherOfChristianUnity": "Our Lady, Mother of Christian Unity",
-    "ourLadyMediatrixOfAllGrace": "Our Lady, Mediatrix of All Grace",
-    "saintAdalbertBishopAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr",
-    "saintSigismundMartyr": "Saint Sigismund, Martyr",
-    "saintJohnNepomucenePriestAndMartyr": "Svätého Jána Nepomuckého, kňaza a mučeníka",
-    "saintClementMaryHofbauerPriest": "Saint Clement Mary Hofbauer, Priest",
-    "saintZdislava": "Saint Zdislava",
-    "saintVitusMartyr": "Saint Vitus, Martyr",
-    "saintJohnNeumannBishop": "Saint John Neumann, Bishop",
-    "saintProcopiusAbbot": "Saint Procopius, Abbot",
-    "blessedHrzonataMartyr": "Blessed Hrzonata, Martyr",
-    "blessedCeslausAndSaintHyacinthPriests": "Blessed Ceslaus and Saint Hyacinth, Priests",
-    "saintBridgetOfSweedenReligious": "Saint Bridget of Sweeden, Religious, Patron of Europe",
-    "saintsBenedyktJanMateuszIsaakAndKrystynMartyrs": "Saints Benedykt, Jan, Mateusz, Isaak and Krystyn, Martyrs",
-    "blessedTeresaOfCalcuttaReligious": "Blessed Teresa of Calcutta, Religious",
-    "saintMelchiorGrodzieckiPriestAndMartyr": "Saint Melchior Grodziecki, Priest and Martyr",
-    "blessedCharlesSpinolaPriestAndMartyr": "Blessed Charles Spinola, Priest and Martyr",
-    "saintLudmilaMartyr": "Saint Ludmila, Martyr",
-    "saintRadimBishop": "Saint Radim, Bishop",
-    "blessedKarlOfAustria": "Blessed Karl of Austria",
-    "saintWolfgangBishop": "Saint Wolfgang, Bishop",
-    "saintAgnesOfBohemiaVirgin": "Saint Agnes of Bohemia, Virgin",
-    "saintEdmundCampionPriestAndMartyr": "Saint Edmund Campion, Priest and Martyr",
+    "saintKateriTekakwithaVirgin": "Svätej Kataríny Tekakwithy, panny",  // canada, unitedStates
+    "blessedMarieAnneBlondinVirgin": "Blahoslavenej Márie Anny Blondinovej, panny", // canada
+    "ourLadyOfGoodCounsel": "Panny Márie Dobrej Rady",  // canada
+    "saintMarieOfTheIncarnationReligious": "Svätej Márie od Vtelenia, rehoľníčky",  // canada
+    "blessedMarieLeonieParadisVirgin": "Blahoslavenej Márie Leónie Paradisovej, panny",  // canada
+    "saintFrancoisDeLavalBishop": "Svätého Františka de Montmorency-Laval, biskupa",  // canada
+    "blessedCaTherineOfSaintAugustineVirgin": "Blahoslavenej Kataríny od sv. Augustína, panny",  // canada
+    "saintEugeneDeMazenodBishop": "Svätého Eugena de Mazenod, biskupa",  // canada
+    "blessedLouisZephirinMoreauBishop": "Blahoslaveného Ľudovíta Zefirína Moreau, Bishop",  // canada
+    "blessedsNykytaBudkaAndVasylVelychkowskyBishopsAndMartyrs": "Blesseds Nykyta Budka and Vasyl Velychkowsky, Bishops and Martyrs",  // canada
+    "saintAnnePatronOfQuebecAndSaintJoachimParentsOfTheBlessedVirginMary": "Saint Anne, Patron of Quebec, and Saint Joachim, Parents of The Blessed Virgin Mary",  // duplicate; canada
+    "blessedFredericJanssoonePriest": "Blessed Frederic Janssoone, Priest",  // canada
+    "blessedAndreGrassetPriestAndMartyr": "Blessed Andre Grasset, Priest and Martyr",  // canada
+    "blessedDinaBelangerVirgin": "Blessed Dina Belanger, Virgin",  // canada
+    "blessedEmilieTavernierGamelinReligious": "Blessed Emilie Tavernier Gamelin, Religious",  // canada
+    "blessedMarieRoseDurocherVirgin": "Blessed Marie Rose Durocher, Virgin",  // canada, unitedStates
+    "saintMargueriteDYouvilleReligious": "Saint Marguerite d'Youville, Religious",  // canada
+    "saintHedwigReligiousOrSaintMargaretMaryAlacoqueVirgin": "Saint Hedwig, Religious Or Saint Margaret Mary Alacoque, Virgin",  // canada
+    "blessedLauraVicunaVirgin": "Blessed Laura Vicuna, Virgin",  // argentina, chile
+    "blessedPiusIxPope": "Blessed Pius IX, Pope",  // chile
+    "saintTeresaOfLosAndesVirgin": "Saint Teresa of Los Andes, Virgin", // chile
+    "ourLadyOfMountCarmelMotherAndQueenOfChile": "Our Lady of Mount Carmel, Mother and Queen of Chile",  // duplicate; TODO: localised key: "ourLadyOfMountCarmel".chille
+    "saintAlbertoHurtadoPriest": "Saint Alberto Hurtado, Priest",  // chille
+    "saintJohnXxiiiPope": "Svätého Jána XXIII., pápeža",  // move to general calendar
+    "saintQuirinusOfSescia": "Saint Quirinus of Sescia",  // croatia
+    "ourLadyMotherOfChristianUnity": "Our Lady, Mother of Christian Unity",  // czechRepublic
+    "ourLadyMediatrixOfAllGrace": "Our Lady, Mediatrix of All Grace",  // czechRepublic
+    "saintAdalbertBishopAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr",  // duplicate
+    "saintSigismundMartyr": "Svätého Žigmunda Burgundského, mučeníka",  // czechRepublic
+    "saintJohnNepomucenePriestAndMartyr": "Svätého Jána Nepomuckého, kňaza a mučeníka",  // austria, czechRepublic, germany, hungary, mexico, slovakia, slovenia, switzerland, ukraine
+    "saintClementMaryHofbauerPriest": "Saint Clement Mary Hofbauer, Priest",  // austria, czechRepublic, germany, switzerland
+    "saintZdislava": "Saint Zdislava",  // czechRepublic
+    "saintVitusMartyr": "Saint Vitus, Martyr",  // austria, czechRepublic, germany, switzerland
+    "saintJohnNeumannBishop": "Saint John Neumann, Bishop",  // austria, czechRepublic, germany, switzerland, unitedStates
+    "saintProcopiusAbbot": "Saint Procopius, Abbot",  // czechRepublic
+    "blessedHrzonataMartyr": "Blessed Hrzonata, Martyr",  // czechRepublic
+    "blessedCeslausAndSaintHyacinthPriests": "Blessed Ceslaus and Saint Hyacinth, Priests",  // czechRepublic
+    "saintBridgetOfSweedenReligious": "Saint Bridget of Sweeden, Religious, Patron of Europe",  // duplicate
+    "saintsBenedyktJanMateuszIsaakAndKrystynMartyrs": "Saints Benedykt, Jan, Mateusz, Isaak and Krystyn, Martyrs",  // czechRepublic, poland
+    "blessedTeresaOfCalcuttaReligious": "Blessed Teresa of Calcutta, Religious",  // czechRepublic, hungary, india
+    "saintMelchiorGrodzieckiPriestAndMartyr": "Saint Melchior Grodziecki, Priest and Martyr",  // not a duplicate; czechRepublic, poland
+    "blessedCharlesSpinolaPriestAndMartyr": "Blessed Charles Spinola, Priest and Martyr",  // czechRepublic
+    "saintLudmilaMartyr": "Saint Ludmila, Martyr",  // czechRepublic
+    "saintRadimBishop": "Saint Radim, Bishop",  // czechRepublic
+    "blessedKarlOfAustria": "Blessed Karl of Austria",  // czechRepublic
+    "saintWolfgangBishop": "Saint Wolfgang, Bishop",  // austria, czechRepublic, germany, switzerland
+    "saintAgnesOfBohemiaVirgin": "Saint Agnes of Bohemia, Virgin",  // czechRepublic, hungary
+    "saintEdmundCampionPriestAndMartyr": "Saint Edmund Campion, Priest and Martyr",  // czechRepublic
     "saintAelredOfRievaulx": "Saint Aelred of Rievaulx",
     "saintWulstanBishop": "Saint Wulstan, Bishop",
     "saintDavidBishop": "Saint David, Bishop",
@@ -407,7 +402,7 @@
     "saintJosemariaEscrivaDeBalaguerPriest": "Saint Josemaria Escriva de Balaguer, Priest",
     "saintCanuteMartyr": "Saint Canute, Martyr",
     "saintThorlacBishop": "Saint Thorlac, Bishop",
-    "saintBrigittaReligious": "Saint Brigitta, Religious",
+    "saintBrigittaReligious": "Saint Brigitta, Religious", // duplicate
     "saintOlafIiMartyr": "Saint Olaf II, Martyr",
     "blessedNicolasStenoBishop": "Blessed Nicolas Steno, Bishop",
     "saintGenevieveVirgin": "Saint Genevieve, Virgin",
@@ -455,7 +450,7 @@
     "saintGallAbbot": "Svätého Gála, kňaza",
     "saintWendelinAbbot": "Saint Wendelin, Abbot",
     "saintUrsulaAndCompanionsVirginsAndMartyrs": "Saint Ursula and Companions, Virgins and Martyrs",
-    "saintWolfgangOfRegensburgBishop": "Saint Wolfgang of Regensburg, Bishop",
+    "saintWolfgangOfRegensburgBishop": "Saint Wolfgang of Regensburg, Bishop",  // duplicate
     "saintHubertOfLiegeBishopOrSaintPirminAbbotAndBishop": "Saint Hubert of Liege, Bishop Or Saint Pirmin, Abbot and Bishop",
     "saintLeonardOfNoblacHermit": "Saint Leonard of Noblac, Hermit",
     "saintLeopoldIii": "Saint Leopold III",
@@ -601,7 +596,7 @@
     "saintJuanDiego": "Saint Juan Diego",
     "waitangiDay": "Waitangi Day",
     "saintMarkApostle": "Saint Mark, Apostle",
-    "saintLouisGrignonDeMontfortPriest": "Saint Louis Grignon de Montfort, Priest",
+    "saintLouisGrignonDeMontfortPriest": "Saint Louis Grignon de Montfort, Priest",  // duplicate
     "saintMarcellinChampagnatPriest": "Saint Marcellin Champagnat, Priest",
     "saintDominicPriest/SaintSixtusIiPopeAndCompanionsMartyrsSaintCajetanPriest": "Saint Dominic, Priest/Saint Sixtus II, Pope, and Companions, Martyrs/Saint Cajetan, Priest",
     "saintMaryMacKillopVirgin": "Saint Mary MacKillop, Virgin",
