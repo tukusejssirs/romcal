@@ -156,7 +156,7 @@
     "saintApollinaris": "Svätého Apolinára, biskupa a mučeníka",
     "saintLawrenceOfBrindisiPriestAndDoctor": "Svätého Vavrinca z Brindisi, kňaza a učiteľa Cirkvi",
     "saintMaryMagdalene": "Svätej Márie Magdalény",
-    "saintBirgittaReligious": "Svätej Brigity, rehoľníčky, patrónky Európy",
+    "saintBridgetOfSwedenReligious": "Svätej Brigity, rehoľníčky, patrónky Európy",
     "saintCharbelMakhloufPriestAndHermit": "Svätého Sarbela Makhlūfa, kňaza",
     "saintJamesApostle": "Svätého Jakuba, apoštola",
     "saintsJoachimAndAnne": "Svätých Joachima a Anny, rodičov Panny Márie",
@@ -230,7 +230,7 @@
     "dedicationOfTheBasilicasOfSaintsPeterAndPaulApostles": "Výročie posviacky bazilík svätého Petra a svätého Pavla, apoštolov",
     "presentationOfTheBlessedVirginMary": "Obetovanie Panny Márie",
     "saintCeciliaVirginAndMartyr": "Svätej Cecílie, panny a mučenice",
-    "saintClementIPopeAndMartyrSaintColumbanReligious": "Svätého Klementa I., papeža a mučeníka/Svätého Kolumbána,f opáta",
+    "saintClementIPopeAndMartyrSaintColumbanReligious": "Svätého Klementa I., pápeža a mučeníka/Svätého Kolumbána,f opáta",
     "saintAndrewDungLacAndCompanionsMartyrs": "Svätého Ondreja Dung-Laka, kňaza, a spoločníkov, mučeníkov",
     "saintCatherineOfAlexandriaVirginAndMartyr": "Svätej Kataríny Alexandrijskej, panny a mučenice",
     "saintAndrewTheApostle": "Svätého Ondreja, apoštola",
@@ -252,7 +252,7 @@
     "saintSylvesterIPope": "Svätého Silvestra I., pápeža"
   },
   "national": {
-    "blessedLauraVicuna": "Blahoslavenej Laury Vicuñe",  // argentina, chile
+    "blessedLauraVicunaVirgin": "Blahoslavenej Laury Vicuñe, panny",  // argentina, chile
     "ourLadyQueenOfPeace": "Panny Márie Kráľovnej",  // argentina, slovakia
     "ourLadyOfLujanPatronessOfArgentina": "Panny Marie Lujánska",  // argentina
     "saintIsidoreTheFarmer": "Svätého Izidora z Madridu, roľníka",  // argentina, philippines, spain, unitedStates; double check en name farmer/laboro(u)r; latin name: Isidor Agricola
@@ -319,51 +319,48 @@
     "blessedCaTherineOfSaintAugustineVirgin": "Blahoslavenej Kataríny od sv. Augustína, panny",  // canada
     "saintEugeneDeMazenodBishop": "Svätého Eugena de Mazenod, biskupa",  // canada
     "blessedLouisZephirinMoreauBishop": "Blahoslaveného Ľudovíta Zefirína Moreau, Bishop",  // canada
-    "blessedsNykytaBudkaAndVasylVelychkowskyBishopsAndMartyrs": "Blesseds Nykyta Budka and Vasyl Velychkowsky, Bishops and Martyrs",  // canada
-    "saintAnnePatronOfQuebecAndSaintJoachimParentsOfTheBlessedVirginMary": "Saint Anne, Patron of Quebec, and Saint Joachim, Parents of The Blessed Virgin Mary",  // duplicate; canada
-    "blessedFredericJanssoonePriest": "Blessed Frederic Janssoone, Priest",  // canada
-    "blessedAndreGrassetPriestAndMartyr": "Blessed Andre Grasset, Priest and Martyr",  // canada
-    "blessedDinaBelangerVirgin": "Blessed Dina Belanger, Virgin",  // canada
-    "blessedEmilieTavernierGamelinReligious": "Blessed Emilie Tavernier Gamelin, Religious",  // canada
-    "blessedMarieRoseDurocherVirgin": "Blessed Marie Rose Durocher, Virgin",  // canada, unitedStates
-    "saintMargueriteDYouvilleReligious": "Saint Marguerite d'Youville, Religious",  // canada
-    "saintHedwigReligiousOrSaintMargaretMaryAlacoqueVirgin": "Saint Hedwig, Religious Or Saint Margaret Mary Alacoque, Virgin",  // canada
-    "blessedLauraVicunaVirgin": "Blessed Laura Vicuna, Virgin",  // argentina, chile
-    "blessedPiusIxPope": "Blessed Pius IX, Pope",  // chile
-    "saintTeresaOfLosAndesVirgin": "Saint Teresa of Los Andes, Virgin", // chile
+    "blessedsNykytaBudkaAndVasylVelychkowskyBishopsAndMartyrs": "Blahoslavených Nikity Budku a Vasiľa Velichkovského, biskupov a mučeníkov",  // canada
+    "saintAnnePatronOfQuebecAndSaintJoachimParentsOfTheBlessedVirginMary": "Svätých Anny, patrónky Quebecu, a Joachima, rodičov Panny Márie",  // duplicate; canada
+    "blessedFredericJanssoonePriest": "Blahoslaveného Frederika Janssoona, kňaza",  // canada
+    "blessedAndreGrassetPriestAndMartyr": "Blahoslaveného Andreja Grasseta, kňaza a mučeníka",  // canada
+    "blessedDinaBelangerVirgin": "Blahoslavenej Diny Belangerovej, panny",  // canada
+    "blessedEmilieTavernierGamelinReligious": "Blahoslavenej Márie Emílie Tavernier Gamelinovej, rehoľníčky",  // canada
+    "blessedMarieRoseDurocherVirgin": "Blahoslavenej Márie Durocherovej, panny",  // canada, unitedStates
+    "saintMargueriteDYouvilleReligious": "Svätej Margaréty d'Youville, rehoľníčky",  // canada
+    "saintHedwigReligiousOrSaintMargaretMaryAlacoqueVirgin": "Saint Hedwig, Religious Or Saint Margaret Mary Alacoque, Virgin",  // duplicate; canada
+    "blessedPiusIxPope": "Blahoslaveného Pia IX., pápeža",  // chile
+    "saintTeresaOfLosAndesVirgin": "Svätej Terézie z Los Andes, panny",  // chile
     "ourLadyOfMountCarmelMotherAndQueenOfChile": "Our Lady of Mount Carmel, Mother and Queen of Chile",  // duplicate; TODO: localised key: "ourLadyOfMountCarmel".chille
-    "saintAlbertoHurtadoPriest": "Saint Alberto Hurtado, Priest",  // chille
+    "saintAlbertoHurtadoPriest": "Svätého Alberta Hurtada, kňaza",  // chille
     "saintJohnXxiiiPope": "Svätého Jána XXIII., pápeža",  // move to general calendar
-    "saintQuirinusOfSescia": "Saint Quirinus of Sescia",  // croatia
-    "ourLadyMotherOfChristianUnity": "Our Lady, Mother of Christian Unity",  // czechRepublic
-    "ourLadyMediatrixOfAllGrace": "Our Lady, Mediatrix of All Grace",  // czechRepublic
+    "saintQuirinusOfSescia": "Svätého Kvirína zo Sisaku",  // croatia
+    "ourLadyMotherOfChristianUnity": "Panny Márie, Matky jednoty kresťanov",  // czechRepublic
+    "ourLadyMediatrixOfAllGrace": "Panny Márie, Prostrednice všetkých milostí",  // czechRepublic
     "saintAdalbertBishopAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr",  // duplicate
     "saintSigismundMartyr": "Svätého Žigmunda Burgundského, mučeníka",  // czechRepublic
     "saintJohnNepomucenePriestAndMartyr": "Svätého Jána Nepomuckého, kňaza a mučeníka",  // austria, czechRepublic, germany, hungary, mexico, slovakia, slovenia, switzerland, ukraine
-    "saintClementMaryHofbauerPriest": "Saint Clement Mary Hofbauer, Priest",  // austria, czechRepublic, germany, switzerland
-    "saintZdislava": "Saint Zdislava",  // czechRepublic
-    "saintVitusMartyr": "Saint Vitus, Martyr",  // austria, czechRepublic, germany, switzerland
-    "saintJohnNeumannBishop": "Saint John Neumann, Bishop",  // austria, czechRepublic, germany, switzerland, unitedStates
-    "saintProcopiusAbbot": "Saint Procopius, Abbot",  // czechRepublic
-    "blessedHrzonataMartyr": "Blessed Hrzonata, Martyr",  // czechRepublic
-    "blessedCeslausAndSaintHyacinthPriests": "Blessed Ceslaus and Saint Hyacinth, Priests",  // czechRepublic
-    "saintBridgetOfSweedenReligious": "Saint Bridget of Sweeden, Religious, Patron of Europe",  // duplicate
-    "saintsBenedyktJanMateuszIsaakAndKrystynMartyrs": "Saints Benedykt, Jan, Mateusz, Isaak and Krystyn, Martyrs",  // czechRepublic, poland
-    "blessedTeresaOfCalcuttaReligious": "Blessed Teresa of Calcutta, Religious",  // czechRepublic, hungary, india
-    "saintMelchiorGrodzieckiPriestAndMartyr": "Saint Melchior Grodziecki, Priest and Martyr",  // not a duplicate; czechRepublic, poland
-    "blessedCharlesSpinolaPriestAndMartyr": "Blessed Charles Spinola, Priest and Martyr",  // czechRepublic
-    "saintLudmilaMartyr": "Saint Ludmila, Martyr",  // czechRepublic
-    "saintRadimBishop": "Saint Radim, Bishop",  // czechRepublic
-    "blessedKarlOfAustria": "Blessed Karl of Austria",  // czechRepublic
-    "saintWolfgangBishop": "Saint Wolfgang, Bishop",  // austria, czechRepublic, germany, switzerland
-    "saintAgnesOfBohemiaVirgin": "Saint Agnes of Bohemia, Virgin",  // czechRepublic, hungary
-    "saintEdmundCampionPriestAndMartyr": "Saint Edmund Campion, Priest and Martyr",  // czechRepublic
-    "saintAelredOfRievaulx": "Saint Aelred of Rievaulx",
-    "saintWulstanBishop": "Saint Wulstan, Bishop",
-    "saintDavidBishop": "Saint David, Bishop",
-    "saintAnselmOfCanterburyBishopAndDoctorOfTheChurch": "Saint Anselm of Canterbury, Bishop and Doctor of the Church",
-    "saintGeorgeMartyr": "Saint George, Martyr",
-    "saintAdalbertBishopAndMartyrSaintFidelisOfSigmaringenPriestAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr/Saint Fidelis of Sigmaringen, Priest and Martyr",
+    "saintClementMaryHofbauerPriest": "Svätého Klementa Márie Hofbauera, kňaza",  // austria, czechRepublic, germany, switzerland
+    "saintZdislava": "Svätej Zdislavy",  // czechRepublic
+    "saintVitusMartyr": "Svätého Víta, mučeníka",  // austria, czechRepublic, germany, switzerland
+    "saintJohnNeumannBishop": "Svätého Jána Nepomuckého Neumanna, biskupa",  // austria, czechRepublic, germany, switzerland, unitedStates
+    "saintProcopiusAbbot": "Svätého Prokopa, opáta",  // czechRepublic
+    "blessedHroznataMartyr": "Blahoslaveného Hroznatu, mučeníka",  // czechRepublic
+    "blessedCeslausAndSaintHyacinthPriests": "Blahoslaveného Česlava a svätého Hyacinta, kňazov",  // czechRepublic
+    "saintsBenedyktJanMateuszIsaakAndKrystynMartyrs": "Svätých Benedikta, Jána, Mateja, Izáka a Kristína (Piatich bratov pustovníkov), mučeníkov",  // czechRepublic, poland
+    "saintTeresaOfCalcuttaReligious": "Svätej Terézie z Kalkaty (Matky Terezy), panny a rehoľnice",  // czechRepublic, hungary, india
+    "saintMelchiorGrodzieckiPriestAndMartyr": "Svätého Melichara Grodzieckého, kňaza a mučeníka",  // (partial) duplicate; czechRepublic, poland
+    "blessedCharlesSpinolaPriestAndMartyr": "Blahoslaveného Karola Spinolu, kňaza a mučeníka",  // czechRepublic
+    "saintLudmilaMartyr": "Svätej Ľudmily, mučenice",  // czechRepublic
+    "saintRadimBishop": "Svätého Radima, biskupa",  // czechRepublic
+    "blessedKarlOfAustria": "Blahoslaveného Karola Habsburského",  // czechRepublic
+    "saintWolfgangBishop": "Svätého Wolfganga, biskupa",  // austria, czechRepublic, germany, switzerland
+    "saintAgnesOfBohemiaVirgin": "Svätej Anežky Českej, panny",  // czechRepublic, hungary
+    "saintEdmundCampionPriestAndMartyr": "Svätého Edmunda Kampiána, kňaza a mučeníka",  // czechRepublic
+    "saintAelredOfRievaulx": "Svätého Aelreda z Rievaulx",  // england
+    "saintWulstanBishop": "Svätého Vulstana, biskupa",  // england
+    "saintDavidBishop": "Svätého Dávida z Menevie, biskupa",  // england, ireland, wales
+    "saintGeorgeMartyr": "Svätého Juraja, mučeníka",  // duplicate; needs to be separated
+    "saintAdalbertBishopAndMartyrSaintFidelisOfSigmaringenPriestAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr/Saint Fidelis of Sigmaringen, Priest and Martyr",  // (possible) duplicate
     "theEnglishMartyrs": "The English Martyrs",
     "stDunstanArchbishopOfCanterbury": "St Dunstan, Archbishop of Canterbury",
     "saintBedeTheVenerablePriestAndDoctor": "Saint Bede the Venerable, Priest and Doctor of the Church",
@@ -402,7 +399,6 @@
     "saintJosemariaEscrivaDeBalaguerPriest": "Saint Josemaria Escriva de Balaguer, Priest",
     "saintCanuteMartyr": "Saint Canute, Martyr",
     "saintThorlacBishop": "Saint Thorlac, Bishop",
-    "saintBrigittaReligious": "Saint Brigitta, Religious", // duplicate
     "saintOlafIiMartyr": "Saint Olaf II, Martyr",
     "blessedNicolasStenoBishop": "Blessed Nicolas Steno, Bishop",
     "saintGenevieveVirgin": "Saint Genevieve, Virgin",
@@ -579,7 +575,6 @@
     "shipwreckOfSaintPaulApostle": "Shipwreck of Saint Paul, Apostle",
     "blessedMariaAdeodataPisaniVirgin": "Blessed Maria Adeodata Pisani, Virgin",
     "ourLadyOfSorrows": "Our Lady of Sorrows",
-    "saintPiusVPope": "Saint Pius V, Pope",
     "saintGeorgePrecaPriest": "Saint George Preca, Priest",
     "blessedNazjuFalzon": "Blessed Nazju Falzon",
     "saintCatherineOfAlexandriaVirginAndMartyr": "Saint Catherine of Alexandria, Virgin and Martyr",
@@ -763,5 +758,5 @@
     "allSaintsOfWales": "All Saints of Wales",
     "saintDubriciusBishop": "Saint Dubricius, Bishop",
     "saintJohnRobertsPriestAndMartyr": "Saint John Roberts, Priest and Martyr"
-  }
+  } 
 };
