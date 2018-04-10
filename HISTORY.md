@@ -8,14 +8,14 @@
 * Various unreported bug fixes
 * Added locale files for Czech Republic and Slovakia
 * Added national calendars for Czech Republick and Slovakia
-* Added more test cases for better test coverage 
+* Added more test cases for better test coverage
 * Fixes:
     - [issue #2](https://github.com/pejulian/romcal/issues/2)
         + The command `npm run build` now generates an ES5 distribution bundle of `romcal` that is UMD compliant.
     - [issue #9](https://github.com/pejulian/romcal/issues/9)
         + typo fix for `src/calendars/*sriLanka*.mjs`
     - [issue #10](https://github.com/pejulian/romcal/issues/10)
-        + removed duplicate celebration with different key names for 
+        + removed duplicate celebration with different key names for
             * `saintsCyrilMonkAndMethodiusBishop` replaces `saintsCyrilAndMethodiusSlavicMissionaries`
             * `assumption` replaces `assumptionOfTheBlessedVirginMaryPrincipalPatronessOfFrance`
             * Removed duplicate key `saintAnselmOfCanterburyBishopAndDoctorOfTheChurch` defined in the national calendar in `src/locales/en.mjs`
@@ -35,7 +35,7 @@
         + `saintsFabianAndSebastianPopeAndMartyrs ` renamed to `saintFabianPopeAndMartyrAndSaintSebastianPopeAndMartyr`
     - [issue #14](https://github.com/pejulian/romcal/issues/14)
         + Introduce the new `drop` property that allows national calendars to omit unwanted celebrations from their output
-        + Introduce new `christmastideIncludesTheSeasonOfEpiphany` flag to allow output to exclude the "season" of Epiphany from being merged into Christmastide
+        + Introduce new `christmastideIncludesTheSeasonOfEpiphany` flag to allow output to include or exclude the "season" of Epiphany from being merged into Christmastide
         + Fix issue where calendar options always end up using their defaults even though an option has been specified
     - [issue #15](https://github.com/pejulian/romcal/issues/15)
         + Renamed `blessedCaTherineOfSaintAugustineVirgin` to `blessedCatherineOfSaintAugustineVirgin` (fix typo with `T`)
@@ -43,6 +43,11 @@
         + Renamed `saintsAndrewZoerardusAndBenedictEremites` to `saintsAndrewZoerardusAndBenedictHermits` (fix typo)
     - [issue #17](https://github.com/pejulian/romcal/issues/17)
         + Remove duplicate keys for `ourLadyOfSorrows`
+    - [issue #27](https://github.com/pejulian/romcal/issues/27)
+    - [issue #28](https://github.com/pejulian/romcal/issues/28)
+    - [issue #29](https://github.com/pejulian/romcal/issues/29)
+        + Epiphany is always celebrated on Jan 6 in Slovakia
+
 
 ## 1.2.4 /2017-03-22
 * Added French translations for France, Canada and Belgium.
