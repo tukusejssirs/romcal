@@ -230,7 +230,7 @@
     "dedicationOfTheBasilicasOfSaintsPeterAndPaulApostles": "Výročie posviacky bazilík svätého Petra a svätého Pavla, apoštolov",
     "presentationOfTheBlessedVirginMary": "Obetovanie Panny Márie",
     "saintCeciliaVirginAndMartyr": "Svätej Cecílie, panny a mučenice",
-    "saintClementIPopeAndMartyrSaintColumbanReligious": "Svätého Klementa I., pápeža a mučeníka/Svätého Kolumbána,f opáta",
+    "saintClementIPopeAndMartyrSaintColumbanReligious": "Svätého Klementa I., pápeža a mučeníka/Svätého Kolumbána, opáta",
     "saintAndrewDungLacAndCompanionsMartyrs": "Svätého Ondreja Dung-Laka, kňaza, a spoločníkov, mučeníkov",
     "saintCatherineOfAlexandriaVirginAndMartyr": "Svätej Kataríny Alexandrijskej, panny a mučenice",
     "saintAndrewTheApostle": "Svätého Ondreja, apoštola",
@@ -359,50 +359,44 @@
     "saintAelredOfRievaulx": "Svätého Aelreda z Rievaulx",  // england
     "saintWulstanBishop": "Svätého Vulstana, biskupa",  // england
     "saintDavidBishop": "Svätého Dávida z Menevie, biskupa",  // england, ireland, wales
-    "saintGeorgeMartyr": "Svätého Juraja, mučeníka",  // duplicate; needs to be separated
-    "saintAdalbertBishopAndMartyrSaintFidelisOfSigmaringenPriestAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr/Saint Fidelis of Sigmaringen, Priest and Martyr",  // (possible) duplicate
-    "theEnglishMartyrs": "The English Martyrs",
-    "stDunstanArchbishopOfCanterbury": "St Dunstan, Archbishop of Canterbury",
-    "saintBedeTheVenerablePriestAndDoctor": "Saint Bede the Venerable, Priest and Doctor of the Church",
-    "saintAugustineOfCanterburyBishop": "Saint Augustine of Canterbury, Bishop",
-    "saintBonifaceBishopAndMartyr": "Saint Boniface, Bishop and Martyr",
-    "saintEphraemDeaconDoctorOrSaintColumbaColumCilleAbbot": "Saint Ephraem, Deacon, Doctor or Saint Columba (Colum Cille), Abbot",
-    "saintRichardOfChichesterBishop": "Saint Richard of Chichester, Bishop",
-    "saintAlbanMartyr": "Saint Alban, Martyr",
-    "saintsJohnFisherBishopAndThomasMoreMartyrs": "Saints John Fisher, Bishop and Thomas More, Martyrs",
-    "saintEtheldredaAudreyVirgin": "Saint Etheldreda (Audrey), Virgin",
-    "saintOliverPlunketBishopAndMartyr": "Saint Oliver Plunket, Bishop and Martyr",
-    "blessedDominicOfTheMotherOfGodDominicBarberiPriest": "Blessed Dominic of The Mother of God (Dominic Barberi), Priest",
-    "saintsMargaretClitherowAnneLineAndMargaretWardMartyrs": "Saints Margaret Clitherow, Anne Line and Margaret Ward, Martyrs",
-    "saintAidanBishopAndTheSaintsOfLindisfarne": "Saint Aidan, Bishop and The Saints of Lindisfarne",
-    "saintGregoryTheGreatPopeAndDoctor": "Saint Gregory The Great, Pope and Doctor",
-    "saintCuthbertBishop": "Saint Cuthbert, Bishop",
-    "saintTheodoreOfCanterburyBishop": "Saint Theodore of Canterbury, Bishop",
-    "ourLadyOfWalsingham": "Our Lady of Walsingham",
-    "blessedJohnHenryNewmanPriest": "Blessed John Henry Newman, Priest",
-    "saintPaulinusOfYorkBishop": "Saint Paulinus of York, Bishop",
-    "peterAndPaulApostles": "Saints Peter and Paul, Apostles",
-    "saintWilfridBishop": "Saint Wilfrid, Bishop",
-    "saintEdwardTheConfessor": "Saint Edward The Confessor",
-    "saintsChadAndCeddBishop": "Saints Chad and Cedd, Bishop",
-    "saintWinefrideVirgin": "Saint Winefride, Virgin",
-    "saintWillibrordBishop": "Saint Willibrord, Bishop",
-    "saintEdmundOfAbingdonBishopOrSaintMargaretOfScotlAnd": "Saint Edmund of Abingdon, Bishop Or Saint Margaret of ScotlAnd",
+    "saintGeorgeMartyr": "Svätého Juraja, mučeníka",  // duplicate; to be separated; england, greece, lebanon, russia, slovakia
+    "saintAdalbertBishopAndMartyrSaintFidelisOfSigmaringenPriestAndMartyr": "Saint Wojciech (Adalbert of Prague), Bishop and Martyr/Saint Fidelis of Sigmaringen, Priest and Martyr",  // (possible) duplicate; england
+    "theEnglishMartyrs": "Svätých anglických mučeníkov",  // possible duplicate with theSixWelshMartyrsAndCompanions; england
+    "stDunstanArchbishopOfCanterbury": "Svätého Dunstana, Archbishop of Canterbury",  // change of the key name in process; england
+    "saintBedeTheVenerablePriestAndDoctor": "Saint Bede the Venerable, Priest and Doctor of the Church",  // duplicate; to be separated; england
+    "saintEphraemDeaconDoctorOrSaintColumbaColumCilleAbbot": "Svätého Efréma, diakona a učiteľa Cirkvi, alebo svätého Kolumbu, opáta",  // to be separated; england
+    "saintRichardOfChichesterBishop": "Saint Richard of Chichester, Bishop",  // england
+    "saintAlbanMartyr": "Saint Alban, Martyr",  // england
+    "saintsJohnFisherBishopAndThomasMoreMartyrs": "Saints John Fisher, Bishop and Thomas More, Martyrs",  // to be separated; england
+    "saintEtheldredaAudreyVirgin": "Saint Etheldreda (Audrey), Virgin",  // england
+    "saintOliverPlunketBishopAndMartyr": "Saint Oliver Plunket, Bishop and Martyr",  // england
+    "blessedDominicOfTheMotherOfGodDominicBarberiPriest": "Blessed Dominic of The Mother of God (Dominic Barberi), Priest",  // england
+    "saintsMargaretClitherowAnneLineAndMargaretWardMartyrs": "Saints Margaret Clitherow, Anne Line and Margaret Ward, Martyrs",  // england
+    "saintAidanBishopAndTheSaintsOfLindisfarne": "Saint Aidan, Bishop and The Saints of Lindisfarne",  // england
+    "saintCuthbertBishop": "Saint Cuthbert, Bishop",  // england
+    "saintTheodoreOfCanterburyBishop": "Saint Theodore of Canterbury, Bishop",  // england
+    "ourLadyOfWalsingham": "Our Lady of Walsingham",  // england
+    "blessedJohnHenryNewmanPriest": "Blessed John Henry Newman, Priest",  // england, ireland
+    "saintPaulinusOfYorkBishop": "Saint Paulinus of York, Bishop",  // england
+    "saintWilfridBishop": "Saint Wilfrid, Bishop",  // england
+    "saintEdwardTheConfessor": "Saint Edward The Confessor",  // england
+    "saintsChadAndCeddBishop": "Saints Chad and Cedd, Bishop",  // england
+    "saintWinefrideVirgin": "Saint Winefride, Virgin",  // england, wales
+    "saintWillibrordBishop": "Saint Willibrord, Bishop",  // england, germany, ireland
+    "saintEdmundOfAbingdonBishopOrSaintMargaretOfScotlAnd": "Saint Edmund of Abingdon, Bishop Or Saint Margaret of ScotlAnd",  // england
     "saintHildaAbbessOrSaintHughOfLincolnBishopOrSaintElizabethOfHungary": "Saint Hilda, Abbess Or Saint Hugh of Lincoln, Bishop Or Saint Elizabeth of Hungary",  // duplicate; candidate for separation
-    "saintAndrewApostle": "Saint Andrew, Apostle",
-    "saintThomasBecketBishopAndMartyr": "Saint Thomas Becket, Bishop and Martyr",
-    "saintHenryBishopAndMartyr": "Saint Henry, Bishop and Martyr",
-    "saintEricIxMartyr": "Saint Eric IX, Martyr",
-    "blessedHemmingBishop": "Blessed Hemming, Bishop",
-    "saintUrsulaLedochowskaVirgin": "Saint Ursula Ledochowska, Virgin",
-    "blessedElisabethHesselbaldVirgin": "Blessed Elisabeth Hesselbald, Virgin",
-    "saintJosemariaEscrivaDeBalaguerPriest": "Saint Josemaria Escriva de Balaguer, Priest",
-    "saintCanuteMartyr": "Saint Canute, Martyr",
-    "saintThorlacBishop": "Saint Thorlac, Bishop",
-    "saintOlafIiMartyr": "Saint Olaf II, Martyr",
-    "blessedNicolasStenoBishop": "Blessed Nicolas Steno, Bishop",
-    "saintGenevieveVirgin": "Saint Genevieve, Virgin",
-    "saintRemigiusBishop": "Saint Remigius, Bishop",
+    "saintAndrewApostle": "Saint Andrew, Apostle",  // duplicate
+    "saintEricIxMartyr": "Saint Eric IX, Martyr",  // finland, norway
+    "blessedHemmingBishop": "Blessed Hemming, Bishop",  // finland
+    "saintUrsulaLedochowskaVirgin": "Saint Ursula Ledochowska, Virgin",  // finland, poland
+    "blessedElisabethHesselbaldVirgin": "Blessed Elisabeth Hesselbald, Virgin",  // finland
+    "saintJosemariaEscrivaDeBalaguerPriest": "Saint Josemaria Escriva de Balaguer, Priest",  // finland
+    "saintCanuteMartyr": "Saint Canute, Martyr",  // finland, norway
+    "saintThorlacBishop": "Saint Thorlac, Bishop",  // finland, norway
+    "saintOlafIiMartyr": "Saint Olaf II, Martyr",  // finland, norway
+    "blessedNicolasStenoBishop": "Blessed Nicolas Steno, Bishop",  // finland, norway
+    "saintGenevieveVirgin": "Saint Genevieve, Virgin",  // france
+    "saintRemigiusBishop": "Saint Remigius, Bishop",  // france
     "saintBernadetteSoubirousVirgin": "Saint Bernadette Soubirous, Virgin",
     "saintIvoPriest": "Saint Ivo, Priest",
     "saintJoanOfArcVirginSecondaryPatronessOfFrance": "Saint Joan of Arc, Virgin, Secondary Patroness of France",
