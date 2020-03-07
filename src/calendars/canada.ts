@@ -1,16 +1,17 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-import { Locales } from "../lib";
-import { Titles, Types, LiturgicalColors } from "../constants";
-import { IRomcalDateItem } from "../models/romcal-date-item";
-import { IRomcalDefaultConfig } from "../models/romcal-config";
+import { Locales } from '../lib';
+import { Titles, Types, LiturgicalColors } from '../constants';
+import { IRomcalDateItem } from '../models/romcal-date-item';
+import Config, { IRomcalDefaultConfig } from '../models/romcal-config';
 
 const defaultConfig: IRomcalDefaultConfig | undefined = undefined;
 
-const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
+const dates = async (config: Config): Promise<Array<IRomcalDateItem>> => {
+  const year = config.year;
   const _dates: Array<IRomcalDateItem> = [
     {
-      key: "saintAndreBessetteReligious",
+      key: 'saintAndreBessetteReligious',
       type: Types.MEMORIAL,
       date: dayjs.utc(`${year}-1-7`),
       data: {
@@ -20,12 +21,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintRaymondOfPenyafortPriest",
+      key: 'saintRaymondOfPenyafortPriest',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-1-8`),
     },
     {
-      key: "saintMargueriteBourgeoysVirgin",
+      key: 'saintMargueriteBourgeoysVirgin',
       type: Types.MEMORIAL,
       date: dayjs.utc(`${year}-1-12`),
       data: {
@@ -35,7 +36,7 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintJosephSpouseOfTheBlessedVirginMaryPrincipalPatronOfCanada",
+      key: 'saintJosephSpouseOfTheBlessedVirginMaryPrincipalPatronOfCanada',
       type: Types.SOLEMNITY,
       date: dayjs.utc(`${year}-3-19`),
       data: {
@@ -45,52 +46,52 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintKateriTekakwithaVirgin",
+      key: 'saintKateriTekakwithaVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-4-17`),
     },
     {
-      key: "blessedMarieAnneBlondinVirgin",
+      key: 'blessedMarieAnneBlondinVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-4-18`),
     },
     {
-      key: "ourLadyOfGoodCounsel",
+      key: 'ourLadyOfGoodCounsel',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-4-26`),
     },
     {
-      key: "saintMarieOfTheIncarnationReligious",
+      key: 'saintMarieOfTheIncarnationReligious',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-4-30`),
     },
     {
-      key: "blessedMarieLeonieParadisVirgin",
+      key: 'blessedMarieLeonieParadisVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-5-4`),
     },
     {
-      key: "saintFrancoisDeLavalBishop",
+      key: 'saintFrancoisDeLavalBishop',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-5-6`),
     },
     {
-      key: "blessedCatherineOfSaintAugustineVirgin",
+      key: 'blessedCatherineOfSaintAugustineVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-5-8`),
     },
     {
-      key: "saintEugeneDeMazenodBishop",
+      key: 'saintEugeneDeMazenodBishop',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-5-21`),
     },
     {
-      key: "blessedLouisZephirinMoreauBishop",
+      key: 'blessedLouisZephirinMoreauBishop',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-5-24`),
     },
     {
-      key: "blessedsNykytaBudkaAndVasylVelychkowskyBishopsAndMartyrs",
+      key: 'blessedsNykytaBudkaAndVasylVelychkowskyBishopsAndMartyrs',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-6-27`),
       data: {
@@ -100,7 +101,7 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintAnnePatronOfQuebecAndSaintJoachimParentsOfTheBlessedVirginMary",
+      key: 'saintAnnePatronOfQuebecAndSaintJoachimParentsOfTheBlessedVirginMary',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-7-26`),
       data: {
@@ -110,12 +111,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "blessedFredericJanssoonePriest",
+      key: 'blessedFredericJanssoonePriest',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-8-5`),
     },
     {
-      key: "blessedAndreGrassetPriestAndMartyr",
+      key: 'blessedAndreGrassetPriestAndMartyr',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-9-2`),
       data: {
@@ -125,17 +126,17 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "blessedDinaBelangerVirgin",
+      key: 'blessedDinaBelangerVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-9-4`),
     },
     {
-      key: "blessedEmilieTavernierGamelinReligious",
+      key: 'blessedEmilieTavernierGamelinReligious',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-9-24`),
     },
     {
-      key: "saintsJeanDeBrebeufAndIsaacJoguesPriestsAndCompanionsMartyrs",
+      key: 'saintsJeanDeBrebeufAndIsaacJoguesPriestsAndCompanionsMartyrs',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-9-26`),
       data: {
@@ -145,7 +146,7 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintsNereusAndAchilleusMartyrs",
+      key: 'saintsNereusAndAchilleusMartyrs',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-9-26`),
       data: {
@@ -155,7 +156,7 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintPancrasMartyr",
+      key: 'saintPancrasMartyr',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-9-26`),
       data: {
@@ -165,12 +166,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "blessedMarieRoseDurocherVirgin",
+      key: 'blessedMarieRoseDurocherVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-10-6`),
     },
     {
-      key: "saintMargueriteDYouvilleReligious",
+      key: 'saintMargueriteDYouvilleReligious',
       type: Types.MEMORIAL,
       date: dayjs.utc(`${year}-10-16`),
       data: {
@@ -180,17 +181,17 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintHedwigReligious",
+      key: 'saintHedwigReligious',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-10-20`),
     },
     {
-      key: "saintMargaretMaryAlacoqueVirgin",
+      key: 'saintMargaretMaryAlacoqueVirgin',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-10-20`),
     },
     {
-      key: "ourLadyOfGuadalupe",
+      key: 'ourLadyOfGuadalupe',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-12-12`),
       data: {

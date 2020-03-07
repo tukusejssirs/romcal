@@ -1,21 +1,22 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-import { Locales } from "../lib";
-import { Titles, Types, LiturgicalColors } from "../constants";
-import { IRomcalDateItem } from "../models/romcal-date-item";
-import { IRomcalDefaultConfig } from "../models/romcal-config";
+import { Locales } from '../lib';
+import { Titles, Types, LiturgicalColors } from '../constants';
+import { IRomcalDateItem } from '../models/romcal-date-item';
+import Config, { IRomcalDefaultConfig } from '../models/romcal-config';
 
 const defaultConfig: IRomcalDefaultConfig | undefined = undefined;
 
-const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
+const dates = async (config: Config): Promise<Array<IRomcalDateItem>> => {
+  const year = config.year;
   const _dates: Array<IRomcalDateItem> = [
     {
-      key: "waitangiDay",
+      key: 'waitangiDay',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-2-6`),
     },
     {
-      key: "saintPaulMikiAndCompanionsMartyrs",
+      key: 'saintPaulMikiAndCompanionsMartyrs',
       type: Types.MEMORIAL,
       date: dayjs.utc(`${year}-2-7`),
       data: {
@@ -26,22 +27,22 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "saintPatrickBishop",
+      key: 'saintPatrickBishop',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-3-17`),
     },
     {
-      key: "saintMarkTheEvangelist",
+      key: 'saintMarkTheEvangelist',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-4-26`),
     },
     {
-      key: "saintLouisMarieGrignionDeMontfortPriest",
+      key: 'saintLouisMarieGrignionDeMontfortPriest',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-4-27`),
     },
     {
-      key: "saintPeterChanelPriestAndMartyr",
+      key: 'saintPeterChanelPriestAndMartyr',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-4-28`),
       data: {
@@ -52,32 +53,32 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
       },
     },
     {
-      key: "ourLadyHelpOfChristians",
+      key: 'ourLadyHelpOfChristians',
       type: Types.MEMORIAL,
       date: dayjs.utc(`${year}-5-24`),
     },
     {
-      key: "saintMarcellinChampagnatPriest",
+      key: 'saintMarcellinChampagnatPriest',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-6-6`),
     },
     {
-      key: "saintDominicPriest",
+      key: 'saintDominicPriest',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-8-7`),
     },
     {
-      key: "saintSixtusIiPopeAndCompanionsMartyrs",
+      key: 'saintSixtusIiPopeAndCompanionsMartyrs',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-8-7`),
     },
     {
-      key: "saintCajetanPriest",
+      key: 'saintCajetanPriest',
       type: Types.OPT_MEMORIAL,
       date: dayjs.utc(`${year}-8-7`),
     },
     {
-      key: "saintMaryMacKillopVirgin",
+      key: 'saintMaryMacKillopVirgin',
       type: Types.FEAST,
       date: dayjs.utc(`${year}-8-8`),
     },

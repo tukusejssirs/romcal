@@ -1,3 +1,3 @@
-import { TRomcalLocale } from "../models/romcal-locale";
+import { IRomcalLocale } from "../models/romcal-locale";
 
-export default {} as TRomcalLocale;
+export default {} as IRomcalLocale;
