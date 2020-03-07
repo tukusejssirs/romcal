@@ -10,7 +10,12 @@ const defaultConfig: IRomcalDefaultConfig | undefined = undefined;
 const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
     const _dates: Array<IRomcalDateItem> = [
         {
-            key: "mostHolyNameOfJesusOrOurLadyOfBethlehem",
+            key: "theMostHolyNameOfJesus",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-1-3`),
+        },
+        {
+            key: "ourLadyOfBethlehem",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-1-3`),
         },

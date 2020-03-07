@@ -50,7 +50,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             },
         },
         {
-            key: "saintCamillusDeLellisPriestOrSaintHenryBishopAndMartyr ",
+            key: "saintCamillusDeLellisPriest",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-7-14`),
+        },
+        {
+            key: "saintHenryBishopAndMartyr",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-7-14`),
         },

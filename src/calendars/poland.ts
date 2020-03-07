@@ -30,7 +30,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             date: dayjs.utc(`${year}-1-27`),
         },
         {
-            key: "blessedBoleslawaMariaLamentVirginAndSaintAngelaMericiVirgin",
+            key: "blessedBoleslawaMariaLamentVirgin",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-1-29`),
+        },
+        {
+            key: "saintAngelaMericiVirgin",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-1-29`),
         },
@@ -183,7 +188,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             },
         },
         {
-            key: "saintJohnSarkanderPriestAndMartyrSaintZdzislawa",
+            key: "saintJohnSarkanderPriestAndMartyr",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-5-30`),
+        },
+        {
+            key: "saintZdzislawa",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-5-30`),
         },
@@ -314,7 +324,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             },
         },
         {
-            key: "saintCamillusDeLellisPriestOrSaintHenryBishopAndMartyr",
+            key: "saintCamillusDeLellisPriest",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-7-14`),
+        },
+        {
+            key: "saintHenryBishopAndMartyr",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-7-14`),
         },
@@ -440,7 +455,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             date: dayjs.utc(`${year}-9-9`),
         },
         {
-            key: "saintDenisAndCompanionsMartyrsSaintJohnLeonardiPriest",
+            key: "saintDenisAndCompanionsMartyrs",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-9-10`),
+        },
+        {
+            key: "saintJohnLeonardiPriest",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-9-10`),
         },

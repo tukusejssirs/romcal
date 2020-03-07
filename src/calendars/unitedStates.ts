@@ -36,7 +36,7 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             data: {},
         },
         {
-            key: "saintVincentDeaconAndMartyrOrSaintMarianneCopeVirgin",
+            key: "saintVincentDeaconAndMartyr",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-1-22`),
             data: {
@@ -44,6 +44,11 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
                     titles: [Titles.MARTYR],
                 },
             },
+        },
+        {
+            key: "saintMarianneCopeVirgin",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-1-22`),
         },
         {
             key: "saintKatharineDrexelVirgin",
@@ -102,7 +107,18 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             data: {},
         },
         {
-            key: "saintsJeanDeBrebeufAndIsaacJoguesPriestsAndCompanionsMartyrsSaintPaulOfTheCrossPriest",
+            key: "saintsJeanDeBrebeufAndIsaacJoguesPriestsAndCompanionsMartyrs",
+            type: Types.MEMORIAL,
+            date: dayjs.utc(`${year}-10-19`),
+            data: {
+                meta: {
+                    liturgicalColor: LiturgicalColors.RED,
+                    titles: [Titles.MARTYR],
+                },
+            },
+        },
+        {
+            key: "saintPaulOfTheCrossPriest",
             type: Types.MEMORIAL,
             date: dayjs.utc(`${year}-10-19`),
             data: {

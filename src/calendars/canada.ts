@@ -135,7 +135,27 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             date: dayjs.utc(`${year}-9-24`),
         },
         {
-            key: "saintsJeanDeBrebeufAndIsaacJoguesPriestsAndCompanionsMartyrsSaintPaulOfTheCrossPriest",
+            key: "saintsJeanDeBrebeufAndIsaacJoguesPriestsAndCompanionsMartyrs",
+            type: Types.FEAST,
+            date: dayjs.utc(`${year}-9-26`),
+            data: {
+                meta: {
+                    liturgicalColor: LiturgicalColors.RED,
+                },
+            },
+        },
+        {
+            key: "saintsNereusAndAchilleusMartyrs",
+            type: Types.FEAST,
+            date: dayjs.utc(`${year}-9-26`),
+            data: {
+                meta: {
+                    liturgicalColor: LiturgicalColors.RED,
+                },
+            },
+        },
+        {
+            key: "saintPancrasMartyr",
             type: Types.FEAST,
             date: dayjs.utc(`${year}-9-26`),
             data: {
@@ -160,7 +180,12 @@ const dates = async (year: number): Promise<Array<IRomcalDateItem>> => {
             },
         },
         {
-            key: "saintHedwigReligiousOrSaintMargaretMaryAlacoqueVirgin",
+            key: "saintHedwigReligious",
+            type: Types.OPT_MEMORIAL,
+            date: dayjs.utc(`${year}-10-20`),
+        },
+        {
+            key: "saintMargaretMaryAlacoqueVirgin",
             type: Types.OPT_MEMORIAL,
             date: dayjs.utc(`${year}-10-20`),
         },
