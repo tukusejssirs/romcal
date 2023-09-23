@@ -2319,6 +2319,12 @@ export const Martyrology: { catalog: MartyrologyCatalog } = {
       name: 'Lawrence Bai Xiaoman',
       titles: [Titles.Martyr],
     },
+    lawrence_justinian: {
+      canonizationLevel: CanonizationLevels.Saint,
+      name: 'Lawrence Justinian',
+      titles: [Titles.Bishop],
+      dateOfDeath: '1456-01-08',
+    },
     lawrence_of_brindisi_priest: {
       canonizationLevel: CanonizationLevels.Saint,
       name: 'Lawrence of Brindisi',
@@ -2540,6 +2546,12 @@ export const Martyrology: { catalog: MartyrologyCatalog } = {
       canonizationLevel: CanonizationLevels.Saint,
       name: 'Marcellin Champagnat',
       titles: [Titles.Priest],
+    },
+    marcellinus_of_ancona_bishop: {
+      canonizationLevel: CanonizationLevels.Saint,
+      name: 'Marcellinus of Ancona',
+      titles: [Titles.Bishop],
+      dateOfDeath: 566,
     },
     marcellinus_of_rome_martyr: {
       canonizationLevel: CanonizationLevels.Saint,
@@ -2908,6 +2920,12 @@ export const Martyrology: { catalog: MartyrologyCatalog } = {
       canonizationLevel: CanonizationLevels.Saint,
       name: 'Miguel Febres Cordero',
       titles: [Titles.Religious],
+    },
+    miltiades_pope: {
+      canonizationLevel: CanonizationLevels.Saint,
+      name: 'Miltiades',
+      titles: [Titles.Pope],
+      dateOfDeath: 314,
     },
     modestus_andlauer_martyr: {
       canonizationLevel: CanonizationLevels.Saint,
