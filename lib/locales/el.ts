@@ -21,10 +21,10 @@ export const locale: Locale = {
     },
 
     ordinary_time: {
-      season: 'Kοινή περίοδος του έτους',
+      season: 'Κοινή περίοδος του έτους',
       weekday:
-        '$t(weekdays:{{dow}}) της $t(ordinals:{{week}}, { "context": "genitive" }) της κοινής περίοδου του έτους',
-      sunday: '$t(ordinals:{{week}}) Κυριακή της κοινής περίοδου του έτους',
+        '$t(weekdays:{{dow}}) της $t(ordinals:{{week}}, { "context": "genitive" }) της κοινής περίοδου του έτους',  // TODO: My spellchecker suggests to use either `περίοδο` or `περίοδοι`. It could be wrong, however, I want to verify it.
+      sunday: '$t(ordinals:{{week}}) Κυριακή της κοινής περίοδου του έτους',  // TODO: My spellchecker suggests to use either `περίοδο` or `περίοδοι`. It could be wrong, however, I want to verify it.
     },
 
     lent: {
@@ -36,20 +36,20 @@ export const locale: Locale = {
       holy_week_day: 'Μεγάλη $t(weekdays:{{dow}})',
     },
 
-    paschal_triduum: { season: 'Πασχαλινό τριήμερο' },
+    paschal_triduum: { season: 'Πασχαλινό τριήμερο' },
 
     easter_time: {
-      season: 'Περίοδος του Πάσχα',
+      season: 'Περίοδος του Πάσχα',  // TODO: My spell-checker suggests to change this to use `Περίοδος` (note the `ί`) and `Πάσχα` (note the `ά`). It could be wrong, however, I want to verify it.
       weekday: '$t(weekdays:{{dow}}) της $t(ordinals:{{week}}, { "context": "abbreviation" }) Εβδομάδας του Πάσχα',
       sunday: '$t(ordinals:{{week}}) Κυριακή του Πάσχα',
-      octave: '$t(weekdays:{{dow}}) της Διακαινησίμου',
+      octave: '$t(weekdays:{{dow}}) της Διακαινησίμου',  // TODO: My spell-checker suggests to change this to use `Διακαινήσιμος` (note the transfer of the accent). It could be wrong, however, I want to verify it.
     },
   },
 
   ranks: {
-    solemnity: 'πανήγυρη',
-    feast: 'εορτή',
-    memorial: 'μνήμη',
+    solemnity: 'πανήγυρη',  // src: mr_el_2006_ed3
+    feast: 'εορτή',  // src: mr_el_2006_ed3
+    memorial: 'μνήμη',  // src: mr_el_2006_ed3
     sunday: 'Κυριακή',
     weekday: 'καθημερινή',
   },
@@ -79,18 +79,18 @@ export const locale: Locale = {
   },
 
   months: {
-    0: 'Ιανουάριου',
-    1: 'Φεβρουάριου',
-    2: 'Μάρτιου',
-    3: 'Απρίλιου',
-    4: 'Μάιου',
-    5: 'Ιούνιου',
-    6: 'Ιούλιου',
-    7: 'Αύγουστου',
-    8: 'Σεπτέμβριου',
-    9: 'Οκτώβριου',
-    10: 'Νοέμβριου',
-    11: 'Δεκέμβριου',
+    0: 'Ιανουάριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%99%CE%B1%CE%BD%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85) suggests to use `Ιανουαρίου` as Genitive. I presume we need Genitive, however, we could consider to add Nominative too. Also compare this to `Κυριακή μετά τις 6 Ιανουαρίου` which can be found int `mr_el_2006_ed3` in the Calendar (Γενικο Πωμαϊκο εορτολογιο Ιανουαριος) in the bottom of the page.
+    1: 'Φεβρουάριου',  // TODO; [Wiktionary](https://en.wiktionary.org/wiki/%CE%A6%CE%B5%CE%B2%CF%81%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85#Greek) suggests to use `Φεβρουαρίου` as Genitive.
+    2: 'Μάρτιου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%9C%CE%B1%CF%81%CF%84%CE%AF%CE%BF%CF%85#Greek) suggests to us `Μαρτίου` as Genitive.
+    3: 'Απρίλιου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%91%CF%80%CF%81%CE%B9%CE%BB%CE%AF%CE%BF%CF%85#Greek) suggests to use `Απριλίου` as Genitive.
+    4: 'Μάιου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%9C%CE%B1%CE%90%CE%BF%CF%85#Greek) suggests to use `Μαΐου` as Genitive.
+    5: 'Ιούνιου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%99%CE%BF%CF%85%CE%BD%CE%AF%CE%BF%CF%85#Greek) suggests to use `Ιουνίου` as Genitive.
+    6: 'Ιούλιου',  // TODO: [Wiktionary}(https://en.wiktionary.org/wiki/%CE%99%CE%BF%CF%85%CE%BB%CE%AF%CE%BF%CF%85#Greek) suggests to use `Ιουλίου` as Genitive.
+    7: 'Αύγουστου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%91%CF%85%CE%B3%CE%BF%CF%8D%CF%83%CF%84%CE%BF%CF%85#Greek) suggests to use `Αυγούστου` as Genitive.
+    8: 'Σεπτέμβριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%A3%CE%B5%CF%80%CF%84%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85#Greek) suggests to use `Σεπτεμβρίου` as Genitive.
+    9: 'Οκτώβριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%9F%CE%BA%CF%84%CF%89%CE%B2%CF%81%CE%AF%CE%BF%CF%85#Greek) suggests to use `Οκτωβρίου` as Genitive.
+    10: 'Νοέμβριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%9D%CE%BF%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85#Greek) suggests to use `Νοεμβρίου` as Genitive.
+    11: 'Δεκέμβριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%94%CE%B5%CE%BA%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85#Greek) suggests to use `Δεκεμβρίου` as Genitive.
   },
 
   ordinals: {
@@ -212,7 +212,7 @@ export const locale: Locale = {
     adalbert_of_prague_bishop: 'Αγίου Αδαλβέρτου, επισκόπου και μάρτυρος',
     agapitus_of_palestrina_martyr: 'Αγίου Αγαπητού, μάρτυρος',
     agatha_of_sicily_virgin: 'Αγίας Αγάθης, παρθενομάρτυρος',
-    agnes_of_rome_virgin: 'Αγίας Αγνής, παρθενομάρτυρος',
+    agnes_of_rome_virgin: 'Αγίας Αγνής, παρθενομάρτυρος',  // src: mr_el_2006_ed3
     albert_the_great_bishop: 'Αγίου Αλβέρτου του Μεγάλου, επισκόπου και διδασκάλου της Εκκλησιάς',
     all_saints: 'Αγίων Πάντων',
     aloysius_gonzaga_religious: 'Αγίου Αλοϊσίου Gonzaga, μοναχού',
@@ -222,12 +222,12 @@ export const locale: Locale = {
     andrew_dung_lac_priest_and_companions_martyrs: 'Αγίων Ανδρέα Dung Lac, πρεσβυτέρου, και συντρόφων, μαρτύρων',
     andrew_kim_tae_gon_priest_paul_chong_ha_sang_and_companions_martyrs:
       'Αγίου Ανδρέα Kim Tae-gon, πρεσβυτέρου, Αγίου Παύλου Chong Ha-sang, και συντρόφων, μαρτύρων',
-    angela_merici_virgin: 'Αγίας Άγγελας Merici, παρθένου',
+    angela_merici_virgin: 'Αγίας Άγγελας Merici, παρθένου',  // src: mr_el_2006_ed3
     annunciation_of_the_lord: 'Ευαγγελισμός της Θεοτόκου',
     anselm_of_canterbury_bishop: 'Αγίου Ανσέλμου, επισκόπου και διδασκάλου της Εκκλησίας',
     ansgar_of_hamburg_bishop: 'Αγίου Ανσγκαρλιου, επισκόπου',
     anthony_mary_claret_bishop: 'Αγίου Αντωνίου Μαρία Claret, επισκόπου',
-    anthony_of_egypt_abbot: 'Αγίου Αντωνίου του Μεγάλου, αββά',
+    anthony_of_egypt_abbot: 'Αγίου Αντωνίου του Μεγάλου, αββά',  // src: mr_el_2006_ed3
     anthony_of_padua_priest: 'Αγίου Αντωνίου της Παδούης, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
     anthony_zaccaria_priest: 'Αγίου Αντωνίου Μαρία Ζαχαρία, πρεσβυτέρου',
     apollinaris_of_ravenna_bishop: 'Αγίου Απολλιναρίου, επισκόπου και μάρτυρος',
@@ -237,12 +237,12 @@ export const locale: Locale = {
     augustine_of_hippo_bishop: 'Αγίου Αυγουστίνου, επισκόπου και διδασκάλου της Εκκλησίας',
     augustine_zhao_rong_priest_and_companions_martyrs:
       'Αγίου Αυγουστίνου Zhao Rong, πρεσβυτέροθ, και ουντρόφων μαρτύρων',
-    baptism_of_the_lord: 'Η Βάπτιση του Κυρίου',
+    baptism_of_the_lord: 'Η Βάπτιση του Κυρίου',  // src: mr_el_2006_ed3
     barbara_of_heliopolis_virgin: 'Αγίας Βαρβάρας, παρθενομάρτυρος',
     barnabas_apostle: 'Αγίου Βαρνάβα, Αποστόλου',
     bartholomew_apostle: 'Αγίου Βαρθολομαίου, Αποστόλου',
     basil_the_great_and_gregory_nazianzen_bishops:
-      'Αγίου Βασιλείου του Μεγάλου και Αγίου Γρηγορίου του Ναζιανζηνού, επισκόπων και διδασκάλων της Εκκλησίας',
+      'Αγίου Βασιλείου του Μεγάλου και Αγίου Γρηγορίου του Ναζιανζηνού, επισκόπων και διδασκάλων της Εκκλησίας',  // src: mr_el_2006_ed3
     bede_the_venerable_priest: 'Αγίου Βέδα του Σεβασμίου, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
     benedict_of_nursia_abbot: 'Αγίου Βενέδικτου, αββά',
     benedict_of_nursia_abbot_patron_of_europe: 'Αγίου Βενέδικτου, αββά, προστάτι της Ευρώπης',
@@ -273,7 +273,7 @@ export const locale: Locale = {
     clement_i_pope: 'Αγίου Κλήμεντος Αʹ, πάπα και μάρτυρος',
     columba_of_iona_abbot: 'Αγίου Κολουμβανού, αββά',
     commemoration_of_all_the_faithful_departed: 'Μνήμη Όλων Των Κεκοιμημένων Πιστών',
-    conversion_of_saint_paul_the_apostle: 'Η μεταστροφή του Αποστόλου Παύλου',
+    conversion_of_saint_paul_the_apostle: 'Η μεταστροφή του Αποστόλου Παύλου',  // src: mr_el_2006_ed3
     cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs:
       'Αγίων Κορνηλίου, πάπα, και Κυπριανού, επισκόπου, μαρτύρων',
     cosmas_of_cilicia_and_damian_of_cilicia_martyrs: 'Αγίων Κοσμά και Δαμιανού, των Αναργύρων, μαρτύρων',
@@ -304,16 +304,16 @@ export const locale: Locale = {
     elizabeth_of_portugal: 'Αγίας Ελισάβετ της Πορτογαλίας',
     emilie_de_vialar_virgin: 'Αγίας Αιμιλίας de Vialar, παρθένου',
     ephrem_the_syrian_deacon: 'Αγίου Εφραίμ, διακόνου και διδασκάλου της Εκκλησίας',
-    epiphany_of_the_lord: 'Των Θεοφανίων',
+    epiphany_of_the_lord: 'Των Θεοφανίων',  // src: mr_el_2006_ed3
     eric_ix_of_sweden_martyr: 'Αγίου Ερρίκου',
     eusebius_of_vercelli_bishop: 'Αγίου Ευσεβίου των Βερκελλών, επισκόπου',
     exaltation_of_the_holy_cross: 'Ύψωση του Τιµίου Σταυρού.',
-    fabian_i_pope: 'Αγίου Φαβιανού, πάπα και μάρτυρος',
+    fabian_i_pope: 'Αγίου Φαβιανού, πάπα και μάρτυρος',  // src: mr_el_2006_ed3
     faustina_kowalska_virgin: 'Αγίας Φαουστίνα Kowalska, παρθένου',
     fidelis_of_sigmaringen_priest: 'Αγίου Φιδελίου de Sigmaringen, πρεσβυτέρου και μάρτυρος',
     first_martyrs_of_the_holy_roman_church: 'Αγίων Πρωτομαρτύρων της Εκκλησίας της Ρώμης',
     frances_of_rome_religious: 'Αγίας Φρανκίσκας της Ρωμαίας, μοναχής',
-    francis_de_sales_bishop: 'Αγίου Φρανκίσκου de Sales, επισκόπου και διδασκάλου της Εκκλησίας',
+    francis_de_sales_bishop: 'Αγίου Φραγκίσκου de Sales, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
     francis_of_assisi: 'Αγίου Φραγκίσκου της Ασσίζης',
     francis_of_paola_hermit: 'Αγίου Φραγκίσκου de Paola, ερημίτη',
     francis_xavier_priest: 'Αγίου Φραγκίσκου Ξαβέριου, πρεσβυτέρου',
@@ -324,7 +324,7 @@ export const locale: Locale = {
     gregory_i_the_great_pope: 'Αγίου Γεωργίου του Μεγάλου, πάπα και διδασκάλου της Εκκλησίας',
     gregory_vii_pope: 'Αγίου Γρηγορίου Ζʹ, πάπα',
     hedwig_of_poland: 'Αγίας Εδβίγης, μοναχής',
-    hilary_of_poitiers_bishop: 'Αγίου Ιλαρίου, επισκόπου και διδασκάλου της Εκκλησίας',
+    hilary_of_poitiers_bishop: 'Αγίου Ιλαρίου, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
     hildegard_of_bingen_abbess: 'Αγίας Χίλντεγκαρντ, παρθένου και διδασκάλου της Εκκλησίας',
     holy_family_of_jesus_mary_and_joseph: 'Της Αγίας Οικογένειας: Ιήσου, Μαρίας και Ιωσήφ',
     holy_guardian_angels: 'Αγίων Φυλάκων Αγγέλων',
@@ -345,7 +345,7 @@ export const locale: Locale = {
     joachim_and_anne_parents_of_mary: 'Αγίων Ιωακείμ και Άννης, γονέων της Παναγίας',
     john_apostle: 'Αγίου Ιωάννη, Απόστολου και Ευαγγελιστή',
     john_baptist_de_la_salle_priest: 'Αγίου Ιωάννη Βαπτιστή de la Salle, πρεσβυτέρου',
-    john_bosco_priest: 'Αγίου Ιωάννη Bosco, πρεσβυτέρου',
+    john_bosco_priest: 'Αγίου Ιωάννη Bosco, πρεσβυτέρου',  // src: mr_el_2006_ed3
     john_chrysostom_bishop: 'Αγίου Ιωάννου Χρυσοστόμου, επισκόπου και διδασκάλου της Εκκλησίας',
     john_damascene_priest: 'Αγίου Ιωάννη του Δαμασκηνού, πρεσβυτέρου και διδασκάλου της Εκκλησιάς',
     john_de_brebeuf_isaac_jogues_priests_and_companions_martyrs:
@@ -395,7 +395,7 @@ export const locale: Locale = {
     martin_of_tours_bishop: 'Αγίου Μαρτίνου, επισκόπου',
     mary_magdalene: 'Αγίας Μαρίας της Μαγδαληνής',
     mary_magdalene_de_pazzi_virgin: 'Αγίας Μαρίας Μαγδαληνής de’ Pazzi, παρθένου',
-    mary_mother_of_god: 'Tης Υπεραγίας Θεοτόκου Μαρίας',
+    mary_mother_of_god: 'Ογδοάδα των Χριστουγέννων: Της Υπεραγίας Θεοτόκου Μαρίας',  // src: mr_el_2006_ed3
     mary_mother_of_the_church: 'Tης Υπεραγίας Θεοτόκου Μαρίας, Μητέρας της Εκκλησίας',
     mary_mother_of_hope: 'Tης Υπεραγίας και Αειπαρθένου Θεοτόκου, Μητέρας της αγίας Ελπίδας',
     matthew_apostle: 'Αγίου Ματθαίου, Απόστολου και Ευαγγελιστή',
@@ -405,7 +405,7 @@ export const locale: Locale = {
     miltiades_pope: 'Αγίου Μιλτιάδης, πάπα',
     monica_of_hippo: 'Αγίας Μόνικας',
     most_holy_body_and_blood_of_christ: 'Του Παναχράντου Σώματος και Αίματος του Χριστού',
-    most_holy_name_of_jesus: 'Του Αγιοτάτου Ονόματος του Ιησού',
+    most_holy_name_of_jesus: 'Του Αγιοτάτου Ονόματος του Ιησού',  // src: mr_el_2006_ed3
     most_holy_name_of_mary: 'Του ονόματος της Υπεραγίας Θεοτόκου Μαρίας',
     most_holy_trinity: 'Της Αγίας Τριάδος',
     most_sacred_heart_of_jesus: 'Ιεροτάτης Καρδίας του Ιησού',
@@ -453,7 +453,7 @@ export const locale: Locale = {
     presentation_of_the_blessed_virgin_mary: 'Εισόδια της Μακαριάς Αειπαρθένου Μαρίας',
     presentation_of_the_lord: 'Η Υπαπαντή του Κυρίου',
     queenship_of_the_blessed_virgin_mary: 'Υπεραγίας Θεοτόκου και Αειπαρθένου Μαρίας Βασίλισσας',
-    raymond_of_penyafort_priest: 'Αγίου Ραϊμόνδου de Penyafort, πρεσβυτέρου',
+    raymond_of_penyafort_priest: 'Αγίου Ραϊμόνδου de Penyafort, πρεσβυτέρου',  // src: mr_el_2006_ed3
     rita_of_cascia_religious: 'Αγίας Ρίτας de Cascia, μοναχής',
     robert_bellarmine_bishop: 'Αγίου Ροβέρτου Bellarmino, επισκόπου και διδασκάλου της Εκκλησίας',
     roch_of_montpellier: 'Αγίου Ρόκκο',
@@ -461,7 +461,7 @@ export const locale: Locale = {
     romuald_of_ravenna_abbot: 'Αγίου Ρομουάλδου, αββά',
     rose_of_lima_virgin: 'Αγίας Ρόζας της Λίμα, παρθένου',
     scholastica_of_nursia_virgin: 'Αγίας Σχολαστικής',
-    sebastian_of_milan_martyr: 'Αγίου Σεβαστιανού, μάρτυρος',
+    sebastian_of_milan_martyr: 'Αγίου Σεβαστιανού, μάρτυρος',  // src: mr_el_2006_ed3
     seven_holy_founders_of_the_servite_order:
       'Επτά Αγίων Ιδρυτών του Τάγματος των Δούλων της Μακαρίας Αειπαρθένου Μαρίας',
     sharbel_makhluf_priest: 'Αγίου Σαρβελίου Makhluf, πρεσβυτέρου',
@@ -483,18 +483,18 @@ export const locale: Locale = {
     therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin:
       'Αγίας Θηρεσίας του Βρέφους Ιησού, παρθένου και διδασκάλου της Εκκλησίας',
     thomas_apostle: 'Αγίου Θωμά, Αποστόλου',
-    thomas_aquinas_priest: 'Αγίου Θωμά του Ακινάτη, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
+    thomas_aquinas_priest: 'Αγίου Θωμά του Ακινάτη, πρεσβυτέρου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
     thomas_becket_bishop: 'Αγίου Θωμά Becket, επισκόπου και μάρτυρος',
-    timothy_of_ephesus_and_titus_of_crete_bishops: 'Αγίων Τιμοθέου και Τίτου, επισκόπων',
+    timothy_of_ephesus_and_titus_of_crete_bishops: 'Αγίων Τιμοθέου και Τίτου, επισκόπων',  // src: mr_el_2006_ed3
     timothy_of_ephesus_and_titus_the_first_bishop_of_crete_bishops:
-      'Αγίου Τίτου, πρώτου επισκόπου Κρήτης και Αγίου Τιμοθέου, επισκόπου',
+      'Αγίου Τίτου, πρώτου επισκόπου Κρήτης και Αγίου Τιμοθέου, επισκόπου',  // based on: mr_el_2006_ed3; TODO: Where is this used? Can't we use `timothy_of_ephesus_and_titus_of_crete_bishops` there instead?
     transfiguration_of_the_lord: 'Η Μεταμόρφωση του Κυρίου',
     turibius_of_mogrovejo_bishop: 'Αγίου Τουριβίου de Mogrovejo, επισκόπου',
     twelve_apostles: 'Αγίων Δώδεκα Αποστόλων',
     ursula_of_cologne_virgin: 'Αγίας Ούρσουλας, παρθενομάρτυρος',
     vincent_de_paul_priest: 'Αγίου Βικεντίου de Paul, πρεσβυτέρου',
     vincent_ferrer_priest: 'Αγίου Βικεντίου Ferrer, πρεσβυτέρου',
-    vincent_of_saragossa_deacon: 'Αγίου Βικεντίου, διακόνου και μάρτυρος',
+    vincent_of_saragossa_deacon: 'Αγίου Βικεντίου, διακόνου και μάρτυρος',  // src: mr_el_2006_ed3
     visitation_of_mary: 'Η επίσκεψη της Αειπαρθένου Μαρίας στην αγία Ελισάβετ',
     zechariah_and_elizabeth_parents_of_john_the_baptist: 'Αγίων Ζαχαρία και Ελισάβετ',
   },
