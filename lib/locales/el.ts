@@ -211,7 +211,7 @@ export const locale: Locale = {
   names: {
     adalbert_of_prague_bishop: 'Αγίου Αδαλβέρτου, επισκόπου και μάρτυρος',
     agapitus_of_palestrina_martyr: 'Αγίου Αγαπητού, μάρτυρος',
-    agatha_of_sicily_virgin: 'Αγίας Αγάθης, παρθενομάρτυρος',
+    agatha_of_sicily_virgin: 'Αγίας Αγάθης, παρθενομάρτυρος',  // src: mr_el_2006_ed3
     agnes_of_rome_virgin: 'Αγίας Αγνής, παρθενομάρτυρος',  // src: mr_el_2006_ed3
     albert_the_great_bishop: 'Αγίου Αλβέρτου του Μεγάλου, επισκόπου και διδασκάλου της Εκκλησιάς',
     all_saints: 'Αγίων Πάντων',
@@ -225,7 +225,7 @@ export const locale: Locale = {
     angela_merici_virgin: 'Αγίας Άγγελας Merici, παρθένου',  // src: mr_el_2006_ed3
     annunciation_of_the_lord: 'Ευαγγελισμός της Θεοτόκου',
     anselm_of_canterbury_bishop: 'Αγίου Ανσέλμου, επισκόπου και διδασκάλου της Εκκλησίας',
-    ansgar_of_hamburg_bishop: 'Αγίου Ανσγκαρλιου, επισκόπου',
+    ansgar_of_hamburg_bishop: 'Αγίου Ανσγκαρίου, επισκόπου',  // src: mr_el_2006_ed3
     anthony_mary_claret_bishop: 'Αγίου Αντωνίου Μαρία Claret, επισκόπου',
     anthony_of_egypt_abbot: 'Αγίου Αντωνίου του Μεγάλου, αββά',  // src: mr_el_2006_ed3
     anthony_of_padua_priest: 'Αγίου Αντωνίου της Παδούης, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
@@ -248,7 +248,7 @@ export const locale: Locale = {
     benedict_of_nursia_abbot_patron_of_europe: 'Αγίου Βενέδικτου, αββά, προστάτι της Ευρώπης',
     bernard_of_clairvaux_abbot: 'Αγίου Βερνάρδου, αββά και διδασκάλου της Εκκλησίας',
     bernardine_of_siena_priest: 'Αγίου Βερναρδίνου της Σιένας, πρεσβυτέρου',
-    blaise_of_sebaste_bishop: 'Αγίου Βλασίου, επισκόπου και μάρτυρος',
+    blaise_of_sebaste_bishop: 'Αγίου Βλασίου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3
     bonaventure_of_bagnoregio_bishop: 'Αγίου Βοναβεντούρα, επισκόπουθ και διδασκάλου της Εκκλησίας',
     boniface_of_mainz_bishop: 'Αγίου Βονιφατίου, επισκόπου και μάρτυρος',
     bridget_of_sweden_religious: 'Αγίας Μπριγκίτης, μοναχής',
@@ -263,7 +263,7 @@ export const locale: Locale = {
     catherine_of_siena_virgin_copatroness_of_europe:
       'Αγίας Αικατερίνης της Σιένας, παρθένου και διδασκάλου της Εκκλησίας, προστάτιδας της Ευρώπης',
     cecilia_of_rome_virgin: 'Αγίας  Καικιλίας, παρθενομάρτυρος',
-    chair_of_saint_peter_the_apostle: 'Καθέδρας του Απόστολου Πέτρου',
+    chair_of_saint_peter_the_apostle: 'Καθέδρας του Απόστολου Πέτρου',  // src: mr_el_2006_ed3
     charles_borromeo_bishop: 'Αγίου Καρόλου Borromeo, επισκόπου',
     charles_lwanga_and_companions_martyrs: 'Καίων Καρόλου Lwanga και συντρόφων, μαρτύρων',
     christopher_magallanes_priest_and_companions_martyrs:
@@ -279,9 +279,9 @@ export const locale: Locale = {
     cosmas_of_cilicia_and_damian_of_cilicia_martyrs: 'Αγίων Κοσμά και Δαμιανού, των Αναργύρων, μαρτύρων',
     cyriacus_martyr: 'Αγίου Κυριάκου, διακόνου και μάρτυρος',
     cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop:
-      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου',
+      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου',  // based on: mr_el_2006_ed3
     cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop_copatrons_of_europe:
-      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου, προστατών της Ευρώπης',
+      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου, Προστατών της Ευρώπης',  // src: mr_el_2006_ed3
     cyril_of_alexandria_bishop: 'Αγίου Κυρίλλου της Αλεξάνδρειας, επισκόπου και διδασκάλου της Εκκλησίας',
     cyril_of_jerusalem_bishop: 'Αγίου Κυρίλλου των Ιεροσολύμων, επισκόπου και διδασκάλου της Εκκλησίας',
     damasus_i_pope: 'Αγίου Δαμάσου, πάπα',
@@ -340,7 +340,7 @@ export const locale: Locale = {
     james_apostle: 'Αγίου Ιακώβου, Απόστολου',
     jane_frances_de_chantal_religious: 'Αγίας Ιωάννας Φραγκίσκης de Chantal, μοναχής',
     januarius_i_of_benevento_bishop: 'Αγίου Ιανουαρίου, επισκόπου και μάρτυρος',
-    jerome_emiliani: 'Αγίου Ιερώνυμου Emiliani',
+    jerome_emiliani: 'Αγίου Ιερώνυμου Emiliani',  // src: mr_el_2006_ed3
     jerome_of_stridon_priest: 'Αγίου Ιερώνυμου, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
     joachim_and_anne_parents_of_mary: 'Αγίων Ιωακείμ και Άννης, γονέων της Παναγίας',
     john_apostle: 'Αγίου Ιωάννη, Απόστολου και Ευαγγελιστή',
@@ -365,7 +365,7 @@ export const locale: Locale = {
     joseph_of_calasanz_priest: 'Αγίου Ιωσήφ de Calasanz, πρεσβυτέρου',
     joseph_spouse_of_mary: 'Αγίου Ιωσήφ, Μνήστορος της Αειπαρθένου Μαρίας',
     joseph_the_worker: 'Αγίου Ιωσήφ, εργαζομένου',
-    josephine_bakhita_virgin: 'Αγίας Ιωσηφίνας Bakhita, παρθένου',
+    josephine_bakhita_virgin: 'Αγίας Ιωσηφίνας Bakhita, παρθένου',  // src: mr_el_2006_ed3
     juan_diego_cuauhtlatoatzin: 'Αγίου Ιωάννη Diego Διδάχου Cuahtlatoatzin',
     justin_martyr: 'Αγίου Ιουστίνου, μάρτυρος',
     lawrence_justinian: 'Αγίου Λαυρεντίου Giustiniani',
@@ -420,7 +420,7 @@ export const locale: Locale = {
     our_lady_of_fatima: 'Tης Υπεραγίας Θεοτόκου Μαρίας de Fatima',
     our_lady_of_guadalupe: 'Της Υπεραγίας Θεοτόκου της Γουαδελούπης',
     our_lady_of_loreto: 'Tης Υπεραγίας Θεοτόκου Μαρίας του Λορέτο',
-    our_lady_of_lourdes: 'Αειπαρθένου Θεοτόκου Μαρίας της Λούρδης',
+    our_lady_of_lourdes: 'Αειπαρθένου Θεοτόκου Μαρίας της Λούρδης',  // src: mr_el_2006_ed3
     our_lady_of_mount_carmel: 'Αειπαρθένου Μαρίας του όρους Καρμήλου',
     our_lady_of_sorrows: 'Παναγίας Αειπαρθένου Μαρίας της Πονεμένης',
     our_lady_of_the_rosary: 'Παναγίας του Ροδαρίου',
@@ -430,7 +430,7 @@ export const locale: Locale = {
     pantaleon_of_nicomedia_martyr: 'Αγίου Παντελεήμονος, μάρτυρος',
     passion_of_saint_john_the_baptist: 'Του μαρτυρίου του Αγίου Ιωάννη, Προδρόμου και Βαπτιστή',
     patrick_of_ireland_bishop: 'Αγίου Πατρικίου, επισκόπου',
-    paul_miki_and_companions_martyrs: 'Αγίων Παύλου Miki και συντρόφων, παρτύρων',
+    paul_miki_and_companions_martyrs: 'Αγίων Παύλου Miki και συντρόφων, μαρτύρων',  // src: mr_el_2006_ed3
     paul_of_the_cross_priest: 'Αγίου Παύλου του Σταυρού, πρεσβυτέρου',
     paulinus_of_nola_bishop: 'Αγίου Παυλίνου Nolani, επισκόπου',
     pelagia_the_penitent_virgin: 'Αγίας Πελαγίας της Μετανοούσης',
@@ -441,17 +441,17 @@ export const locale: Locale = {
     peter_chanel_priest: 'Αγίου Πέτρου Chanel, πρεσβυτέρου και μάρτυρος',
     peter_chrysologus_bishop: 'Αγίου Πέτρου του Χρυσολόγου, επισκόπου και διδασκάλου της Εκκλησίας',
     peter_claver_priest: 'Αγίου Πέτρου Claver, πρεσβυτέρου',
-    peter_damian_bishop: 'Αγίου Πέτρου Damiani, επισκόπου και διδασκάλου της Εκκλησίας',
+    peter_damian_bishop: 'Αγίου Πέτρου Damiani, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
     peter_julian_eymard_priest: 'Αγίου Πέτρου Ιουλιανού Eymard, πρεσβυτέρου',
     philip_and_james_apostles: 'Αγίων Φιλίππου και Ιακώβου, Αποστόλων',
     philip_neri_priest: 'Αγίων Φιλίππου Neri, πρεσβυτέρου',
     pius_francesco_forgione_priest: 'Αγίου Πίου de Pietrelcina, πρεσβυτέρου',
     pius_v_pope: 'Αγίου Πίου Εʹ, πάπα',
     pius_x_pope: 'Αγίου Πίου Ιʹ, πάπα',
-    polycarp_of_smyrna_bishop: 'Αγίου Πολυκάρπου, επισκόπου και μάρτυρος',
+    polycarp_of_smyrna_bishop: 'Αγίου Πολυκάρπου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3
     pontian_i_pope_and_hippolytus_of_rome_priest: 'Αγίου Ποντιανού, πάπα, και Ιππολύτου, πρεσβυτέρου, μαρτύρων',
     presentation_of_the_blessed_virgin_mary: 'Εισόδια της Μακαριάς Αειπαρθένου Μαρίας',
-    presentation_of_the_lord: 'Η Υπαπαντή του Κυρίου',
+    presentation_of_the_lord: 'Η Υπαπαντή του Κυρίου',  // src: mr_el_2006_ed3
     queenship_of_the_blessed_virgin_mary: 'Υπεραγίας Θεοτόκου και Αειπαρθένου Μαρίας Βασίλισσας',
     raymond_of_penyafort_priest: 'Αγίου Ραϊμόνδου de Penyafort, πρεσβυτέρου',  // src: mr_el_2006_ed3
     rita_of_cascia_religious: 'Αγίας Ρίτας de Cascia, μοναχής',
@@ -460,10 +460,10 @@ export const locale: Locale = {
     romanus_martyr: 'Αγίου Ρωμανού, μάρτυρος',
     romuald_of_ravenna_abbot: 'Αγίου Ρομουάλδου, αββά',
     rose_of_lima_virgin: 'Αγίας Ρόζας της Λίμα, παρθένου',
-    scholastica_of_nursia_virgin: 'Αγίας Σχολαστικής',
+    scholastica_of_nursia_virgin: 'Αγίας Σχολαστικής, παρθένου',  // src: mr_el_2006_ed3
     sebastian_of_milan_martyr: 'Αγίου Σεβαστιανού, μάρτυρος',  // src: mr_el_2006_ed3
     seven_holy_founders_of_the_servite_order:
-      'Επτά Αγίων Ιδρυτών του Τάγματος των Δούλων της Μακαρίας Αειπαρθένου Μαρίας',
+      'Επτά Αγίων Ιδρυτών του Τάγματος των Δούλων της Μακαρίας Αειπαρθένου Μαρίας',  // src: mr_el_2006_ed3
     sharbel_makhluf_priest: 'Αγίου Σαρβελίου Makhluf, πρεσβυτέρου',
     simon_and_jude_apostles: 'Αγίων Σίμωνος και Ιούδα, Αποστόλων',
     sixtus_ii_pope_and_companions_martyrs: 'Αγίου Σίξτου Βʹ, πάπα, και των συντρόφων, μαρτύρων',
