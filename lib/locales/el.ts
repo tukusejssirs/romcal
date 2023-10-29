@@ -47,9 +47,9 @@ export const locale: Locale = {
   },
 
   ranks: {
-    solemnity: 'πανήγυρη',  // src: mr_el_2006_ed3
-    feast: 'εορτή',  // src: mr_el_2006_ed3
-    memorial: 'μνήμη',  // src: mr_el_2006_ed3
+    solemnity: 'πανήγυρη',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
+    feast: 'εορτή',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
+    memorial: 'μνήμη',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     sunday: 'Κυριακή',
     weekday: 'καθημερινή',
   },
@@ -79,7 +79,7 @@ export const locale: Locale = {
   },
 
   months: {
-    0: 'Ιανουάριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%99%CE%B1%CE%BD%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85) suggests to use `Ιανουαρίου` as Genitive. I presume we need Genitive, however, we could consider to add Nominative too. Also compare this to `Κυριακή μετά τις 6 Ιανουαρίου` which can be found int `mr_el_2006_ed3` in the Calendar (Γενικο Πωμαϊκο εορτολογιο Ιανουαριος) in the bottom of the page.
+    0: 'Ιανουάριου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%99%CE%B1%CE%BD%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85) suggests to use `Ιανουαρίου` as Genitive. I presume we need Genitive, however, we could consider to add Nominative too. Also compare this to `Κυριακή μετά τις 6 Ιανουαρίου` which can be found int `mr_el_2006_ed3` in the Calendar (Γενικό Ρωμαϊκό εορτολόγιο Ιανουαριος) in the bottom of the page.
     1: 'Φεβρουάριου',  // TODO; [Wiktionary](https://en.wiktionary.org/wiki/%CE%A6%CE%B5%CE%B2%CF%81%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85#Greek) suggests to use `Φεβρουαρίου` as Genitive.
     2: 'Μάρτιου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%9C%CE%B1%CF%81%CF%84%CE%AF%CE%BF%CF%85#Greek) suggests to us `Μαρτίου` as Genitive.
     3: 'Απρίλιου',  // TODO: [Wiktionary](https://en.wiktionary.org/wiki/%CE%91%CF%80%CF%81%CE%B9%CE%BB%CE%AF%CE%BF%CF%85#Greek) suggests to use `Απριλίου` as Genitive.
@@ -209,10 +209,10 @@ export const locale: Locale = {
   },
 
   names: {
-    adalbert_of_prague_bishop: 'Αγίου Αδαλβέρτου, επισκόπου και μάρτυρος',
+    adalbert_of_prague_bishop: 'Αγίου Αδαλβέρτου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     agapitus_of_palestrina_martyr: 'Αγίου Αγαπητού, μάρτυρος',
-    agatha_of_sicily_virgin: 'Αγίας Αγάθης, παρθενομάρτυρος',  // src: mr_el_2006_ed3
-    agnes_of_rome_virgin: 'Αγίας Αγνής, παρθενομάρτυρος',  // src: mr_el_2006_ed3
+    agatha_of_sicily_virgin: 'Αγίας Αγάθης, παρθενομάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
+    agnes_of_rome_virgin: 'Αγίας Αγνής, παρθενομάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     albert_the_great_bishop: 'Αγίου Αλβέρτου του Μεγάλου, επισκόπου και διδασκάλου της Εκκλησιάς',
     all_saints: 'Αγίων Πάντων',
     aloysius_gonzaga_religious: 'Αγίου Αλοϊσίου Gonzaga, μοναχού',
@@ -222,12 +222,12 @@ export const locale: Locale = {
     andrew_dung_lac_priest_and_companions_martyrs: 'Αγίων Ανδρέα Dung Lac, πρεσβυτέρου, και συντρόφων, μαρτύρων',
     andrew_kim_tae_gon_priest_paul_chong_ha_sang_and_companions_martyrs:
       'Αγίου Ανδρέα Kim Tae-gon, πρεσβυτέρου, Αγίου Παύλου Chong Ha-sang, και συντρόφων, μαρτύρων',
-    angela_merici_virgin: 'Αγίας Άγγελας Merici, παρθένου',  // src: mr_el_2006_ed3
-    annunciation_of_the_lord: 'Ευαγγελισμός της Θεοτόκου',
-    anselm_of_canterbury_bishop: 'Αγίου Ανσέλμου, επισκόπου και διδασκάλου της Εκκλησίας',
-    ansgar_of_hamburg_bishop: 'Αγίου Ανσγκαρίου, επισκόπου',  // src: mr_el_2006_ed3
+    angela_merici_virgin: 'Αγίας Άγγελας Merici, παρθένου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
+    annunciation_of_the_lord: 'Ευαγγελισμός της Θεοτόκου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
+    anselm_of_canterbury_bishop: 'Αγίου Ανσέλμου, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
+    ansgar_of_hamburg_bishop: 'Αγίου Ανσγκαρίου, επισκόπου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     anthony_mary_claret_bishop: 'Αγίου Αντωνίου Μαρία Claret, επισκόπου',
-    anthony_of_egypt_abbot: 'Αγίου Αντωνίου του Μεγάλου, αββά',  // src: mr_el_2006_ed3
+    anthony_of_egypt_abbot: 'Αγίου Αντωνίου του Μεγάλου, αββά',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     anthony_of_padua_priest: 'Αγίου Αντωνίου της Παδούης, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
     anthony_zaccaria_priest: 'Αγίου Αντωνίου Μαρία Ζαχαρία, πρεσβυτέρου',
     apollinaris_of_ravenna_bishop: 'Αγίου Απολλιναρίου, επισκόπου και μάρτυρος',
@@ -237,18 +237,18 @@ export const locale: Locale = {
     augustine_of_hippo_bishop: 'Αγίου Αυγουστίνου, επισκόπου και διδασκάλου της Εκκλησίας',
     augustine_zhao_rong_priest_and_companions_martyrs:
       'Αγίου Αυγουστίνου Zhao Rong, πρεσβυτέροθ, και ουντρόφων μαρτύρων',
-    baptism_of_the_lord: 'Η Βάπτιση του Κυρίου',  // src: mr_el_2006_ed3
+    baptism_of_the_lord: 'Η Βάπτιση του Κυρίου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     barbara_of_heliopolis_virgin: 'Αγίας Βαρβάρας, παρθενομάρτυρος',
     barnabas_apostle: 'Αγίου Βαρνάβα, Αποστόλου',
     bartholomew_apostle: 'Αγίου Βαρθολομαίου, Αποστόλου',
     basil_the_great_and_gregory_nazianzen_bishops:
-      'Αγίου Βασιλείου του Μεγάλου και Αγίου Γρηγορίου του Ναζιανζηνού, επισκόπων και διδασκάλων της Εκκλησίας',  // src: mr_el_2006_ed3
+      'Αγίου Βασιλείου του Μεγάλου και Αγίου Γρηγορίου του Ναζιανζηνού, επισκόπων και διδασκάλων της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     bede_the_venerable_priest: 'Αγίου Βέδα του Σεβασμίου, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
     benedict_of_nursia_abbot: 'Αγίου Βενέδικτου, αββά',
     benedict_of_nursia_abbot_patron_of_europe: 'Αγίου Βενέδικτου, αββά, προστάτι της Ευρώπης',
     bernard_of_clairvaux_abbot: 'Αγίου Βερνάρδου, αββά και διδασκάλου της Εκκλησίας',
     bernardine_of_siena_priest: 'Αγίου Βερναρδίνου της Σιένας, πρεσβυτέρου',
-    blaise_of_sebaste_bishop: 'Αγίου Βλασίου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3
+    blaise_of_sebaste_bishop: 'Αγίου Βλασίου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     bonaventure_of_bagnoregio_bishop: 'Αγίου Βοναβεντούρα, επισκόπουθ και διδασκάλου της Εκκλησίας',
     boniface_of_mainz_bishop: 'Αγίου Βονιφατίου, επισκόπου και μάρτυρος',
     bridget_of_sweden_religious: 'Αγίας Μπριγκίτης, μοναχής',
@@ -257,13 +257,13 @@ export const locale: Locale = {
     cajetan_of_thiene_priest: 'Αγίου Γαετάνου, πρεσβυτέρου',
     callistus_i_pope: 'Αγίου Καλλίστου Αʹ, πάπα και μάρτυρος',
     camillus_de_lellis_priest: 'Αγίου Καμίλλου de Lellis, πρεσβυτέρου',
-    casimir_of_poland: 'Αγίου Καζίμηρου',
+    casimir_of_poland: 'Αγίου Καζίμηρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
     catherine_of_alexandria_virgin: 'Αγίας Αικατερίνης Αλεξανδρείας, παρθενομάρτυρος',
-    catherine_of_siena_virgin: 'Αγίας Αικατερίνης της Σιένας, παρθένου και διδασκάλου της Εκκλησίας',
+    catherine_of_siena_virgin: 'Αγίας Αικατερίνης της Σιένας, παρθένου και διδασκάλου της Εκκλησίας',  // based on: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     catherine_of_siena_virgin_copatroness_of_europe:
-      'Αγίας Αικατερίνης της Σιένας, παρθένου και διδασκάλου της Εκκλησίας, προστάτιδας της Ευρώπης',
+      'Αγίας Αικατερίνης της Σιένας, παρθένου και διδασκάλου της Εκκλησίας, προστάτιδας της Ευρώπης',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     cecilia_of_rome_virgin: 'Αγίας  Καικιλίας, παρθενομάρτυρος',
-    chair_of_saint_peter_the_apostle: 'Καθέδρας του Απόστολου Πέτρου',  // src: mr_el_2006_ed3
+    chair_of_saint_peter_the_apostle: 'Καθέδρας του Απόστολου Πέτρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     charles_borromeo_bishop: 'Αγίου Καρόλου Borromeo, επισκόπου',
     charles_lwanga_and_companions_martyrs: 'Καίων Καρόλου Lwanga και συντρόφων, μαρτύρων',
     christopher_magallanes_priest_and_companions_martyrs:
@@ -273,17 +273,17 @@ export const locale: Locale = {
     clement_i_pope: 'Αγίου Κλήμεντος Αʹ, πάπα και μάρτυρος',
     columba_of_iona_abbot: 'Αγίου Κολουμβανού, αββά',
     commemoration_of_all_the_faithful_departed: 'Μνήμη Όλων Των Κεκοιμημένων Πιστών',
-    conversion_of_saint_paul_the_apostle: 'Η μεταστροφή του Αποστόλου Παύλου',  // src: mr_el_2006_ed3
+    conversion_of_saint_paul_the_apostle: 'Η μεταστροφή του Αποστόλου Παύλου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs:
       'Αγίων Κορνηλίου, πάπα, και Κυπριανού, επισκόπου, μαρτύρων',
     cosmas_of_cilicia_and_damian_of_cilicia_martyrs: 'Αγίων Κοσμά και Δαμιανού, των Αναργύρων, μαρτύρων',
     cyriacus_martyr: 'Αγίου Κυριάκου, διακόνου και μάρτυρος',
     cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop:
-      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου',  // based on: mr_el_2006_ed3
+      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου',  // based on: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop_copatrons_of_europe:
-      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου, Προστατών της Ευρώπης',  // src: mr_el_2006_ed3
+      'Αγίων Κύριλλου, μοναχού και Μεθόδιου, επισκόπου, Προστατών της Ευρώπης',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     cyril_of_alexandria_bishop: 'Αγίου Κυρίλλου της Αλεξάνδρειας, επισκόπου και διδασκάλου της Εκκλησίας',
-    cyril_of_jerusalem_bishop: 'Αγίου Κυρίλλου των Ιεροσολύμων, επισκόπου και διδασκάλου της Εκκλησίας',
+    cyril_of_jerusalem_bishop: 'Αγίου Κυρίλλου των Ιεροσολύμων, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
     damasus_i_pope: 'Αγίου Δαμάσου, πάπα',
     dedication_of_the_basilica_of_our_lady_of_the_snows_tinos_grece:
       'Των Εγκαινίων της Βασιλικής της Αγίας Μαρίας, της Παναγίας των Χιόνων',
@@ -304,27 +304,27 @@ export const locale: Locale = {
     elizabeth_of_portugal: 'Αγίας Ελισάβετ της Πορτογαλίας',
     emilie_de_vialar_virgin: 'Αγίας Αιμιλίας de Vialar, παρθένου',
     ephrem_the_syrian_deacon: 'Αγίου Εφραίμ, διακόνου και διδασκάλου της Εκκλησίας',
-    epiphany_of_the_lord: 'Των Θεοφανίων',  // src: mr_el_2006_ed3
+    epiphany_of_the_lord: 'Των Θεοφανίων',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     eric_ix_of_sweden_martyr: 'Αγίου Ερρίκου',
     eusebius_of_vercelli_bishop: 'Αγίου Ευσεβίου των Βερκελλών, επισκόπου',
     exaltation_of_the_holy_cross: 'Ύψωση του Τιµίου Σταυρού.',
-    fabian_i_pope: 'Αγίου Φαβιανού, πάπα και μάρτυρος',  // src: mr_el_2006_ed3
+    fabian_i_pope: 'Αγίου Φαβιανού, πάπα και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     faustina_kowalska_virgin: 'Αγίας Φαουστίνα Kowalska, παρθένου',
-    fidelis_of_sigmaringen_priest: 'Αγίου Φιδελίου de Sigmaringen, πρεσβυτέρου και μάρτυρος',
+    fidelis_of_sigmaringen_priest: 'Αγίου Φιδελίου de Sigmaringen, πρεσβυτέρου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     first_martyrs_of_the_holy_roman_church: 'Αγίων Πρωτομαρτύρων της Εκκλησίας της Ρώμης',
-    frances_of_rome_religious: 'Αγίας Φρανκίσκας της Ρωμαίας, μοναχής',
-    francis_de_sales_bishop: 'Αγίου Φραγκίσκου de Sales, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
+    frances_of_rome_religious: 'Αγίας Φρανγκίσκας της Ρωμαίας, μοναχής',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
+    francis_de_sales_bishop: 'Αγίου Φραγκίσκου de Sales, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     francis_of_assisi: 'Αγίου Φραγκίσκου της Ασσίζης',
-    francis_of_paola_hermit: 'Αγίου Φραγκίσκου de Paola, ερημίτη',
+    francis_of_paola_hermit: 'Αγίου Φραγκίσκου de Paola, ερημίτη',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     francis_xavier_priest: 'Αγίου Φραγκίσκου Ξαβέριου, πρεσβυτέρου',
     genevieve_of_paris_virgin: 'Αγίας Γενεβιέβης, παρθένου',
-    george_of_lydda_martyr: 'Αγίου Γεωργίου, μάρτυρος',
+    george_of_lydda_martyr: 'Αγίου Γεωργίου, μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     gregory_of_narek_abbot: 'Αγίου Γρηγορίου του Narek, μοναχού και διδασκάλου της Εκκλησίας',
     gertrude_the_great_virgin: 'Αγίας Γερτρούδης, παρθένου',
     gregory_i_the_great_pope: 'Αγίου Γεωργίου του Μεγάλου, πάπα και διδασκάλου της Εκκλησίας',
     gregory_vii_pope: 'Αγίου Γρηγορίου Ζʹ, πάπα',
     hedwig_of_poland: 'Αγίας Εδβίγης, μοναχής',
-    hilary_of_poitiers_bishop: 'Αγίου Ιλαρίου, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
+    hilary_of_poitiers_bishop: 'Αγίου Ιλαρίου, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     hildegard_of_bingen_abbess: 'Αγίας Χίλντεγκαρντ, παρθένου και διδασκάλου της Εκκλησίας',
     holy_family_of_jesus_mary_and_joseph: 'Της Αγίας Οικογένειας: Ιήσου, Μαρίας και Ιωσήφ',
     holy_guardian_angels: 'Αγίων Φυλάκων Αγγέλων',
@@ -335,17 +335,17 @@ export const locale: Locale = {
     immaculate_heart_of_mary: 'Αµίαντης Καρδίας της Αειπαρθένου Μαρίας',
     irenaeus_of_lyon_bishop: 'Αγίου Ειρηναίου, επισκόπου, μάρτυρος και διδασκάλου της Εκκλησίας',
     irene_of_macedonia: 'Αγίας Ειρήνης, παρθενομάρτυρος',
-    isidore_of_seville_bishop: 'Αγίου Ισιδώρου, επισκόπου και διδασκάλου της Εκκλησίας',
+    isidore_of_seville_bishop: 'Αγίου Ισιδώρου, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     isidore_the_farmer: 'Αγίου Ισιδώρου, γεωργού',
     james_apostle: 'Αγίου Ιακώβου, Απόστολου',
     jane_frances_de_chantal_religious: 'Αγίας Ιωάννας Φραγκίσκης de Chantal, μοναχής',
     januarius_i_of_benevento_bishop: 'Αγίου Ιανουαρίου, επισκόπου και μάρτυρος',
-    jerome_emiliani: 'Αγίου Ιερώνυμου Emiliani',  // src: mr_el_2006_ed3
+    jerome_emiliani: 'Αγίου Ιερώνυμου Emiliani',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     jerome_of_stridon_priest: 'Αγίου Ιερώνυμου, πρεσβυτέρου και διδασκάλου της Εκκλησίας',
     joachim_and_anne_parents_of_mary: 'Αγίων Ιωακείμ και Άννης, γονέων της Παναγίας',
     john_apostle: 'Αγίου Ιωάννη, Απόστολου και Ευαγγελιστή',
-    john_baptist_de_la_salle_priest: 'Αγίου Ιωάννη Βαπτιστή de la Salle, πρεσβυτέρου',
-    john_bosco_priest: 'Αγίου Ιωάννη Bosco, πρεσβυτέρου',  // src: mr_el_2006_ed3
+    john_baptist_de_la_salle_priest: 'Αγίου Ιωάννη Βαπτιστή de la Salle, πρεσβυτέρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
+    john_bosco_priest: 'Αγίου Ιωάννη Bosco, πρεσβυτέρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     john_chrysostom_bishop: 'Αγίου Ιωάννου Χρυσοστόμου, επισκόπου και διδασκάλου της Εκκλησίας',
     john_damascene_priest: 'Αγίου Ιωάννη του Δαμασκηνού, πρεσβυτέρου και διδασκάλου της Εκκλησιάς',
     john_de_brebeuf_isaac_jogues_priests_and_companions_martyrs:
@@ -356,16 +356,16 @@ export const locale: Locale = {
     john_leonardi_priest: 'Αγίου Ιωάννη Leonardi, πρεσβυτέρου',
     john_mary_vianney_priest: 'Αγίου Ιωάννη Μαρία Vianney, πρεσβυτέρου',
     john_of_capistrano_priest: 'Αγίου Ιωάννη de Capestrano, πρεσβυτέρου',
-    john_of_god_duarte_cidade_religious: 'Αγίου Ιωάννη του Θεού, μοναχού',
+    john_of_god_duarte_cidade_religious: 'Αγίου Ιωάννη του Θεού, μοναχού',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
     john_of_kanty_priest: 'Αγίου Ιωάννη de Kety, πρεσβυτέρου',
     john_of_the_cross_priest: 'Αγίου Ιωάννη του Σταυρού, πρεσβυτέρου και διδασκάλου της Εκκλησιάς',
     john_paul_ii_pope: 'Αγίου Ιωάννη Παύλου Βʹ, πάπα',
     john_xxiii_pope: 'Αγίου Ιωάννη ΚΓ΄, πάπα',
     josaphat_kuntsevych_bishop: 'Αγίου Ιωσαφάτ, επισκόπου Και μάρτυρος',
     joseph_of_calasanz_priest: 'Αγίου Ιωσήφ de Calasanz, πρεσβυτέρου',
-    joseph_spouse_of_mary: 'Αγίου Ιωσήφ, Μνήστορος της Αειπαρθένου Μαρίας',
+    joseph_spouse_of_mary: 'Αγίου Ιωσήφ, Μνήστορος της Αειπαρθένου Μαρίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
     joseph_the_worker: 'Αγίου Ιωσήφ, εργαζομένου',
-    josephine_bakhita_virgin: 'Αγίας Ιωσηφίνας Bakhita, παρθένου',  // src: mr_el_2006_ed3
+    josephine_bakhita_virgin: 'Αγίας Ιωσηφίνας Bakhita, παρθένου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     juan_diego_cuauhtlatoatzin: 'Αγίου Ιωάννη Diego Διδάχου Cuahtlatoatzin',
     justin_martyr: 'Αγίου Ιουστίνου, μάρτυρος',
     lawrence_justinian: 'Αγίου Λαυρεντίου Giustiniani',
@@ -373,9 +373,9 @@ export const locale: Locale = {
     lawrence_of_rome_deacon: 'Αγίου Λαυρεντίου, διακόνου και μάρτυρος',
     lawrence_ruiz_and_companions_martyrs: 'Αγίου Λαυρεντίου Ruiz και συντρόφων μαρτύρων',
     leo_i_the_great_pope: 'Αγίου Λέωντα του Μεγάλου, πάπα και διδασκόλου της Εκκλησίας',
-    louis_grignion_de_montfort_priest: 'Αγίου Λουδοβίκου Μαρία Grignion de Montfort, πρεσβυτέρου',
+    louis_grignion_de_montfort_priest: 'Αγίου Λουδοβίκου Μαρία Grignion de Montfort, πρεσβυτέρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     louis_ix_of_france: 'Αγίου Λουδοβίκου',
-    louise_de_marillac_religious: 'Αγίας Λουίζας de Marillac',
+    louise_de_marillac_religious: 'Αγίας Λουίζας de Marillac',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
     luke_evangelist: 'Αγίου Λούκα, Ευαγγελιστή',
     lydia_of_philippi: 'Αγίας Λυδίας της Φιλιππησίας',
     lydia_of_philippi_first_european_christian: 'Αγίας Λυδίας της Φιλιππησίας, πρώτης Χριστιανής της Ευρώπης', // Custom title
@@ -387,15 +387,15 @@ export const locale: Locale = {
     margaret_of_antioch_virgin: 'Αγίας Μαρίνας, παρθενομάρτυρος',
     margaret_of_scotland: 'Αγίας Μαργαρίτας της Σκοτίας',
     maria_goretti_virgin: 'Αγίας Μαρίας Goretti, παρθενομάρτυρος',
-    mark_evangelist: 'Αγίου Μάρκου, Ευαγγελιστή',
+    mark_evangelist: 'Αγίου Μάρκου, Ευαγγελιστή',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     martha_of_bethany: 'Αγίας Μάρθας',
     martha_of_bethany_mary_of_bethany_and_lazarus_of_bethany: 'Αγίων Μάρθας, Μαρίας και Λαζάρου',
     martin_de_porres_religious: 'Αγίου Μαρτίνου de Porres, μοναχού',
-    martin_i_pope: 'Αγίου Μαρτίνου Αʹ, πάπα και μάρτυρος',
+    martin_i_pope: 'Αγίου Μαρτίνου Αʹ, πάπα και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     martin_of_tours_bishop: 'Αγίου Μαρτίνου, επισκόπου',
     mary_magdalene: 'Αγίας Μαρίας της Μαγδαληνής',
     mary_magdalene_de_pazzi_virgin: 'Αγίας Μαρίας Μαγδαληνής de’ Pazzi, παρθένου',
-    mary_mother_of_god: 'Ογδοάδα των Χριστουγέννων: Της Υπεραγίας Θεοτόκου Μαρίας',  // src: mr_el_2006_ed3
+    mary_mother_of_god: 'Ογδοάδα των Χριστουγέννων: Της Υπεραγίας Θεοτόκου Μαρίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     mary_mother_of_the_church: 'Tης Υπεραγίας Θεοτόκου Μαρίας, Μητέρας της Εκκλησίας',
     mary_mother_of_hope: 'Tης Υπεραγίας και Αειπαρθένου Θεοτόκου, Μητέρας της αγίας Ελπίδας',
     matthew_apostle: 'Αγίου Ματθαίου, Απόστολου και Ευαγγελιστή',
@@ -405,7 +405,7 @@ export const locale: Locale = {
     miltiades_pope: 'Αγίου Μιλτιάδης, πάπα',
     monica_of_hippo: 'Αγίας Μόνικας',
     most_holy_body_and_blood_of_christ: 'Του Παναχράντου Σώματος και Αίματος του Χριστού',
-    most_holy_name_of_jesus: 'Του Αγιοτάτου Ονόματος του Ιησού',  // src: mr_el_2006_ed3
+    most_holy_name_of_jesus: 'Του Αγιοτάτου Ονόματος του Ιησού',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     most_holy_name_of_mary: 'Του ονόματος της Υπεραγίας Θεοτόκου Μαρίας',
     most_holy_trinity: 'Της Αγίας Τριάδος',
     most_sacred_heart_of_jesus: 'Ιεροτάτης Καρδίας του Ιησού',
@@ -420,7 +420,7 @@ export const locale: Locale = {
     our_lady_of_fatima: 'Tης Υπεραγίας Θεοτόκου Μαρίας de Fatima',
     our_lady_of_guadalupe: 'Της Υπεραγίας Θεοτόκου της Γουαδελούπης',
     our_lady_of_loreto: 'Tης Υπεραγίας Θεοτόκου Μαρίας του Λορέτο',
-    our_lady_of_lourdes: 'Αειπαρθένου Θεοτόκου Μαρίας της Λούρδης',  // src: mr_el_2006_ed3
+    our_lady_of_lourdes: 'Αειπαρθένου Θεοτόκου Μαρίας της Λούρδης',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     our_lady_of_mount_carmel: 'Αειπαρθένου Μαρίας του όρους Καρμήλου',
     our_lady_of_sorrows: 'Παναγίας Αειπαρθένου Μαρίας της Πονεμένης',
     our_lady_of_the_rosary: 'Παναγίας του Ροδαρίου',
@@ -429,8 +429,8 @@ export const locale: Locale = {
     pancras_of_rome_martyr: 'Αγίου Πανκρατίου, μάρτυρος',
     pantaleon_of_nicomedia_martyr: 'Αγίου Παντελεήμονος, μάρτυρος',
     passion_of_saint_john_the_baptist: 'Του μαρτυρίου του Αγίου Ιωάννη, Προδρόμου και Βαπτιστή',
-    patrick_of_ireland_bishop: 'Αγίου Πατρικίου, επισκόπου',
-    paul_miki_and_companions_martyrs: 'Αγίων Παύλου Miki και συντρόφων, μαρτύρων',  // src: mr_el_2006_ed3
+    patrick_of_ireland_bishop: 'Αγίου Πατρικίου, επισκόπου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
+    paul_miki_and_companions_martyrs: 'Αγίων Παύλου Miki και συντρόφων, μαρτύρων',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     paul_of_the_cross_priest: 'Αγίου Παύλου του Σταυρού, πρεσβυτέρου',
     paulinus_of_nola_bishop: 'Αγίου Παυλίνου Nolani, επισκόπου',
     pelagia_the_penitent_virgin: 'Αγίας Πελαγίας της Μετανοούσης',
@@ -438,37 +438,37 @@ export const locale: Locale = {
     perpetua_of_carthage_and_felicity_of_carthage_martyrs: 'Αγίων Περπέτουας και Φηλικίτης, μαρτύρων',
     peter_and_paul_apostles: 'Αγίων Πέτρου και Παύλου, Αποστόλων',
     peter_canisius_priest: 'Αγίου Πέτρου Κανισίου, πρεσβυτέρου και διδασκάλου της Εκκλησιάς',
-    peter_chanel_priest: 'Αγίου Πέτρου Chanel, πρεσβυτέρου και μάρτυρος',
+    peter_chanel_priest: 'Αγίου Πέτρου Chanel, πρεσβυτέρου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     peter_chrysologus_bishop: 'Αγίου Πέτρου του Χρυσολόγου, επισκόπου και διδασκάλου της Εκκλησίας',
     peter_claver_priest: 'Αγίου Πέτρου Claver, πρεσβυτέρου',
-    peter_damian_bishop: 'Αγίου Πέτρου Damiani, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
+    peter_damian_bishop: 'Αγίου Πέτρου Damiani, επισκόπου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     peter_julian_eymard_priest: 'Αγίου Πέτρου Ιουλιανού Eymard, πρεσβυτέρου',
     philip_and_james_apostles: 'Αγίων Φιλίππου και Ιακώβου, Αποστόλων',
     philip_neri_priest: 'Αγίων Φιλίππου Neri, πρεσβυτέρου',
     pius_francesco_forgione_priest: 'Αγίου Πίου de Pietrelcina, πρεσβυτέρου',
-    pius_v_pope: 'Αγίου Πίου Εʹ, πάπα',
+    pius_v_pope: 'Αγίου Πίου Εʹ, πάπα',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     pius_x_pope: 'Αγίου Πίου Ιʹ, πάπα',
-    polycarp_of_smyrna_bishop: 'Αγίου Πολυκάρπου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3
+    polycarp_of_smyrna_bishop: 'Αγίου Πολυκάρπου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     pontian_i_pope_and_hippolytus_of_rome_priest: 'Αγίου Ποντιανού, πάπα, και Ιππολύτου, πρεσβυτέρου, μαρτύρων',
     presentation_of_the_blessed_virgin_mary: 'Εισόδια της Μακαριάς Αειπαρθένου Μαρίας',
-    presentation_of_the_lord: 'Η Υπαπαντή του Κυρίου',  // src: mr_el_2006_ed3
+    presentation_of_the_lord: 'Η Υπαπαντή του Κυρίου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     queenship_of_the_blessed_virgin_mary: 'Υπεραγίας Θεοτόκου και Αειπαρθένου Μαρίας Βασίλισσας',
-    raymond_of_penyafort_priest: 'Αγίου Ραϊμόνδου de Penyafort, πρεσβυτέρου',  // src: mr_el_2006_ed3
+    raymond_of_penyafort_priest: 'Αγίου Ραϊμόνδου de Penyafort, πρεσβυτέρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     rita_of_cascia_religious: 'Αγίας Ρίτας de Cascia, μοναχής',
     robert_bellarmine_bishop: 'Αγίου Ροβέρτου Bellarmino, επισκόπου και διδασκάλου της Εκκλησίας',
     roch_of_montpellier: 'Αγίου Ρόκκο',
     romanus_martyr: 'Αγίου Ρωμανού, μάρτυρος',
     romuald_of_ravenna_abbot: 'Αγίου Ρομουάλδου, αββά',
     rose_of_lima_virgin: 'Αγίας Ρόζας της Λίμα, παρθένου',
-    scholastica_of_nursia_virgin: 'Αγίας Σχολαστικής, παρθένου',  // src: mr_el_2006_ed3
-    sebastian_of_milan_martyr: 'Αγίου Σεβαστιανού, μάρτυρος',  // src: mr_el_2006_ed3
+    scholastica_of_nursia_virgin: 'Αγίας Σχολαστικής, παρθένου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
+    sebastian_of_milan_martyr: 'Αγίου Σεβαστιανού, μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     seven_holy_founders_of_the_servite_order:
-      'Επτά Αγίων Ιδρυτών του Τάγματος των Δούλων της Μακαρίας Αειπαρθένου Μαρίας',  // src: mr_el_2006_ed3
+      'Επτά Αγίων Ιδρυτών του Τάγματος των Δούλων της Μακαρίας Αειπαρθένου Μαρίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Φεβρουάριος, p32
     sharbel_makhluf_priest: 'Αγίου Σαρβελίου Makhluf, πρεσβυτέρου',
     simon_and_jude_apostles: 'Αγίων Σίμωνος και Ιούδα, Αποστόλων',
     sixtus_ii_pope_and_companions_martyrs: 'Αγίου Σίξτου Βʹ, πάπα, και των συντρόφων, μαρτύρων',
     spyridon_of_trimythous_bishop: 'Αγίου Σπυρίδωνος, επισκόπου',
-    stanislaus_of_szczepanow_bishop: 'Αγίου Στανισλάου, επισκόπου και μάρτυρος',
+    stanislaus_of_szczepanow_bishop: 'Αγίου Στανισλάου, επισκόπου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
     stephen_i_of_hungary: 'Αγίου Στέφανου της Ουγγαρίας',
     stephen_the_first_martyr: 'Αγίου Στέφανου, Πρωτομάρτυρος',
     sylvester_i_pope: 'Αγίου Σιλβέστρου Αʹ, πάπα',
@@ -483,18 +483,18 @@ export const locale: Locale = {
     therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin:
       'Αγίας Θηρεσίας του Βρέφους Ιησού, παρθένου και διδασκάλου της Εκκλησίας',
     thomas_apostle: 'Αγίου Θωμά, Αποστόλου',
-    thomas_aquinas_priest: 'Αγίου Θωμά του Ακινάτη, πρεσβυτέρου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3
+    thomas_aquinas_priest: 'Αγίου Θωμά του Ακινάτη, πρεσβυτέρου και διδασκάλου της Εκκλησίας',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     thomas_becket_bishop: 'Αγίου Θωμά Becket, επισκόπου και μάρτυρος',
-    timothy_of_ephesus_and_titus_of_crete_bishops: 'Αγίων Τιμοθέου και Τίτου, επισκόπων',  // src: mr_el_2006_ed3
+    timothy_of_ephesus_and_titus_of_crete_bishops: 'Αγίων Τιμοθέου και Τίτου, επισκόπων',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     timothy_of_ephesus_and_titus_the_first_bishop_of_crete_bishops:
-      'Αγίου Τίτου, πρώτου επισκόπου Κρήτης και Αγίου Τιμοθέου, επισκόπου',  // based on: mr_el_2006_ed3; TODO: Where is this used? Can't we use `timothy_of_ephesus_and_titus_of_crete_bishops` there instead?
+      'Αγίου Τίτου, πρώτου επισκόπου Κρήτης και Αγίου Τιμοθέου, επισκόπου',  // based on: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31; TODO: Where is this used? Can't we use `timothy_of_ephesus_and_titus_of_crete_bishops` there instead?
     transfiguration_of_the_lord: 'Η Μεταμόρφωση του Κυρίου',
-    turibius_of_mogrovejo_bishop: 'Αγίου Τουριβίου de Mogrovejo, επισκόπου',
+    turibius_of_mogrovejo_bishop: 'Αγίου Τουριβίου de Mogrovejo, επισκόπου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Μάρτιος, p33
     twelve_apostles: 'Αγίων Δώδεκα Αποστόλων',
     ursula_of_cologne_virgin: 'Αγίας Ούρσουλας, παρθενομάρτυρος',
     vincent_de_paul_priest: 'Αγίου Βικεντίου de Paul, πρεσβυτέρου',
-    vincent_ferrer_priest: 'Αγίου Βικεντίου Ferrer, πρεσβυτέρου',
-    vincent_of_saragossa_deacon: 'Αγίου Βικεντίου, διακόνου και μάρτυρος',  // src: mr_el_2006_ed3
+    vincent_ferrer_priest: 'Αγίου Βικεντίου Ferrer, πρεσβυτέρου',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Απρίλιος, p34
+    vincent_of_saragossa_deacon: 'Αγίου Βικεντίου, διακόνου και μάρτυρος',  // src: mr_el_2006_ed3, Γενικό Ρωμαϊκό εορτολόγιο, Ιανουάριος, p31
     visitation_of_mary: 'Η επίσκεψη της Αειπαρθένου Μαρίας στην αγία Ελισάβετ',
     zechariah_and_elizabeth_parents_of_john_the_baptist: 'Αγίων Ζαχαρία και Ελισάβετ',
   },
