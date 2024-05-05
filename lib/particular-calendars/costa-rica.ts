@@ -14,10 +14,5 @@ export class CostaRica extends CalendarDef {
       dateDef: { dateFn: 'pentecostSunday', addDay: 4 },
       properCycle: ProperCycles.ProperOfTime,
     },
-
-    our_lady_of_angels: {
-      precedence: Precedences.GeneralSolemnity_3,
-      dateDef: { month: 8, date: 2 },
-    },
   };
 }
