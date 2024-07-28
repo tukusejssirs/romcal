@@ -79,7 +79,7 @@ export class LiturgicalDayDef implements BaseLiturgicalDayDef {
     // i18nDef from the proper of time already contains the ID
     if (this.fromCalendarId === PROPER_OF_TIME_NAME) {
       name = this.#config.i18next.t(this.i18nDef[0], this.i18nDef[1]);
-    }
+    } // eslint-disable-line @typescript-eslint/brace-style
     // i18nDef from general or particular calendars
     else {
       name = this.#config.i18next.t(this.i18nDef[0], this.i18nDef[1]);
@@ -293,7 +293,7 @@ export class LiturgicalDayDef implements BaseLiturgicalDayDef {
         if (pointer.titles) {
           martyrologyItem.titles = this.#combineTitles(pointer.titles, pointer.id, previousDef);
         }
-      }
+      } // eslint-disable-line @typescript-eslint/brace-style
       // If the Martyrology item is not found, it means this item is badly referenced in the date definition.
       // In this situation, romcal must report en error.
       // Note: romcal do not report an error when the liturgical day ID is used to find a martyrology item,

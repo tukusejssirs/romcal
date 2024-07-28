@@ -136,7 +136,7 @@ export class RomcalConfig implements IRomcalConfig {
     // Then, import input definitions within a new CalendarDef object
     if (config?.localizedCalendar) {
       this.calendarsDef.push(new CalendarDef(this, config.localizedCalendar.inputs));
-    }
+    } // eslint-disable-line @typescript-eslint/brace-style
     // Otherwise, it's mean that the GRC or particular calendar must be computed from scratch,
     // probably by using the RomcalBuilder class helper, or Romcal without a specific localizedCalendar.
     else {

@@ -1,46 +1,46 @@
-import { readdir, readFile, stat } from 'node:fs/promises'
-import {dirname, relative, resolve} from 'node:path'
+import { readdir, readFile, stat } from 'node:fs/promises';
+import { dirname, relative, resolve } from 'node:path';
 
-import inspectUrls from '@jsdevtools/rehype-url-inspector'
-import rehypeSlug from 'rehype-slug'
-import rehypeStringify from 'rehype-stringify'
-import remarkGfm from 'remark-gfm'
-import remarkParse from 'remark-parse'
-import remarkRehype from 'remark-rehype'
-import {unified} from 'unified'
+import inspectUrls from '@jsdevtools/rehype-url-inspector';
+import rehypeSlug from 'rehype-slug';
+import rehypeStringify from 'rehype-stringify';
+import remarkGfm from 'remark-gfm';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
 
 const links = [];
 
 /** @param path - Folder or file with absolute or relative path */
 const checkLinks = async (path) => {
-  const files = await isDir(path) ? await getMarkdownFiles(path) : [path]
+  const files = (await isDir(path)) ? await getMarkdownFiles(path) : [path];
 
   for (const file of files) {
-    await processFile(file, path)
+    await processFile(file, path);
   }
-}
+};
 
 const getMarkdownFiles = async (directory) => {
-  const files = await readdir(directory, {withFileTypes: true})
-  const markdownFiles = []
+  const files = await readdir(directory, { withFileTypes: true });
+  const markdownFiles = [];
 
   for (const file of files) {
-    const fullPath = resolve(directory, file.name)
+    const fullPath = resolve(directory, file.name);
 
     if (file.isDirectory()) {
-      const nestedFiles = await getMarkdownFiles(fullPath)
-      markdownFiles.push(...nestedFiles)
+      const nestedFiles = await getMarkdownFiles(fullPath);
+      markdownFiles.push(...nestedFiles);
     } else if (file.isFile() && file.name.endsWith('.md')) {
-      markdownFiles.push(fullPath)
+      markdownFiles.push(fullPath);
     }
   }
 
-  return markdownFiles
-}
+  return markdownFiles;
+};
 
 const processFile = async (filePath, directory) => {
-  const content = await readFile(filePath, 'utf8')
-  const basePath = dirname(filePath)
+  const content = await readFile(filePath, 'utf8');
+  const basePath = dirname(filePath);
 
   await unified()
     .use(remarkGfm)
@@ -48,7 +48,7 @@ const processFile = async (filePath, directory) => {
     .use(remarkRehype)
     .use(rehypeSlug)
     .use(inspectUrls, {
-      inspectEach({node, root, url}) {
+      inspectEach({ node, root, url }) {
         // Note: We ignore external URLs (HTTP/S).
         if (url.match(/^(?!https?:\/\/).+/)) {
           // Check internal anchor links within the same file
@@ -58,38 +58,35 @@ const processFile = async (filePath, directory) => {
                 directory,
                 filePath,
                 position: node.position.start,
-                url
-              })
+                url,
+              });
             }
           } else {
             // Check relative links (with or without anchor)
-            const [relativePath, anchor] = url.split('#')
+            const [relativePath, anchor] = url.split('#');
 
             // Check paths with and without `.md` extension
             // Note: Markdown files are usually referenced without the extension, other files require the extension specification.
-            const targetPaths = [
-              resolve(basePath, relativePath),
-              resolve(basePath, `${relativePath}.md`)
-            ]
+            const targetPaths = [resolve(basePath, relativePath), resolve(basePath, `${relativePath}.md`)];
 
             Promise.all(
               targetPaths.map(async (targetPath) => {
                 try {
-                  const pathStats = await stat(targetPath)
+                  const pathStats = await stat(targetPath);
                   if (pathStats.isFile()) {
-                    return targetPath
+                    return targetPath;
                   } else {
                     // Path is a directory
-                    return undefined
+                    return undefined;
                   }
                 } catch {
                   // Path does not exist
-                  return undefined
+                  return undefined;
                 }
               })
             )
               .then((resolvedPaths) => {
-                const existingPath = resolvedPaths.find((p) => !!p)
+                const existingPath = resolvedPaths.find((p) => !!p);
 
                 if (existingPath && anchor) {
                   checkAnchorInFile({
@@ -98,15 +95,15 @@ const processFile = async (filePath, directory) => {
                     filePath: existingPath,
                     originalUrl: url,
                     position: node.position.start,
-                    sourceFile: filePath
-                  })
+                    sourceFile: filePath,
+                  });
                 } else if (!existingPath) {
                   logBrokenLink({
                     directory,
                     filePath,
                     position: node.position.start,
-                    url
-                  })
+                    url,
+                  });
                 }
               })
               .catch(() => {
@@ -114,71 +111,59 @@ const processFile = async (filePath, directory) => {
                   directory,
                   filePath,
                   position: node.position.start,
-                  url
-                })
-              })
+                  url,
+                });
+              });
           }
         }
-      }
+      },
     })
     .use(rehypeStringify)
-    .process(content)
-}
+    .process(content);
+};
 
-const checkAnchorInFile = async ({
-                                   anchor,
-                                   directory,
-                                   filePath,
-                                   originalUrl,
-                                   position,
-                                   sourceFile
-                                 }) => {
-  const content = await readFile(filePath, 'utf8')
-  const u = await unified()
-    .use(remarkGfm)
-    .use(remarkParse)
-    .use(remarkRehype)
-    .use(rehypeSlug)
-    .use(rehypeStringify)
-  const result = await u.run(u.parse(content))
+const checkAnchorInFile = async ({ anchor, directory, filePath, originalUrl, position, sourceFile }) => {
+  const content = await readFile(filePath, 'utf8');
+  const u = await unified().use(remarkGfm).use(remarkParse).use(remarkRehype).use(rehypeSlug).use(rehypeStringify);
+  const result = await u.run(u.parse(content));
 
-  const anchorExists = result.children?.some((i) => i.properties?.id === anchor)
+  const anchorExists = result.children?.some((i) => i.properties?.id === anchor);
 
   if (!anchorExists) {
     logBrokenLink({
       directory,
       filePath: sourceFile,
       position,
-      url: originalUrl
-    })
+      url: originalUrl,
+    });
   }
-}
+};
 
-const logBrokenLink = ({directory, filePath, position, url}) => {
-  const {line, column} = position;
-  links.push(`${directory}/${relative(directory, filePath)}:${line}:${column} - ${url}`)
-}
+const logBrokenLink = ({ directory, filePath, position, url }) => {
+  const { line, column } = position;
+  links.push(`${directory}/${relative(directory, filePath)}:${line}:${column} - ${url}`);
+};
 
 const isDir = async (inputPath) => {
   try {
-    const stats = await stat(inputPath)
-    return stats.isDirectory()
+    const stats = await stat(inputPath);
+    return stats.isDirectory();
   } catch {
-    return false
+    return false;
   }
-}
+};
 
 checkLinks(process.argv[2] || '.')
   .then(() => {
     if (links.length) {
-      console.error(`Found ${links.length} broken links:`)
-      links.forEach((link) => console.info(link))
-      process.exit(1)
+      console.error(`Found ${links.length} broken links:`);
+      links.forEach((link) => console.info(link));
+      process.exit(1);
     } else {
       console.info('No broken links found.');
       process.exit(0);
     }
   })
-  .catch((e) => {console.error(e)})
-
-
+  .catch((e) => {
+    console.error(e);
+  });

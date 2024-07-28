@@ -5,17 +5,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  parserOptions: {
-    project: 'tsconfig.json',
-    sourceType: 'module',
-  },
-  extends: [
-    'airbnb-base',
-    // although this is typescript, it has to be here to have it's imported rules configured for
-    //  typescript and not re-apply them in the typescript inherited portion
-    'airbnb-typescript/base',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb-base', 'plugin:prettier/recommended'],
   plugins: ['unused-imports'],
   rules: {
     // disable conflicting prettier-adjacent rules
@@ -52,7 +42,6 @@ module.exports = {
 
     'no-console': 'error',
     'object-shorthand': 'error',
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
     'unused-imports/no-unused-imports': 'error',
     'no-return-assign': ['error', 'except-parens'],
 
@@ -74,7 +63,18 @@ module.exports = {
       files: ['scripts/**/*.ts', 'lib/**/*.ts', 'tests/**/*.ts'],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
+      parserOptions: {
+        project: 'tsconfig.json',
+        sourceType: 'module',
+      },
+      extends: [
+        // although this is typescript, it has to be here to have it's imported rules configured for
+        //  typescript and not re-apply them in the typescript inherited portion
+        'airbnb-typescript/base',
+      ],
       rules: {
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
+
         // disable overlapping non-typescript rules
         'no-return-await': 'off',
         'no-unused-vars': 'off',
@@ -143,6 +143,13 @@ module.exports = {
           },
         },
       ],
+    },
+    {
+      files: ['scripts/**/*.(m|d)?js'],
+      extends: ['airbnb-base', 'plugin:prettier/recommended'],
+      plugins: ['unused-imports'],
+      parser: 'espree',
+      parserOptions: {},
     },
   ],
 };

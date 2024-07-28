@@ -65,7 +65,7 @@ export class LiturgicalDayConfig implements BaseLiturgicalDayConfig {
     // DateDefMonthDate
     if (isInteger(dateDef.month) && isInteger(dateDef.date) && dateDef.month > 0 && dateDef.date > 0) {
       date = getUtcDate(year, dateDef.month, dateDef.date);
-    }
+    } // eslint-disable-line @typescript-eslint/brace-style
 
     // DateDefDateFnAddDay or DateDefDateFnSubtractDay
     else if (typeof dateDef.dateFn === 'string' && Object.prototype.hasOwnProperty.call(this.dates, dateDef.dateFn)) {
@@ -78,14 +78,14 @@ export class LiturgicalDayConfig implements BaseLiturgicalDayConfig {
 
       if (date && isInteger(dateDef.addDay)) date = addDays(date, dateDef.addDay);
       if (date && isInteger(dateDef.subtractDay)) date = subtractsDays(date, dateDef.subtractDay);
-    }
+    } // eslint-disable-line @typescript-eslint/brace-style
 
     // DateDefMonthDowNthWeekInMonth
     else if (isInteger(dateDef.month) && isInteger(dateDef.dayOfWeek) && isInteger(dateDef.nthWeekInMonth)) {
       const firstDayOf7Days = getUtcDate(year, dateDef.month, 7 * dateDef.nthWeekInMonth - 6);
 
       date = LiturgicalDayConfig.#getNextDayOfWeek(firstDayOf7Days, dateDef.dayOfWeek);
-    }
+    } // eslint-disable-line @typescript-eslint/brace-style
 
     // DateDefMonthLastDowInMonth
     else if (isInteger(dateDef.month) && isInteger(dateDef.lastDayOfWeekInMonth)) {
@@ -134,13 +134,13 @@ export class LiturgicalDayConfig implements BaseLiturgicalDayConfig {
             if (date.getTime() >= from.getTime() && date.getTime() <= to.getTime()) {
               setDate(exception.setDate);
             }
-          }
+          } // eslint-disable-line @typescript-eslint/brace-style
           // From-To exclusive
           else if (date.getTime() > from.getTime() && date.getTime() < to.getTime()) {
             setDate(exception.setDate);
           }
         }
-      }
+      } // eslint-disable-line @typescript-eslint/brace-style
 
       // ifIsSameAsDate
       else if (typeof exception.ifIsSameAsDate === 'object') {
@@ -148,7 +148,7 @@ export class LiturgicalDayConfig implements BaseLiturgicalDayConfig {
         if (dateComparison && isSameDate(dateComparison, date)) {
           setDate(exception.setDate);
         }
-      }
+      } // eslint-disable-line @typescript-eslint/brace-style
 
       // ifIsDayOfWeek
       else if (Number.isInteger(exception.ifIsDayOfWeek)) {

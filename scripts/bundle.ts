@@ -216,8 +216,8 @@ export const RomcalBundler = (): void => {
         .replace(/(\n\s*\S+:\sundefined,)/gi, '') // Remove undefined properties
         .replace(/\n\s*(!:seasons|periods)\s:\[],/gi, ''); // Remove empty arrays
       const jsOutput =
-        `/* eslint-disable */\n` +
-        `import { RomcalBundleObject } from '../../../lib';\n\n` +
+        '/* eslint-disable */\n' +
+        "import { RomcalBundleObject } from '../../../lib';\n\n" +
         `export const ${calVarName}: RomcalBundleObject = ${data}`;
 
       // Write the calendar bundle file.
@@ -248,7 +248,7 @@ export const RomcalBundler = (): void => {
     }, '');
     const indexExports = Object.entries(calVarObj).reduce((acc, [, varName]) => `${acc}    ${varName},\n`, '');
     const indexOutput = `import { RomcalBundleObject } from '../../../lib';\n${indexImports}\nexport {\n${indexExports}};`;
-    fs.writeFileSync(path.resolve(dir, `index.ts`), indexOutput, 'utf-8');
+    fs.writeFileSync(path.resolve(dir, 'index.ts'), indexOutput, 'utf-8');
 
     /**
      * Write index.d.ts files
@@ -258,7 +258,7 @@ export const RomcalBundler = (): void => {
       ''
     );
     const dtsOutput = `import { RomcalBundleObject } from 'romcal';\n\n${dtsExports}`;
-    fs.writeFileSync(path.resolve(dir, `index.d.ts`), dtsOutput, 'utf-8');
+    fs.writeFileSync(path.resolve(dir, 'index.d.ts'), dtsOutput, 'utf-8');
   }
 
   if (!isCI) gauge.stop();

@@ -5,7 +5,7 @@ This glossary provides definitions of terms used in the context of this romcal p
 The structure of a glossary items is as follows:
 
 - the term name in a heading of the second level, without any abbreviation:
-  - abbreviations, acronyms, initialisms (etc) should be made a separate item with `See [Full Term Name](#full-term-name).` (change the link name and anchor as required);
+  - abbreviations, acronyms, initialisms, etc., should be made a separate item with `See [Full Term Name](#full-term-name).` (change the link name and anchor as required);
   - the headings should be ordered alphabetically;
 - definition of the term:
   - ideally, it should full in a single, short paragraph;
@@ -65,7 +65,7 @@ See [GIRM §346](https://www.liturgyoffice.org.uk/Resources/GIRM/Documents/GIRM.
 
 ## Liturgical Day
 
-A liturgical day denotes a specific and distinct day within the Church’s liturgical calendar, characterized by particular celebrations and observances. Each day is assigned a [rank](#liturgical-rank) to indicate its significance, a specific [liturgical color](#liturgical-color), and various properties that define its nature and all associated celebrations. The date of each liturgical day is determined according to the [Proper of Time](#proper-of-time), the [Proper of Saints](#proper-of-saints), and the rules governing the precedence of other liturgical days.
+A liturgical day denotes a specific and distinct day within the Church’s liturgical calendar, characterized by particular celebrations and observances. Each day is assigned a [rank](#rank) to indicate its significance, a specific [liturgical color](#liturgical-color), and various properties that define its nature and all associated celebrations. The date of each liturgical day is determined according to the [Proper of Time](#proper-of-time), the [Proper of Saints](#proper-of-saints), and the rules governing the precedence of other liturgical days.
 
 A liturgical day generally aligns with a day in the Gregorian calendar but has some nuances: it typically begins at First Vespers or Vigils (if observed), or otherwise at midnight, and ends at the beginning of the following liturgical day. If a liturgical day begins before midnight, it remains identified as a single liturgical day, even if it spans two civil days. A liturgical day is identified by a Gregorian date (considering the majority of the liturgical day that occurs within a given civil day).
 
@@ -109,7 +109,7 @@ The four-week cycle of the psalter is coordinated with the liturgical year in su
 
 See [GILH §133](https://www.liturgyoffice.org.uk/Resources/Rites/GILH.pdf#page=26).
 
-## Liturgical Rank
+## Rank
 
 The rank of a liturgical celebration is a measure of its importance in the liturgical calendar. The rank of a celebration determines how it should be observed when it falls on the same day as another celebration.
 
