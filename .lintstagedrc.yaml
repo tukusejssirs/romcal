@@ -1,0 +1,12 @@
+---
+"*.ts":
+  - eslint --fix
+  - prettier --write
+"*.{json,yaml,yml,md},!package*.json":
+  - prettier --write
+package*.json:
+  - npx prettier --write
+  - npm dedupe
+docs/**/*.md:
+  - prettier --write
+  - npm run docs:check-links

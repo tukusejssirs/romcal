@@ -5,37 +5,51 @@ This glossary provides definitions of terms used in the context of this romcal p
 The structure of a glossary items is as follows:
 
 - the term name in a heading of the second level, without any abbreviation:
-   - abbreviations, acronyms, initialisms (etc) should be made a separate item with `See [Full Term Name](#full-term-name).` (change the link name and anchor as required);
-   - the headings should be ordered alphabetically;
+  - abbreviations, acronyms, initialisms (etc) should be made a separate item with `See [Full Term Name](#full-term-name).` (change the link name and anchor as required);
+  - the headings should be ordered alphabetically;
 - definition of the term:
-   - ideally, it should full in a single, short paragraph;
-   - provide an abbreviation (if it is used) after the first mention of the term;
-- add a list named `See also:` where the synonyms and related items would be provided (provide as many links as required; prefer links to the glossary items). 
+  - ideally, it should full in a single, short paragraph;
+  - provide an abbreviation (if it is used) after the first mention of the term;
+- add a list named `See also:` where the synonyms and related items would be provided (provide as many links as required; prefer links to the glossary items).
+
+## Abbreviations
+
+### GILH
+
+See #general-instruction-of-the-liturgy-of-the-hours.
+
+### GIRM
+
+See #general-instruction-on-the-roman-missal.
+
+### GNLYC
+
+See #general-norms-for-the-liturgical-year-and-the-calendar.
 
 ## Celebration
 
 A celebration is a liturgical or sacramental event, typically consisting of rituals, readings, prayers, and often the Eucharist (Mass), whether or not it is associated with a liturgical day.
 
 > [!NOTE]
-> Currently, Romcal does not provide specific information about celebrations, such as the list of Masses for a given day or the hours of the Divine Office. Instead, it indicates unique liturgical days determined within a liturgical calendar. However, the ability to list these celebrations—linked to a liturgical day or corresponding to a civil day (such as Vigil Masses)—is a feature that may be added in the future.
+> Currently, romcal does not provide specific information about celebrations, such as the list of Masses for a given day or the hours of the Divine Office. Instead, it indicates unique liturgical days determined within a liturgical calendar. However, the ability to list these celebrations—linked to a liturgical day or corresponding to a civil day (such as Vigil Masses)—is a feature that may be added in the future.
 
 ## Divine Office
 
 See the [Liturgy of the Hours](#liturgy-of-the-hours).
 
-## General Instruction of the Liturgy of the Hours (GILH)
+## General Instruction of the Liturgy of the Hours
 
 The General Instruction of the Liturgy of the Hours (GILH) is the document that provides the general instructions for the Liturgy of the Hours. It is an official liturgical document that was promulgated by the Congregation for Divine Worship and the Discipline of the Sacraments.
 
 An English translation of the GILH can be found [here](https://www.liturgyoffice.org.uk/Resources/Rites/GILH.pdf).
 
-## General Instruction on the Roman Missal (GIRM)
+## General Instruction on the Roman Missal
 
 The General Instruction on the Roman Missal (GIRM) is the detailed document that provides the rubrics for the celebration of the Mass. It is an official liturgical document that was promulgated by the Congregation for Divine Worship and the Discipline of the Sacraments.
 
 An English translation of the GIRM can be found [here](https://www.liturgyoffice.org.uk/Resources/GIRM/Documents/GIRM.pdf).
 
-## General Norms for the Liturgical Year and the Calendar (GNLYC)
+## General Norms for the Liturgical Year and the Calendar
 
 The General Norms for the Liturgical Year and the Calendar (GNLYC) is the document that provides the general norms for the liturgical year and the calendar. It is an official liturgical document that was promulgated by the Congregation for Divine Worship and the Discipline of the Sacraments.
 
@@ -51,7 +65,7 @@ See [GIRM §346](https://www.liturgyoffice.org.uk/Resources/GIRM/Documents/GIRM.
 
 ## Liturgical Day
 
-A liturgical day denotes a specific and distinct day within the Church’s liturgical calendar, characterized by particular celebrations and observances. Each day is assigned a [rank](#rank) to indicate its significance, a specific [liturgical color](#liturgical-colors), and various properties that define its nature and all associated celebrations. The date of each liturgical day is determined according to the [Proper of Time](#proper-of-time), the [Proper of Saints](#proper-of-saints), and the rules governing the precedence of other liturgical days.
+A liturgical day denotes a specific and distinct day within the Church’s liturgical calendar, characterized by particular celebrations and observances. Each day is assigned a [rank](#liturgical-rank) to indicate its significance, a specific [liturgical color](#liturgical-color), and various properties that define its nature and all associated celebrations. The date of each liturgical day is determined according to the [Proper of Time](#proper-of-time), the [Proper of Saints](#proper-of-saints), and the rules governing the precedence of other liturgical days.
 
 A liturgical day generally aligns with a day in the Gregorian calendar but has some nuances: it typically begins at First Vespers or Vigils (if observed), or otherwise at midnight, and ends at the beginning of the following liturgical day. If a liturgical day begins before midnight, it remains identified as a single liturgical day, even if it spans two civil days. A liturgical day is identified by a Gregorian date (considering the majority of the liturgical day that occurs within a given civil day).
 
@@ -70,7 +84,7 @@ The Liturgy of the Hours (LotH), or the Divine Office, is a set of prayers presc
 
 See also:
 
-- [General Instruction of the Liturgy of the Hours](#general-instruction-of-the-liturgy-of-the-hours-gilh).
+- [General Instruction of the Liturgy of the Hours](#general-instruction-of-the-liturgy-of-the-hours).
 
 ## Precedence
 

@@ -42,7 +42,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['tests/**', 'scripts/**'],
+        devDependencies: ['tests/**/*', 'scripts/**/*'],
       },
     ],
     'import/prefer-default-export': 'off',
@@ -113,6 +113,8 @@ module.exports = {
             // turn this off to see if there's anything unused worth removing
             'import/no-unused-modules': 'off',
             'no-console': 'off',
+            'no-restricted-syntax': 'off',
+            'import/no-extraneous-dependencies': 'off',
           },
         },
         {
