@@ -1,0 +1,55 @@
+# Known Missing Glossary / Documentation
+
+- we should definitely add these terms:
+  - Advent:
+    - link to this item in `See also` of `[Liturgical] Season`;
+  - Blessed;
+  - _Calendarium Romanum_;
+  - Christmas Time:
+    - link to this item in `See also` of `[Liturgical] Season`;
+  - Easter Time:
+    - link to this item in `See also` of `[Liturgical] Season`;
+  - Feast;
+  - Feria → Weekday;
+  - Holy Mass;
+  - Holy Week:
+    - link to this item in `See also` of `[Liturgical] Period`;
+  - Holyday of Obligation;
+  - Lectionary;
+  - Lent:
+    - link to this item in `See also` of `[Liturgical] Season`;
+  - Liturgy;
+  - Mass → Holy Mass;
+  - Memorial;
+  - _Mysterii Paschalis_;
+  - [Liturgical] Occurrence:
+    - Occurrence is the coinciding or occurring of two liturgical offices on one and the same day; concurrence is the succession of two offices, so that the second vespers of one occur at the same time as the first vespers of the other. The chief causes of occurrence are: (I) the variableness of the feast and cycle of Easter, while the other feasts are fixed; (2) the annual change of the Dominical Letter, whereby Sunday falls successively on different dates of the same month (see Calendar; Dominical Letter). Occurrence may be _accidental_ or _perpetual_. (I) The calendar gives as a fixed feast for May 28 the feast of St. Augustine of Canterbury; on the other hand on May 28, 1891, the table of movable feasts marked that day as the feast of Corpus Christi; thus on May 28, 1891, these two offices fell on the same day—that is there was an occurrence. But as this coincidence was due to a variable cause, and did not happen the following years, the occurrence was _accidental_. (2) The patronal feast of churches is celebrated with an octave; in the case of a church having St. Martin (November 11) as its patron, the octave day (November 18) falls on a fixed feast marked in the Calendar: “Dedication, etc …”; consequently, there is in such a church each year a coinciding of two offices on November 18; this occurrence is said to be _perpetual_.
+    - ([src](https://www.catholic.com/encyclopedia/occurrence-in-liturgy); we might want to shorten this definition, and re-format)
+  - Octave;
+  - Optional Memorial;
+  - Order of Time:
+    - link to this item in `See also` of `[Liturgical] Season`;
+  - Paschal Triduum:
+    - link to this item in `See also` of `[Liturgical] Period`;
+  - Prayers of the Faithful;
+  - Psalter;
+  - Response in Responsorial Psalms;
+  - Responsorial Psalm (or Responsorial Psalmody);
+  - Roman Martyrology;
+  - Roman Missal;
+  - Saint;
+  - Solemnity;
+  - Votive Mass:
+    - see also [Holy Mass];
+  - Weekday;
+  - [Liturgical] Gospel;
+  - [Liturgical] Reading;
+- consider adding these terms:
+  - Bible → Holy Scripture;
+  - Celebration of an Event → Non-personal celebration;
+  - Holy Scripture;
+  - Non-personal Celebration;
+  - Personal Celebration;
+  - romcal (it should not be spelled _Romcal_);
+  - Server of God;
+  - Companion.
