@@ -2,12 +2,26 @@
 
 This glossary provides definitions of terms used in the context of this romcal project. The terms are listed in alphabetical order.
 
+The structure of a glossary items is as follows:
+
+- the term name in a heading of the second level, without any abbreviation:
+   - abbreviations, acronyms, initialisms (etc) should be made a separate item with `See [Full Term Name](#full-term-name).` (change the link name and anchor as required);
+   - the headings should be ordered alphabetically;
+- definition of the term:
+   - ideally, it should full in a single, short paragraph;
+   - provide an abbreviation (if it is used) after the first mention of the term;
+- add a list named `See also:` where the synonyms and related items would be provided (provide as many links as required; prefer links to the glossary items). 
+
 ## Celebration
 
 A celebration is a liturgical or sacramental event, typically consisting of rituals, readings, prayers, and often the Eucharist (Mass), whether or not it is associated with a liturgical day.
 
 > [!NOTE]
 > Currently, Romcal does not provide specific information about celebrations, such as the list of Masses for a given day or the hours of the Divine Office. Instead, it indicates unique liturgical days determined within a liturgical calendar. However, the ability to list these celebrations—linked to a liturgical day or corresponding to a civil day (such as Vigil Masses)—is a feature that may be added in the future.
+
+## Divine Office
+
+See the [Liturgy of the Hours](#liturgy-of-the-hours).
 
 ## General Instruction of the Liturgy of the Hours (GILH)
 
@@ -27,6 +41,8 @@ The General Norms for the Liturgical Year and the Calendar (GNLYC) is the docume
 
 An English translation of the GNLYC can be found [here](https://www.liturgyoffice.org.uk/Resources/GIRM/Documents/GNLY.pdf).
 
+Older English name of the document was [_Universal Norms on the Liturgical Year and General Roman Calendar_](https://www.liturgyoffice.org.uk/Calendar/Info/GNLY.pdf), sometimes abbreviated as UNLY, UNLYC, UNLYGRC.
+
 ## Liturgical Color
 
 The liturgical colors are the colors used in the liturgical vestments and altar cloths for the celebration of the Mass and other liturgical services. The colors are used to signify the nature of the liturgical season or feast being celebrated.
@@ -39,14 +55,22 @@ A liturgical day denotes a specific and distinct day within the Church’s litur
 
 A liturgical day generally aligns with a day in the Gregorian calendar but has some nuances: it typically begins at First Vespers or Vigils (if observed), or otherwise at midnight, and ends at the beginning of the following liturgical day. If a liturgical day begins before midnight, it remains identified as a single liturgical day, even if it spans two civil days. A liturgical day is identified by a Gregorian date (considering the majority of the liturgical day that occurs within a given civil day).
 
-In Romcal, it is this concept of the liturgical day that is calculated within a liturgical calendar.
+In romcal, it is this concept of the liturgical day that is calculated within a liturgical calendar.
 
 > [!NOTE]
 > A liturgical day should not be confused with a celebration (see [celebration](#celebration)).
 
 ## Liturgical Period
 
-In Romcal, in addition to the liturgical seasons, liturgical periods provide further detail and metadata about the current liturgical period. For example, the octaves of Christmas and Easter, the period before and after Epiphany, Holy Week, etc. They also denote periods traditionally observed in the Catholic Church and by religious communities (especially for Marian hymns), including the period from the Baptism of Christ to the Presentation of Jesus in the Temple, and from the Presentation of Jesus in the Temple to Holy Thursday.
+In romcal, in addition to the liturgical seasons, liturgical periods provide further detail and metadata about the current liturgical period. For example, the octaves of Christmas and Easter, the period before and after Epiphany, Holy Week, etc. They also denote periods traditionally observed in the Catholic Church and by religious communities (especially for Marian hymns), including the period from the Baptism of Christ to the Presentation of Jesus in the Temple, and from the Presentation of Jesus in the Temple to Holy Thursday.
+
+## Liturgy of the Hours
+
+The Liturgy of the Hours (LotH), or the Divine Office, is a set of prayers prescribed by the Catholic Church to be recited at specific times of the day by clergy, religious, and laity. It consists of psalms, hymns, readings, and other prayers, structured to sanctify the day and mark the passage of time. The principal hours are Lauds (Morning Prayer), Vespers (Evening Prayer), and Compline (Night Prayer), with additional hours such as Matins (Office of Readings), Terce (Mid-Morning Prayer), Sext (Midday Prayer), and None (Mid-Afternoon Prayer). The LotH aims to fulfil St Paul’s exhortation to ‘pray without ceasing’ (1 Thessalonians 5:17).
+
+See also:
+
+- [General Instruction of the Liturgy of the Hours](#general-instruction-of-the-liturgy-of-the-hours-gilh).
 
 ## Precedence
 
