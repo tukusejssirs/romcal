@@ -11,20 +11,11 @@ import { unified } from 'unified';
 
 const links = [];
 
-/** @param path - Folder or file with absolute or relative path */
-const checkLinks = async (path) => {
-  const files = (await isDir(path)) ? await getMarkdownFiles(path) : [path];
-
-  for (const file of files) {
-    await processFile(file, path);
-  }
-};
-
 const getMarkdownFiles = async (directory) => {
   const files = await readdir(directory, { withFileTypes: true });
   const markdownFiles = [];
 
-  for (const file of files) {
+  for await (const file of files) {
     const fullPath = resolve(directory, file.name);
 
     if (file.isDirectory()) {
@@ -36,6 +27,28 @@ const getMarkdownFiles = async (directory) => {
   }
 
   return markdownFiles;
+};
+
+const logBrokenLink = ({ directory, filePath, position, url }) => {
+  const { line, column } = position;
+  links.push(`${directory}/${relative(directory, filePath)}:${line}:${column} - ${url}`);
+};
+
+const checkAnchorInFile = async ({ anchor, directory, filePath, originalUrl, position, sourceFile }) => {
+  const content = await readFile(filePath, 'utf8');
+  const u = await unified().use(remarkGfm).use(remarkParse).use(remarkRehype).use(rehypeSlug).use(rehypeStringify);
+  const result = await u.run(u.parse(content));
+
+  const anchorExists = result.children.some((i) => i.properties.id === anchor);
+
+  if (!anchorExists) {
+    logBrokenLink({
+      directory,
+      filePath: sourceFile,
+      position,
+      url: originalUrl,
+    });
+  }
 };
 
 const processFile = async (filePath, directory) => {
@@ -53,7 +66,7 @@ const processFile = async (filePath, directory) => {
         if (url.match(/^(?!https?:\/\/).+/)) {
           // Check internal anchor links within the same file
           if (url.startsWith('#')) {
-            if (!root.children.some((i) => i.properties?.id === url.substring(1))) {
+            if (!root.children.some((i) => i.properties.id === url.substring(1))) {
               logBrokenLink({
                 directory,
                 filePath,
@@ -75,11 +88,10 @@ const processFile = async (filePath, directory) => {
                   const pathStats = await stat(targetPath);
                   if (pathStats.isFile()) {
                     return targetPath;
-                  } else {
-                    // Path is a directory
-                    return undefined;
                   }
-                } catch {
+                  // Path is a directory
+                  return undefined;
+                } catch (e) {
                   // Path does not exist
                   return undefined;
                 }
@@ -122,34 +134,21 @@ const processFile = async (filePath, directory) => {
     .process(content);
 };
 
-const checkAnchorInFile = async ({ anchor, directory, filePath, originalUrl, position, sourceFile }) => {
-  const content = await readFile(filePath, 'utf8');
-  const u = await unified().use(remarkGfm).use(remarkParse).use(remarkRehype).use(rehypeSlug).use(rehypeStringify);
-  const result = await u.run(u.parse(content));
-
-  const anchorExists = result.children?.some((i) => i.properties?.id === anchor);
-
-  if (!anchorExists) {
-    logBrokenLink({
-      directory,
-      filePath: sourceFile,
-      position,
-      url: originalUrl,
-    });
-  }
-};
-
-const logBrokenLink = ({ directory, filePath, position, url }) => {
-  const { line, column } = position;
-  links.push(`${directory}/${relative(directory, filePath)}:${line}:${column} - ${url}`);
-};
-
 const isDir = async (inputPath) => {
   try {
     const stats = await stat(inputPath);
     return stats.isDirectory();
-  } catch {
+  } catch (_) {
     return false;
+  }
+};
+
+/** @param path - Folder or file with absolute or relative path */
+const checkLinks = async (path) => {
+  const files = (await isDir(path)) ? await getMarkdownFiles(path) : [path];
+
+  for (const file of files) {
+    await processFile(file, path);
   }
 };
 

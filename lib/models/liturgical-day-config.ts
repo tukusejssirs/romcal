@@ -1,7 +1,7 @@
 import { DayOfWeek } from '../constants/weekdays';
 import { DateDef, DateDefExtended } from '../types/liturgical-day';
 import { BaseLiturgicalDayConfig, LiturgicalDayConfigOutput } from '../types/liturgical-day-config';
-import { addDays, Dates, daysInMonth, getUtcDate, isSameDate, isValidDate, subtractsDays } from '../utils/dates';
+import { Dates, addDays, daysInMonth, getUtcDate, isSameDate, isValidDate, subtractsDays } from '../utils/dates';
 import { isInteger } from '../utils/numbers';
 
 import { RomcalConfig } from './config';

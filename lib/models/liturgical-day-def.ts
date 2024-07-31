@@ -15,8 +15,6 @@ import {
   DateDef,
   DateDefException,
   FromCalendarId,
-  i18nDef,
-  isLiturgicalDayProperOfTimeInput,
   LiturgicalDayBundleInput,
   LiturgicalDayInput,
   LiturgicalDayProperOfTimeInput,
@@ -24,6 +22,8 @@ import {
   MartyrologyItemRedefined,
   RomcalTitles,
   TitlesDef,
+  i18nDef,
+  isLiturgicalDayProperOfTimeInput,
 } from '../types/liturgical-day';
 import { MartyrologyItem } from '../types/martyrology';
 import { safeWrapArray } from '../utils/arrays';

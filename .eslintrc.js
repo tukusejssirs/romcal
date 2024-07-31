@@ -27,6 +27,10 @@ module.exports = {
       {
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
         'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
       },
     ],
     'import/no-extraneous-dependencies': [
@@ -47,15 +51,6 @@ module.exports = {
 
     // gotta do it sometimes
     'no-await-in-loop': 'off',
-
-    // prettier
-    'prettier/prettier': [
-      'error',
-      {},
-      {
-        usePrettierrc: true,
-      },
-    ],
   },
   // override specific to test files
   overrides: [
@@ -141,11 +136,23 @@ module.exports = {
       ],
     },
     {
-      files: ['scripts/**/*.(m|d)?js'],
+      files: ['*.mjs', '*.cjs', '*.js'],
       extends: ['airbnb-base', 'plugin:prettier/recommended'],
       plugins: ['unused-imports'],
       parser: 'espree',
       parserOptions: {},
+      rules: {
+        'no-console': 'off',
+        'no-restricted-syntax': ['error', 'ForInStatement'],
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+          },
+        ],
+        'no-await-in-loop': 'off',
+        'no-nested-ternary': 'off',
+      },
     },
   ],
 };

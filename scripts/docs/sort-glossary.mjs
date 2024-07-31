@@ -2,14 +2,14 @@ import { readFile, writeFile } from 'node:fs';
 import { resolve } from 'node:path';
 
 import c from 'chalk';
+import { diffTrimmedLines } from 'diff';
 import { remark } from 'remark';
 import gfm from 'remark-gfm';
 import parse from 'remark-parse';
 import stringify from 'remark-stringify';
-import { diffTrimmedLines } from 'diff';
 
 const isCI = process.env.CI === 'true';
-const file = resolve(import.meta.dirname, '../../docs/glossary.md');
+const file = resolve(__dirname, '../../docs/glossary.md');
 
 /** Sort second-level headings alphabetically */
 const sortHeadings = (tree) => {
@@ -111,7 +111,7 @@ const processFile = () => {
 
             diff.forEach((part) => {
               // green for additions, red for deletions
-              let text = part.added ? c.bgGreen(part.value) : part.removed ? c.bgRed(part.value) : undefined;
+              const text = part.added ? c.bgGreen(part.value) : part.removed ? c.bgRed(part.value) : undefined;
               if (text) process.stderr.write(text);
             });
 
@@ -133,6 +133,5 @@ const processFile = () => {
       });
   });
 };
-
 
 processFile(file, file);

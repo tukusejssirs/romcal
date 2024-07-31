@@ -1,9 +1,9 @@
-import { dirname, resolve } from 'node:path';
 import fs from 'fs';
+import { dirname, resolve } from 'node:path';
 
 import chalk from 'chalk';
 import { generateDtsBundle } from 'dts-bundle-generator';
-import { build, Format, Platform } from 'esbuild';
+import { Format, Platform, build } from 'esbuild';
 import { glob } from 'glob';
 import { rimraf } from 'rimraf';
 import { PackageJson } from 'type-fest';
