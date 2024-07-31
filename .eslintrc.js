@@ -67,11 +67,7 @@ module.exports = {
         project: 'tsconfig.json',
         sourceType: 'module',
       },
-      extends: [
-        // although this is typescript, it has to be here to have it's imported rules configured for
-        //  typescript and not re-apply them in the typescript inherited portion
-        'airbnb-typescript/base',
-      ],
+      extends: ['airbnb-typescript/base'],
       rules: {
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
 

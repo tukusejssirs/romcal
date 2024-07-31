@@ -16,15 +16,15 @@ The structure of a glossary items is as follows:
 
 ### GILH
 
-See #general-instruction-of-the-liturgy-of-the-hours.
+See [General Instruction of the Liturgy of the Hours](#general-instruction-of-the-liturgy-of-the-hours).
 
 ### GIRM
 
-See #general-instruction-on-the-roman-missal.
+See [General Instruction on the Roman Missal](#general-instruction-on-the-roman-missal).
 
 ### GNLYC
 
-See #general-norms-for-the-liturgical-year-and-the-calendar.
+See [General Norms for the Liturgical Year and the Calendar](#general-norms-for-the-liturgical-year-and-the-calendar).
 
 ## Celebration
 

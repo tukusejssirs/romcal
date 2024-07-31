@@ -9,6 +9,7 @@ import stringify from 'remark-stringify';
 import { diffTrimmedLines } from 'diff';
 
 const isCI = process.env.CI === 'true';
+const file = resolve(import.meta.dirname, '../../docs/glossary.md');
 
 /** Sort second-level headings alphabetically */
 const sortHeadings = (tree) => {
@@ -64,7 +65,7 @@ const sortHeadings = (tree) => {
     });
   });
 
-  // reply all the top body backwards on top of the children array
+  // replay all the top body backwards on top of the children array
   top.content.reverse().forEach((node) => {
     newChildren.unshift(node);
   });
@@ -75,8 +76,8 @@ const sortHeadings = (tree) => {
 };
 
 /** Read, sort and write the Markdown file */
-const processFile = (fIn, fOut) => {
-  readFile(fIn, 'utf8', (readError, data) => {
+const processFile = () => {
+  readFile(file, 'utf8', (readError, data) => {
     if (readError) {
       console.error(readError);
       return;
@@ -94,13 +95,13 @@ const processFile = (fIn, fOut) => {
         listItemIndent: 'one',
         emphasis: '_',
       })
-      .process(data, (processError, file) => {
+      .process(data, (processError, vfile) => {
         if (processError) {
           console.error(processError);
           return;
         }
 
-        const updatedFile = String(file).replace(/^> \\\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)][ \t]*$/gm, '> [!$1]');
+        const updatedFile = String(vfile).replace(/^> \\\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)][ \t]*$/gm, '> [!$1]');
 
         if (isCI) {
           const diff = diffTrimmedLines(data, updatedFile).filter((part) => part.removed || part.added);
@@ -121,8 +122,7 @@ const processFile = (fIn, fOut) => {
           return;
         }
 
-        // Note: We need to remove the escapes from alerts, as `remark-gfm` does not support these yet, see https://github.com/remarkjs/remark-gfm/issues/66.
-        writeFile(fOut, updatedFile, 'utf8', (writeError) => {
+        writeFile(file, updatedFile, 'utf8', (writeError) => {
           if (writeError) {
             console.error(writeError);
             return;
@@ -134,6 +134,5 @@ const processFile = (fIn, fOut) => {
   });
 };
 
-const file = resolve(import.meta.dirname, '../../docs/glossary.md');
 
 processFile(file, file);

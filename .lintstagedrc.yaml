@@ -9,7 +9,7 @@ package*.json:
   - npx prettier --write
   - npm dedupe
 docs/**/*.md:
-  # Prettier first, because prettier & sort-glossary define italics differently for markdown
+  # Prettier last, configured to have the same italics characters
   - npm run docs:check-links
   - cross-env CI=true npm run docs:sort-glossary
   - prettier --write
