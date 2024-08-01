@@ -136,11 +136,15 @@ module.exports = {
       ],
     },
     {
-      files: ['*.mjs', '*.cjs', '*.js'],
+      files: ['*.mjs', '*.js'],
       extends: ['airbnb-base', 'plugin:prettier/recommended'],
       plugins: ['unused-imports'],
-      parser: 'espree',
-      parserOptions: {},
+      parser: '@babel/eslint-parser',
+      parserOptions: {
+        sourceType: 'module',
+        ecmaVersion: 2018,
+        requireConfigFile: false,
+      },
       rules: {
         'no-console': 'off',
         'no-restricted-syntax': ['error', 'ForInStatement'],

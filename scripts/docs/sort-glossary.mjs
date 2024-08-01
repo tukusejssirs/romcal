@@ -9,7 +9,8 @@ import parse from 'remark-parse';
 import stringify from 'remark-stringify';
 
 const isCI = process.env.CI === 'true';
-const file = resolve(__dirname, '../../docs/glossary.md');
+const dir = import.meta.dirname;
+const file = resolve(dir, '../../docs/glossary.md');
 
 /** Sort second-level headings alphabetically */
 const sortHeadings = (tree) => {

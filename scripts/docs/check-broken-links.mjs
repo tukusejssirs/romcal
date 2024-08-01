@@ -2,11 +2,11 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import { dirname, relative, resolve } from 'node:path';
 
 import inspectUrls from '@jsdevtools/rehype-url-inspector';
-import rehypeSlug from 'rehype-slug';
-import rehypeStringify from 'rehype-stringify';
-import remarkGfm from 'remark-gfm';
-import remarkParse from 'remark-parse';
-import remarkRehype from 'remark-rehype';
+import slug from 'rehype-slug';
+import stringify from 'rehype-stringify';
+import gfm from 'remark-gfm';
+import parse from 'remark-parse';
+import rehype from 'remark-rehype';
 import { unified } from 'unified';
 
 const links = [];
@@ -36,7 +36,7 @@ const logBrokenLink = ({ directory, filePath, position, url }) => {
 
 const checkAnchorInFile = async ({ anchor, directory, filePath, originalUrl, position, sourceFile }) => {
   const content = await readFile(filePath, 'utf8');
-  const u = await unified().use(remarkGfm).use(remarkParse).use(remarkRehype).use(rehypeSlug).use(rehypeStringify);
+  const u = await unified().use(gfm).use(parse).use(rehype).use(slug).use(stringify);
   const result = await u.run(u.parse(content));
 
   const anchorExists = result.children.some((i) => i.properties.id === anchor);
@@ -56,17 +56,17 @@ const processFile = async (filePath, directory) => {
   const basePath = dirname(filePath);
 
   await unified()
-    .use(remarkGfm)
-    .use(remarkParse)
-    .use(remarkRehype)
-    .use(rehypeSlug)
+    .use(gfm)
+    .use(parse)
+    .use(rehype)
+    .use(slug)
     .use(inspectUrls, {
       inspectEach({ node, root, url }) {
         // Note: We ignore external URLs (HTTP/S).
         if (url.match(/^(?!https?:\/\/).+/)) {
           // Check internal anchor links within the same file
           if (url.startsWith('#')) {
-            if (!root.children.some((i) => i.properties.id === url.substring(1))) {
+            if (!root.children.some((i) => i.properties?.id === url.substring(1))) {
               logBrokenLink({
                 directory,
                 filePath,
@@ -130,7 +130,7 @@ const processFile = async (filePath, directory) => {
         }
       },
     })
-    .use(rehypeStringify)
+    .use(stringify)
     .process(content);
 };
 
