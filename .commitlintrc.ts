@@ -5,7 +5,7 @@ import { LOCALE_IDS } from './rites/roman1969/src/constants/locales';
 
 const empty = [null];
 const scopes = [...CALENDAR_IDS, ...LOCALE_IDS, 'calendar', 'l10n', 'util', 'package'];
-const styleScopes = ['commitlint', 'editorconfig', 'eslint', 'prettier'];
+const styleScopes = ['claude_ai', 'commitlint', 'editorconfig', 'eslint', 'prettier'];
 
 const typesEnumScoped = {
   // Updates to the automation or release process
