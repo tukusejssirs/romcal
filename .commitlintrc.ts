@@ -8,6 +8,8 @@ const scopes = [...CALENDAR_IDS, ...LOCALE_IDS, 'calendar', 'l10n', 'util', 'pac
 const styleScopes = ['claude_ai', 'commitlint', 'editorconfig', 'eslint', 'prettier'];
 
 const typesEnumScoped = {
+  // Other commits which do not match the scope of other Commitlint types
+  chore: empty,
   // Updates to the automation or release process
   ci: empty,
   // Changes to build scripts
