@@ -1,0 +1,67 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "docs",
+  "projectType": "application",
+  "sourceRoot": "apps/docs/src",
+  "tags": ["scope:docs", "type:app", "platform:web"],
+  "targets": {
+    "build": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitepress build apps/docs/src"
+      },
+      "outputs": ["{workspaceRoot}/dist/apps/docs"]
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitepress dev apps/docs/src"
+      }
+    },
+    "lint:check": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "eslint . --config eslint.config.js",
+        "cwd": "apps/docs"
+      }
+    },
+    "lint:fix": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "eslint --fix . --config eslint.config.js",
+        "cwd": "apps/docs"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitepress preview apps/docs/src"
+      },
+      "dependsOn": ["build"]
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitepress dev apps/docs/src"
+      }
+    },
+    "test": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest run",
+        "cwd": "apps/docs"
+      }
+    },
+    "test:watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest",
+        "cwd": "apps/docs"
+      }
+    }
+  }
+}
