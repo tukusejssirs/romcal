@@ -118,9 +118,10 @@ const processFile = async (filePath: string, directory: string): Promise<void> =
             // Check relative links (with or without anchor)
             const [relativePath, anchor] = url.split('#');
 
-            // Check paths with and without `.md` extension
-            // Note: Markdown files are usually referenced without the extension, other files require the extension specification.
-            const targetPaths = [resolve(basePath, relativePath), resolve(basePath, `${relativePath}.md`)];
+            // Handle absolute paths (starting with /) as relative to the docs source directory
+            const targetPaths = relativePath.startsWith('/')
+              ? [resolve(directory, relativePath.substring(1)), resolve(directory, `${relativePath.substring(1)}.md`)]
+              : [resolve(basePath, relativePath), resolve(basePath, `${relativePath}.md`)];
 
             Promise.all(
               targetPaths.map(async (targetPath) => {

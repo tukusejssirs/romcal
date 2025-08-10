@@ -23,6 +23,8 @@ export default [
       '**/vitest.config.*.timestamp*',
       '**/.vitepress/cache/**',
       '**/.vitepress/dist/**',
+      '**/.vitepress/theme/**',
+      '**/.vitepress/config.mts',
     ],
   },
   {

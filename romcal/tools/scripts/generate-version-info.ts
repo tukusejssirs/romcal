@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 /**
- * Generate version information file for a project
+ * Generate a version information file for a project
  * @param projectPath - Path to the project relative to workspace root (e.g., "apps/docs")
  */
 function generateVersionInfo(projectPath: string): void {
@@ -17,7 +17,7 @@ function generateVersionInfo(projectPath: string): void {
     const workspaceRoot = join(__dirname, '../..');
     const packageJsonPath = join(workspaceRoot, 'package.json');
 
-    // Read version from package.json
+    // Read the version from `package.json`
     const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
     const packageVersion = packageJson.version || '0.0.0';
 
@@ -40,7 +40,7 @@ function generateVersionInfo(projectPath: string): void {
 
       // Try to get the most recent tag
       try {
-        gitTag = execSync('git describe --tags --abbrev=0', {
+        gitTag = execSync('git describe --abbrev=0 --tags', {
           cwd: workspaceRoot,
           encoding: 'utf8',
         }).trim();
@@ -49,8 +49,9 @@ function generateVersionInfo(projectPath: string): void {
       }
 
       // Get full git describe output (includes commits since tag)
+      // Use `--tags` to include lightweight tags, not just annotated ones
       try {
-        gitDescribe = execSync('git describe --always', {
+        gitDescribe = execSync('git describe --always --tags', {
           cwd: workspaceRoot,
           encoding: 'utf8',
         }).trim();
@@ -66,26 +67,23 @@ function generateVersionInfo(projectPath: string): void {
     const buildDate = new Date().toISOString();
 
     // Construct version string
-    // Use git describe if available, otherwise package version + commit
+    // Use `git describe` if available, otherwise package version and commit
     const version = gitDescribe || `${packageVersion}-${gitCommit}`;
 
     // Check if this is a prerelease version
     const isPrerelease = gitTag === '' || gitTag.includes('-');
 
-    // Create version info object with alphabetically sorted properties
-    const versionInfo = {
-      buildDate,
-      gitBranch,
-      gitCommit,
-      gitTag,
-      isPrerelease,
-      packageVersion,
-      version,
-    };
-
     // Determine the output path
     const outputDir = join(workspaceRoot, projectPath, 'src');
     const outputPath = join(outputDir, 'version.constant.ts');
+
+    // Helper function to escape string values for template literal
+    const formatValue = (value: any): string => {
+      if (typeof value === 'string') {
+        return `'${value.replace(/'/g, "\\'")}'`;
+      }
+      return String(value);
+    };
 
     // Generate TypeScript content
     const content = `/**
@@ -94,12 +92,19 @@ function generateVersionInfo(projectPath: string): void {
  */
 
 export interface VersionInfo {
+  /** ISO 8601 timestamp of when this build was created */
   buildDate: string;
+  /** Git branch name at build time */
   gitBranch: string;
+  /** Short SHA of the Git commit */
   gitCommit: string;
+  /** Most recent Git tag at build time */
   gitTag: string;
+  /** Whether this is a prerelease version (\`dev\`, \`alpha\`, \`beta\`, \`rc\`, etc.) */
   isPrerelease: boolean;
+  /** Version from package.json */
   packageVersion: string;
+  /** Full version string including Git information */
   version: string;
 }
 
@@ -119,7 +124,22 @@ export interface VersionInfo {
  * }
  * \`\`\`
  */
-export const VERSION_INFO: VersionInfo = Object.freeze(${JSON.stringify(versionInfo, null, '\t')});
+export const VERSION_INFO: VersionInfo = Object.freeze({
+  /** ISO 8601 timestamp of when this build was created */
+  buildDate: ${formatValue(buildDate)},
+  /** Git branch name at build time */
+  gitBranch: ${formatValue(gitBranch)},
+  /** Short SHA of the Git commit */
+  gitCommit: ${formatValue(gitCommit)},
+  /** Most recent Git tag at build time */
+  gitTag: ${formatValue(gitTag)},
+  /** Whether this is a prerelease version */
+  isPrerelease: ${isPrerelease},
+  /** Version from \`package.json\` */
+  packageVersion: ${formatValue(packageVersion)},
+  /** Full version string including Git information */
+  version: ${formatValue(version)},
+});
 `;
 
     // Write the file

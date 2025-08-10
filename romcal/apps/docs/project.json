@@ -7,11 +7,27 @@
   "targets": {
     "build": {
       "cache": true,
+      "dependsOn": ["generate-version"],
       "executor": "nx:run-commands",
       "options": {
-        "command": "vitepress build apps/docs/src"
+        "commands": ["vitepress build apps/docs/src"],
+        "parallel": false
       },
-      "outputs": ["{workspaceRoot}/dist/apps/docs"]
+      "outputs": ["{workspaceRoot}/dist/apps/docs"],
+      "configurations": {
+        "production": {
+          "commands": ["tsx tools/scripts/generate-version-info.ts apps/docs", "vitepress build apps/docs/src"]
+        }
+      }
+    },
+    "generate-version": {
+      "cache": false,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsx tools/scripts/generate-version-info.ts apps/docs",
+        "cwd": "{workspaceRoot}"
+      },
+      "outputs": ["{workspaceRoot}/apps/docs/src/version.constant.ts"]
     },
     "dev": {
       "executor": "nx:run-commands",
@@ -23,7 +39,7 @@
       "cache": true,
       "executor": "nx:run-commands",
       "options": {
-        "command": "eslint . --config eslint.config.js",
+        "command": "eslint . --config eslint.config.mjs",
         "cwd": "apps/docs"
       }
     },
@@ -31,7 +47,7 @@
       "cache": true,
       "executor": "nx:run-commands",
       "options": {
-        "command": "eslint --fix . --config eslint.config.js",
+        "command": "eslint --fix . --config eslint.config.mjs",
         "cwd": "apps/docs"
       }
     },
@@ -61,6 +77,42 @@
       "options": {
         "command": "vitest",
         "cwd": "apps/docs"
+      }
+    },
+    "format:check": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier -c .",
+        "cwd": "apps/docs"
+      }
+    },
+    "format:fix": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier -w .",
+        "cwd": "apps/docs"
+      }
+    },
+    "check-links": {
+      "cache": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsx tools/scripts/check-broken-links.ts apps/docs/src",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "sort-glossary": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsx tools/scripts/sort-glossary.ts",
+        "cwd": "{workspaceRoot}"
+      },
+      "configurations": {
+        "specific-file": {
+          "command": "tsx tools/scripts/sort-glossary.ts {args.file}"
+        }
       }
     }
   }
