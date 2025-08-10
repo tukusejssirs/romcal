@@ -1,16 +1,20 @@
+# Add files here to ignore them from prettier formatting (workspace-level)
+
 # Logs
 logs
 *.log
 npm-debug.log*
 
 # Dependencies
-/node_modules/
+node_modules/
 
 # Coverage
-/coverage/
+coverage/
+/coverage
 
 # Transpiled files
-/dist/
+dist/
+/dist
 tmp/
 
 # Nx
@@ -22,6 +26,10 @@ tmp/
 
 # Romcal codebase
 LICENSE
+
+# Package directories (excluded from workspace-level formatting)
+/apps/
+/libs/
 
 # Misc
 .DS_Store

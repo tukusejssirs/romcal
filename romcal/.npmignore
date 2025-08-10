@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+
+# Main codebase
+.github/
+.husky/
+apps/
+libs/*/src
+tools/
+.commitlintrc.ts
+.editorconfig
+.eslintignore
+.eslintrc.js
+.lintstagedrc.yaml
+.nvmrc
+.prettierignore
+.prettierrc
+CODE_OF_CONDUCT.md
+global.d.ts
+tsconfig.*
+
+# Keep the dist folder for published packages
+!libs/*/dist
+
+# Transpiled files
+tmp/
+
+# Act (run GitHub Actions locally)
+*.event
+
+# IDEs
+.idea/
+.vscode/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Misc
+.DS_Store
+local-*
+*.bak
+*.orig
+*code-workspace
+*~

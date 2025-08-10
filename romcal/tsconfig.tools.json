@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true
+  },
+  "include": [".commitlintrc.ts", "eslint.config.mjs", "eslint.workspace.config.mjs", "tools/**/*.ts"]
+}

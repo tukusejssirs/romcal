@@ -19,12 +19,12 @@
     "customConditions": ["development"],
     "baseUrl": ".",
     "paths": {
-      "@romcal/core": ["libs/core/src/index.ts"],
-      "@romcal/types": ["libs/types/src/index.ts"],
-      "@romcal/utils": ["libs/utils/src/index.ts"],
-      "@romcal/locales": ["libs/locales/src/index.ts"],
       "@romcal/calendars": ["libs/calendars/src/index.ts"],
-      "@romcal/metadata": ["libs/metadata/src/index.ts"]
+      "@romcal/core": ["libs/core/src/index.ts"],
+      "@romcal/locales": ["libs/locales/src/index.ts"],
+      "@romcal/metadata": ["libs/metadata/src/index.ts"],
+      "@romcal/types": ["libs/types/src/index.ts"],
+      "@romcal/utils": ["libs/utils/src/index.ts"]
     }
   }
 }
