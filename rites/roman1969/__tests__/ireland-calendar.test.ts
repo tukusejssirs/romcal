@@ -1,6 +1,8 @@
 import { Ireland_En } from '@dist/rite-roman1969/bundles/ireland';
 import { Romcal } from '@src/rite-roman1969';
 
+import { Martyrology } from '../src/catalog/martyrology';
+
 describe('Ireland calendar', () => {
   test('keeps the Ascension and Corpus Christi on Sunday, and the national celebrations of 2026', async () => {
     const calendar = await new Romcal({ localizedCalendar: Ireland_En }).generateCalendar(2026);
@@ -27,11 +29,22 @@ describe('Ireland calendar', () => {
     expect(dateOf('clement_i_pope')).toBe('2026-11-25');
   });
 
+  // Nathy, Felim and Eunan are in the National Proper for Ireland. Their optional memorials (9 August, 23 September)
+  // are celebrated when nothing outranks them. The generated calendar currently impedes them (the feast of Saint Teresa
+  // Benedicta, the memorial of Saint Pius of Pietrelcina), but the catalogue must define every celebration.
+  test('defines the saints of the National Proper that the calendar impedes in the catalogue', () => {
+    const catalog = Martyrology.catalog;
+
+    expect(catalog.nathy_of_achonry_bishop).toMatchObject({ name: 'Nathy' });
+    expect(catalog.felim_of_kilmore_bishop).toMatchObject({ name: 'Felim' });
+    expect(catalog.eunan_of_iona_abbot).toMatchObject({ name: 'Eunan' });
+  });
+
   test('keeps Saint Brigid as a feast on 1 February', async () => {
     const calendar = await new Romcal({ localizedCalendar: Ireland_En }).generateCalendar(2027);
     const brigid = calendar['2027-02-01'].find((day) => day.id === 'brigid_of_kildare_virgin');
 
     expect(brigid?.rank).toBe('FEAST');
-    expect(brigid?.name).toBe('Saint Brigid of Kildare, Abbess, Copatroness of Ireland');
+    expect(brigid?.name).toBe('Saint Brigid, Abbess, Copatroness of Ireland');
   });
 });

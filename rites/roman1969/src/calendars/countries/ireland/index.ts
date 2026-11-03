@@ -1,4 +1,4 @@
-import { PatronTitle, Precedences, Inputs, ParticularConfig } from '@internal/generator';
+import { PatronTitle, Title, Precedences, Inputs, ParticularConfig } from '@internal/generator';
 
 import { CalendarDef } from '../../../calendar-def';
 import { Europe } from '../../regions/europe';
@@ -141,7 +141,7 @@ export class Ireland extends CalendarDef {
     },
 
     charles_lwanga_and_companions_martyrs: {
-      // src: https://gcatholic.org/calendar/2026/IE-en
+      // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=25
       dateDef: { month: 6, date: 4 },
     },
 
@@ -159,11 +159,11 @@ export class Ireland extends CalendarDef {
       customLocaleId: 'columba_of_iona_abbot_copatron_of_ireland',
       precedence: Precedences.ProperFeast_PrincipalPatronOfARegion_8c,
       dateDef: { month: 6, date: 9 },
-      titles: { append: [PatronTitle.CopatronOfIreland] },
+      titles: { append: [Title.Missionary, PatronTitle.CopatronOfIreland] },
     },
 
     ephrem_the_syrian_deacon: {
-      // src: https://gcatholic.org/calendar/2026/IE-en
+      // src: https://www.dublindiocese.ie/wp-content/uploads/2017/09/Feilire-agus-Feastai-Mi-Meithimh-2026.pdf#page=1
       dateDef: { month: 6, date: 10 },
     },
 
@@ -200,6 +200,18 @@ export class Ireland extends CalendarDef {
     declan_of_ardmore_bishop: {
       precedence: Precedences.OptionalMemorial_12,
       dateDef: { month: 7, date: 24 },
+    },
+
+    nathy_of_achonry_bishop: {
+      // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
+      precedence: Precedences.OptionalMemorial_12,
+      dateDef: { month: 8, date: 9 },
+    },
+
+    felim_of_kilmore_bishop: {
+      // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
+      precedence: Precedences.OptionalMemorial_12,
+      dateDef: { month: 8, date: 9 },
     },
 
     muredach_of_killala_bishop: {
@@ -263,6 +275,12 @@ export class Ireland extends CalendarDef {
       dateDef: { month: 9, date: 12 },
     },
 
+    eunan_of_iona_abbot: {
+      // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=36
+      precedence: Precedences.OptionalMemorial_12,
+      dateDef: { month: 9, date: 23 },
+    },
+
     finbarr_of_cork_bishop: {
       precedence: Precedences.OptionalMemorial_12,
       dateDef: { month: 9, date: 25 },
@@ -304,7 +322,7 @@ export class Ireland extends CalendarDef {
     },
 
     martin_de_porres_religious: {
-      // src: https://gcatholic.org/calendar/2026/IE-en
+      // src: https://www.dublindiocese.ie/wp-content/uploads/2017/09/November-Calendar-and-Feast-Days-2026.pdf#page=1
       dateDef: { month: 11, date: 5 },
     },
 
@@ -341,6 +359,7 @@ export class Ireland extends CalendarDef {
     virgilius_of_salzburg_bishop: {
       precedence: Precedences.OptionalMemorial_12,
       dateDef: { month: 11, date: 27 },
+      titles: { append: [Title.Missionary] },
     },
 
     finnian_of_clonard_bishop: {

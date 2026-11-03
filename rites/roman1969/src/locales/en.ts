@@ -63,7 +63,7 @@ export const locale: Locale = {
     agnes_of_rome_virgin: 'Saint Agnes, Virgin and Martyr',
     agoard_of_creteil_and_aglibert_of_creteil_martyrs: 'Saints Agoard and Aglibert, Martyrs', // src: mr_fr_2009_ed2_paris_creteil_nanterre_saint_denis
     agoard_of_creteil_martyr: 'Saint Agoard, Martyr at Créteil', // src: https://en.wikipedia.org/wiki/Agoard_and_Aglibert
-    aidan_of_ferns_bishop: 'Saint Aidan of Ferns, Bishop',
+    aidan_of_ferns_bishop: 'Saint Aidan, Bishop', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf
     aidan_of_lindisfarne_bishop: 'Saint Aidan of Lindisfarne, Bishop and Missionary',
     aidan_of_lindisfarne_bishop_and_the_saints_of_lindisfarne: 'Saint Aidan, Bishop, and the Saints of Lindisfarne',
     ailbe_of_emly_bishop: 'Saint Ailbe, Bishop',
@@ -193,7 +193,7 @@ export const locale: Locale = {
     assumption_of_the_blessed_virgin_mary_titular_of_the_cathedral_and_patroness_of_france_and_the_diocese_of_bayonne:
       'The Assumption of the Blessed Virgin Mary, Titular of the Cathedral and Patroness of France and of the Diocese of Bayonne, Lescar and Oloron',
     athanasius_of_alexandria_bishop: 'Saint Athanasius, Bishop and Doctor of the Church',
-    attracta_of_killaraght_virgin: 'Saint Attracta of Killaraght, Virgin',
+    attracta_of_killaraght_virgin: 'Saint Attracta, Virgin',
     aubert_of_avranches_bishop: 'Saint Aubert, Bishop',
     audoen_of_rouen_bishop: 'Saint Audoen, Bishop',
     audomar_of_therouanne_bishop: 'Saint Audomar, Bishop',
@@ -256,11 +256,11 @@ export const locale: Locale = {
     bonaventure_of_bagnoregio_bishop: 'Saint Bonaventure, Bishop and Doctor of the Church',
     boniface_of_mainz_bishop: 'Saint Boniface, Bishop and Martyr',
     boris_of_kiev_and_gleb_of_kiev_martyrs: 'Saints Boris and Gleb, Martyrs',
-    brendan_of_clonfert_abbot: 'Saint Brendan of Clonfert, Abbot',
+    brendan_of_clonfert_abbot: 'Saint Brendan, Abbot',
     bridget_of_sweden_religious: 'Saint Bridget, Religious',
     bridget_of_sweden_religious_copatroness_of_europe: 'Saint Bridget, Religious, Copatroness of Europe',
     brigid_of_kildare_virgin: 'Saint Brigid, Abbess',
-    brigid_of_kildare_virgin_copatroness_of_ireland: 'Saint Brigid of Kildare, Abbess, Copatroness of Ireland',
+    brigid_of_kildare_virgin_copatroness_of_ireland: 'Saint Brigid, Abbess, Copatroness of Ireland', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=10
     bronislava_of_poland_virgin: 'Blessed Bronislava, Virgin',
     bronislaw_markiewicz_priest: 'Blessed Bronisław Markiewicz, Priest',
     bruno_of_cologne_priest: 'Saint Bruno, Priest',
@@ -322,7 +322,7 @@ export const locale: Locale = {
     christopher_of_palestine_martyr: 'Saint Christopher, Martyr',
     christopher_of_romandiola_priest: 'Blessed Christopher of Romandiola, Priest',
     chrysolius_martyr: 'Saint Chrysolius, Martyr',
-    ciaran_of_clonmacnoise_abbot: 'Saint Ciaran of Clonmacnoise, Abbot',
+    ciaran_of_clonmacnoise_abbot: 'Saint Ciaran, Abbot', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf
     cibar_of_saint_ybars_monk: 'Saint Cibar of Saint-Ybars, Monk',
     clair_of_lectoure_martyr: 'Saint Clair of Lectoure, Martyr',
     clair_of_normandy_priest: 'Saint Clair of Normandy, Priest and Martyr',
@@ -341,7 +341,7 @@ export const locale: Locale = {
     colman_of_kilmacduagh_bishop: 'Saint Colman of Kilmacduagh, Bishop',
     columba_marmion_priest: 'Blessed Columba Marmion, Priest',
     columba_of_iona_abbot: 'Saint Columba, Abbot',
-    columba_of_iona_abbot_copatron_of_ireland: 'Saint Columba, Abbot, Copatron of Ireland',
+    columba_of_iona_abbot_copatron_of_ireland: 'Saint Columba, Abbot and Missionary, Copatron of Ireland', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=26
     columban_of_luxeuil_abbot: 'Saint Columban, Abbot',
     comgall_of_bangor_abbot: 'Saint Comgall, Abbot',
     commemoration_of_all_the_faithful_departed: 'The Commemoration of All the Faithful Departed (All Soul’s Day)',
@@ -488,7 +488,7 @@ export const locale: Locale = {
     emilie_de_rodat_virgin: 'Saint Émilie de Rodat, Virgin',
     emilie_de_vialar_virgin: 'Saint Émilie de Vialar, Virgin',
     emilie_tavernier_gamelin_religious: 'Blessed Émilie Tavernier-Gamelin, Religious',
-    enda_of_aran_abbot: 'Saint Enda of Aran, Abbot',
+    enda_of_aran_abbot: 'Saint Enda, Abbot',
     english_martyrs: 'English Martyrs',
     enimie_of_gevaudan_virgin: 'Saint Énimie of Gévaudan, Virgin',
     eoghan_of_ardstraw_bishop: 'Saint Eugene of Ardstraw, Bishop',
@@ -510,6 +510,7 @@ export const locale: Locale = {
       'Saints Eulalia and Julia of Merida, Virgins and Martyrs, Patronesses of the Diocese of Perpignan-Elne',
     eulalia_of_merida_virgin: 'Saint Eulalia of Merida, Virgin and Martyr',
     eulogius_of_cordoba_bishop: 'Saint Eulogius of Córdoba, Bishop',
+    eunan_of_iona_abbot: 'Saint Eunan, Abbot', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=36
     eusebius_of_esztergom_priest: 'Blessed Eusebius of Esztergom, Priest',
     eusebius_of_vercelli_bishop: 'Saint Eusebius of Vercelli, Bishop',
     everard_of_friuli: 'Saint Everard of Friuli',
@@ -523,6 +524,7 @@ export const locale: Locale = {
     fachtna_of_rosscarbery_bishop: 'Saint Fachtna, Bishop',
     faith_of_agen_virgin: 'Saint Faith of Agen, Virgin and Martyr',
     faustina_kowalska_virgin: 'Saint Faustina Kowalska, Virgin',
+    felim_of_kilmore_bishop: 'Saint Felim, Bishop', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
     ferdinand_iii_of_castile: 'Saint Ferdinand III of Castile',
     ferreolus_of_uzes_bishop: 'Saint Ferreolus of Uzès, Bishop', // src: mr_fr_1984_ed1_nimes
     fiacre_of_breuil_monk: 'Saint Fiacre, Monk',
@@ -530,7 +532,7 @@ export const locale: Locale = {
     finbarr_of_cork_bishop: 'Saint Finbarr, Bishop',
     finding_of_the_holy_cross: 'Finding of the Holy Cross',
     finnian_of_clonard_bishop: 'Saint Finnian, Bishop',
-    fintan_of_clonenagh_abbot: 'Saint Fintan of Clonenagh, Abbot',
+    fintan_of_clonenagh_abbot: 'Saint Fintan, Abbot', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=13
     firmin_of_amiens_bishop: 'Saint Firmin, Bishop and Martyr',
     firmin_of_mende_bishop: 'Saint Firmin of Mende, Bishop',
     firmin_of_mende_bishop_and_all_holy_bishops_of_the_diocese_of_mende:
@@ -595,7 +597,7 @@ export const locale: Locale = {
     fructuosus_of_tarragona_bishop_and_augurius_of_tarragona_and_eulogius_of_tarragona_deacons_martyrs:
       'Saints Fructuosus, Bishop, Augurius and Eulogius, Deacons, Martyrs',
     fulgentius_of_ruspe_bishop: 'Saint Fulgentius, Bishop',
-    fursa_of_peronne_abbot: 'Saint Fursa, Abbot',
+    fursa_of_peronne_abbot: 'Saint Fursa, Abbot and Missionary', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=9
     gabriel_taurin_dufresse_bishop: 'Saint Gabriel-Taurin Dufresse, Bishop and Martyr',
     gabriele_maria_allegra_priest: 'Blessed Gabriele Maria Allegra, Priest',
     galactorius_of_lescar_bishop_and_martyr: 'Saint Galactorius of Lescar, Bishop and Martyr',
@@ -716,13 +718,13 @@ export const locale: Locale = {
     irenaeus_of_lyon_bishop_patron_of_the_archdiocese_of_lyon_and_companions_martyrs:
       'Saints Irenaeus, Bishop and Doctor of the Church, Patron of the Archdiocese of Lyon, and Companions, Martyrs',
     irene_of_macedonia: 'Saint Irene',
-    irish_martyrs: 'The Blessed Irish Martyrs',
+    irish_martyrs: 'The Irish Martyrs', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=29
     irmina_of_oeren_abbess: 'Saint Irmina of Oeren, Abbess',
     isabelle_of_france_virgin: 'Blessed Isabelle of France, Virgin',
     isidore_of_seville_bishop: 'Saint Isidore, Bishop and Doctor of the Church',
     isidore_the_farmer: 'Saint Isidore',
     istvan_sandor_religious: 'Blessed István Sándor, Religious and Martyr',
-    ita_of_killeedy_virgin: 'Saint Ita of Limerick, Virgin',
+    ita_of_killeedy_virgin: 'Saint Ita, Virgin', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=8
     ivan_merz: 'Blessed Ivan Merz',
     ivo_of_auteuil_bishop: 'Saint Ivo of Auteuil, Bishop',
     ivo_of_chartres_bishop: 'Saint Ivo of Chartres, Bishop',
@@ -875,7 +877,7 @@ export const locale: Locale = {
     ladislaus_i_of_hungary: 'Saint Ladislaus',
     lambert_of_maastricht_bishop: 'Saint Lambert of Maastricht, Bishop and Martyr',
     landry_of_paris_bishop: 'Saint Landry of Paris, Bishop',
-    laserian_of_leighlin_bishop: 'Saint Laserian of Leighlin, Bishop',
+    laserian_of_leighlin_bishop: 'Saint Laserian, Bishop',
     laud_of_coutances_bishop: 'Saint Laud, Bishop',
     laud_of_coutances_bishop_patron_of_the_diocese_of_coutances:
       'Saint Laud, Bishop, Patron of the Diocese of Coutances',
@@ -890,7 +892,7 @@ export const locale: Locale = {
     lawrence_of_rome_deacon: 'Saint Lawrence, Deacon and Martyr',
     lawrence_ruiz_and_companions_martyrs: 'Saint Lawrence Ruiz and Companions, Martyrs',
     leander_of_seville_bishop: 'Saint Leander of Seville, Bishop',
-    lelia_of_killeely_virgin: 'Saint Lelia of Killeely, Virgin',
+    lelia_of_killeely_virgin: 'Saint Lelia, Virgin', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=33
     leo_i_the_great_pope: 'Saint Leo the Great, Pope and Doctor of the Church',
     leo_ignatius_mangin_priest_and_companions_martyrs: 'Saint Leo Ignatius Mangin, Priest, and Companions, Martyrs',
     leo_ix_pope: 'Saint Leo IX, Pope',
@@ -1045,7 +1047,7 @@ export const locale: Locale = {
     medard_of_noyon_bishop: 'Saint Medard of Noyon, Bishop',
     mederic_of_autun_and_droctoveus_of_autun_abbots: 'Saints Mederic and Droctoveus, Abbots',
     meinrad_of_einsiedeln_martyr: 'Saint Meinrad of Einsiedeln, Martyr',
-    mel_of_ardagh_bishop: 'Saint Mel of Ardagh, Bishop',
+    mel_of_ardagh_bishop: 'Saint Mel, Bishop',
     melchior_grodziecki_priest: 'Saint Melchior Grodziecki, Priest and Martyr',
     mellitus_of_canterbury_bishop: 'Saint Mellitus, Bishop',
     michael_gabriel_and_raphael_archangels: 'Saints Michael, Gabriel and Raphael, Archangels',
@@ -1069,10 +1071,11 @@ export const locale: Locale = {
     most_holy_name_of_mary: 'The Most Holy Name of Mary',
     most_holy_trinity: 'The Most Holy Trinity',
     most_sacred_heart_of_jesus: 'The Most Sacred Heart of Jesus',
-    munchin_of_limerick_bishop: 'Saint Munchin of Limerick, Bishop',
-    muredach_of_killala_bishop: 'Saint Muredach of Killala, Bishop',
+    munchin_of_limerick_bishop: 'Saint Munchin, Bishop', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=8
+    muredach_of_killala_bishop: 'Saint Muredach, Bishop', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
     mutien_marie_wiaux_religious: 'Saint Mutien-Marie Wiaux, Religious',
     namphaise_of_cahors_hermit: 'Saint Namphaise of Cahors, Hermit',
+    nathy_of_achonry_bishop: 'Saint Nathy, Bishop', // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
     nativity_of_john_the_baptist: 'The Nativity of Saint John the Baptist',
     nativity_of_john_the_baptist_principal_patron_of_the_diocese_of_perpignan_elne:
       'The Nativity of Saint John the Baptist, Principal Patron of the Diocese of Perpignan-Elne',

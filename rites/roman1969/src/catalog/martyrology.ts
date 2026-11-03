@@ -2334,6 +2334,24 @@ export const Martyrology: { catalog: MartyrologyCatalog } = {
       hideTitles: true,
       count: 'many',
     },
+    // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=36
+    eunan_of_iona_abbot: {
+      canonizationLevel: CanonizationLevels.Saint,
+      name: 'Eunan',
+      titles: [Title.Abbot],
+    },
+    // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
+    felim_of_kilmore_bishop: {
+      canonizationLevel: CanonizationLevels.Saint,
+      name: 'Felim',
+      titles: [Title.Bishop],
+    },
+    // src: https://www.catholicbishops.ie/wp-content/uploads/2024/09/National-Proper-for-Ireland-web.pdf#page=32
+    nathy_of_achonry_bishop: {
+      canonizationLevel: CanonizationLevels.Saint,
+      name: 'Nathy',
+      titles: [Title.Bishop],
+    },
     eoghan_of_ardstraw_bishop: {
       canonizationLevel: CanonizationLevels.Saint,
       name: 'Eugene',
